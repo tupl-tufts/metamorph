@@ -1,0 +1,223 @@
+2024-09-24 12:54:59.7660 DEBUG Using integer programming to estimating the distance to this.users.Keys == {0}
+2024-09-24 12:54:59.7822 TRACE Minimizing value: (((AddUser + RequestConnect) + RemoveUser) + RequestResponse)
+2024-09-24 12:54:59.7856 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-09-24 12:54:59.7856 DEBUG In particular, need at least -0 calls to AddUser
+2024-09-24 12:54:59.7856 DEBUG In particular, need at least -0 calls to RequestConnect
+2024-09-24 12:54:59.7856 DEBUG In particular, need at least -0 calls to RemoveUser
+2024-09-24 12:54:59.7856 DEBUG In particular, need at least -0 calls to RequestResponse
+2024-09-24 12:54:59.7856 INFO Initial heuristic value is 0
+2024-09-24 12:54:59.7877 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-24 12:54:59.8559 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: int) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} !(receiver.users.Keys == {0});}
+2024-09-24 12:54:59.8559 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: int) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_0_337_0 == 0;
+      assert {:keepAssertion} !(receiver.users.Keys == {formal_0_337_0});
+    }
+2024-09-24 12:55:00.9633 DEBUG Trying method sequence: AddUser
+2024-09-24 12:55:00.9669 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: int, argument_2_0_0: nat, receiver: SocialNetwork)
+    modifies receiver {assume !(receiver.users.Keys == {0});
+assume true && receiver.IsValid() && argument_2_0_0 !in receiver.users;
+receiver.AddUser(argument_2_0_0);
+assert {:keepAssertion} !(receiver.users.Keys == {0});}
+2024-09-24 12:55:00.9669 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: int, argument_2_0_0: nat, receiver: SocialNetwork)
+      modifies receiver
+    {
+      assume {:formal} formal_0_337_0 == 0;
+      assume !(receiver.users.Keys == {formal_0_337_0});
+      assume true && receiver.IsValid() && argument_2_0_0 !in receiver.users;
+      receiver.AddUser(argument_2_0_0);
+      assert {:keepAssertion} !(receiver.users.Keys == {formal_0_337_0});
+    }
+2024-09-24 12:55:01.4186 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_248_0: bool, formal_0_337_0: int, argument_2_0_0: nat, receiver: SocialNetwork, formal_0_339_0: int)
+    modifies receiver {assume !(receiver == null);
+assume receiver.IsValid.requires();
+assume true == receiver.IsValid();
+assume map[] == receiver.users;
+receiver.AddUser(0);
+assert {:keepAssertion} receiver.users.Keys == {0};}
+2024-09-24 12:55:01.4186 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_248_0: bool, formal_0_337_0: int, argument_2_0_0: nat, receiver: SocialNetwork, formal_0_339_0: int)
+      modifies receiver
+    {
+      assume {:formal} formal_0_339_0 == 0;
+      assume {:attribute 10} argument_2_0_0 == formal_0_339_0;
+      assume {:formal} formal_2_248_0 == true;
+      assume !(receiver == null);
+      assume receiver.IsValid.requires();
+      assume formal_2_248_0 == receiver.IsValid();
+      assume map[] == receiver.users;
+      receiver.AddUser(argument_2_0_0);
+      assume {:formal} formal_0_337_0 == 0;
+      assert {:keepAssertion} receiver.users.Keys == {formal_0_337_0};
+    }
+2024-09-24 12:55:01.8074 DEBUG Trying simplification:
+2024-09-24 12:55:01.8119 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: int, formal_2_248_0: bool, formal_0_339_0: int, argument_2_0_0: nat, receiver: SocialNetwork)
+    modifies receiver {receiver.AddUser(0);
+assert {:keepAssertion} receiver.users.Keys == {0};}
+2024-09-24 12:55:01.8119 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: int, formal_2_248_0: bool, formal_0_339_0: int, argument_2_0_0: nat, receiver: SocialNetwork)
+      modifies receiver
+    {
+      assume {:attribute 10} argument_2_0_0 == formal_0_339_0;
+      assume {:formal} formal_0_339_0 == 0;
+      receiver.AddUser(argument_2_0_0);
+      assume {:formal} formal_0_337_0 == 0;
+      assert {:keepAssertion} receiver.users.Keys == {formal_0_337_0};
+    }
+2024-09-24 12:55:02.3280 DEBUG Using integer programming to estimating the distance to receiver.IsValid.requires(), ¬(receiver == null), map[] == receiver.users, true == this.IsValid()
+2024-09-24 12:55:02.3280 TRACE Minimizing value: (((AddUser + RequestConnect) + RemoveUser) + RequestResponse)
+2024-09-24 12:55:02.3280 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-09-24 12:55:02.3280 DEBUG In particular, need at least -0 calls to AddUser
+2024-09-24 12:55:02.3306 DEBUG In particular, need at least -0 calls to RequestConnect
+2024-09-24 12:55:02.3306 DEBUG In particular, need at least -0 calls to RemoveUser
+2024-09-24 12:55:02.3306 DEBUG In particular, need at least -0 calls to RequestResponse
+2024-09-24 12:55:02.3306 INFO The following method sequence is possible (heuristic=0): AddUser
+2024-09-24 12:55:02.3306 INFO New state is receiver.IsValid.requires(), ¬(receiver == null), map[] == receiver.users, true == this.IsValid()
+2024-09-24 12:55:02.3306 DEBUG Trying method sequence: RequestConnect
+2024-09-24 12:55:02.3306 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: int, argument_3_0_0: nat, argument_3_0_1: nat, receiver: SocialNetwork)
+    modifies receiver {assume !(receiver.users.Keys == {0});
+assume true && receiver.IsValid() && argument_3_0_0 != argument_3_0_1 && argument_3_0_0 in receiver.users && argument_3_0_1 in receiver.users && argument_3_0_0 !in receiver.users[argument_3_0_1].friends && argument_3_0_1 !in receiver.users[argument_3_0_0].friends && argument_3_0_1 !in receiver.users[argument_3_0_0].requests;
+receiver.RequestConnect(argument_3_0_0, argument_3_0_1);
+assert {:keepAssertion} !(receiver.users.Keys == {0});}
+2024-09-24 12:55:02.3306 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: int, argument_3_0_0: nat, argument_3_0_1: nat, receiver: SocialNetwork)
+      modifies receiver
+    {
+      assume {:formal} formal_0_337_0 == 0;
+      assume !(receiver.users.Keys == {formal_0_337_0});
+      assume true && receiver.IsValid() && argument_3_0_0 != argument_3_0_1 && argument_3_0_0 in receiver.users && argument_3_0_1 in receiver.users && argument_3_0_0 !in receiver.users[argument_3_0_1].friends && argument_3_0_1 !in receiver.users[argument_3_0_0].friends && argument_3_0_1 !in receiver.users[argument_3_0_0].requests;
+      receiver.RequestConnect(argument_3_0_0, argument_3_0_1);
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 60 LINES OF LOGS TO SAVE DISK SPACE ****************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+      receiver.RemoveUser(argument_4_0_0);
+      assume {:formal} formal_0_337_0 == 0;
+      assert {:keepAssertion} receiver.users.Keys == {formal_0_337_0};
+    }
+2024-09-24 12:55:03.4252 DEBUG Trying simplification:
+2024-09-24 12:55:03.4275 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: int, formal_1_350_0: int, formal_2_352_0: int, formal_2_352_1: int, formal_2_352_2: int, formal_2_352_3: int, formal_3_354_0: int, formal_4_356_0: int, formal_5_358_0: int, formal_7_248_0: bool, formal_8_362_0: int, formal_9_364_0: int, formal_0_347_0: int, argument_4_0_0: nat, receiver: SocialNetwork)
+    modifies receiver {receiver.RemoveUser(1);
+assert {:keepAssertion} receiver.users.Keys == {0};}
+2024-09-24 12:55:03.4275 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: int, formal_1_350_0: int, formal_2_352_0: int, formal_2_352_1: int, formal_2_352_2: int, formal_2_352_3: int, formal_3_354_0: int, formal_4_356_0: int, formal_5_358_0: int, formal_7_248_0: bool, formal_8_362_0: int, formal_9_364_0: int, formal_0_347_0: int, argument_4_0_0: nat, receiver: SocialNetwork)
+      modifies receiver
+    {
+      assume {:attribute 22} argument_4_0_0 == formal_0_347_0;
+      assume {:formal} formal_0_347_0 == 1;
+      receiver.RemoveUser(argument_4_0_0);
+      assume {:formal} formal_0_337_0 == 0;
+      assert {:keepAssertion} receiver.users.Keys == {formal_0_337_0};
+    }
+2024-09-24 12:55:03.8498 DEBUG Using integer programming to estimating the distance to {} == this.users[1].requests, {} == this.users[1].friends, this.users[0].requests == {}, this.users[0].friends == {}, this.users.Keys == {0, 0, 1, 1}, receiver.IsValid.requires(), ¬(receiver == null), 0 in this.users, 1 in this.users, true == this.IsValid()
+2024-09-24 12:55:03.8572 TRACE Adding solver constraint for property {} == this.users[default0].requests from Undefined to True: (((AddUser * 1) + (AddUser * 0)) + ((RequestResponse * 0) + (RequestResponse * 0))) >= 1
+2024-09-24 12:55:03.8572 TRACE Adding solver constraint for property {} == this.users[default0].requests from Undefined to True: (((AddUser * 1) + (AddUser * 0)) + ((RequestResponse * 0) + (RequestResponse * 1))) >= 1
+2024-09-24 12:55:03.8591 TRACE Adding solver constraint for property {} == this.users[default0].friends from Undefined to True: ((AddUser * 1) + (AddUser * 0)) >= 1
+2024-09-24 12:55:03.8591 TRACE Adding solver constraint for property {} == this.users[default0].friends from Undefined to True: ((AddUser * 1) + (AddUser * 0)) >= 1
+2024-09-24 12:55:03.8591 TRACE Adding solver constraint for property this.users[default0].requests == {} from Undefined to True: (((AddUser * 1) + (AddUser * 0)) + ((RequestResponse * 0) + (RequestResponse * 0))) >= 1
+2024-09-24 12:55:03.8591 TRACE Adding solver constraint for property this.users[default0].requests == {} from Undefined to True: (((AddUser * 1) + (AddUser * 0)) + ((RequestResponse * 0) + (RequestResponse * 1))) >= 1
+2024-09-24 12:55:03.8591 TRACE Adding solver constraint for property this.users[default0].friends == {} from Undefined to True: ((AddUser * 1) + (AddUser * 0)) >= 1
+2024-09-24 12:55:03.8591 TRACE Adding solver constraint for property this.users[default0].friends == {} from Undefined to True: ((AddUser * 1) + (AddUser * 0)) >= 1
+2024-09-24 12:55:03.8591 TRACE Adding solver constraint for property default0 in this.users from False to True: ((AddUser * 1) + (AddUser * 0)) >= 2
+2024-09-24 12:55:03.8591 TRACE Adding solver constraint for property default0 in this.users from False to True: ((AddUser * 1) + (AddUser * 0)) >= 2
+2024-09-24 12:55:03.8591 TRACE Minimizing value: (((AddUser + RequestConnect) + RemoveUser) + RequestResponse)
+2024-09-24 12:55:03.8591 DEBUG The integer programming gives the lower bound of 2 methods.
+2024-09-24 12:55:03.8591 DEBUG In particular, need at least 2 calls to AddUser
+2024-09-24 12:55:03.8591 DEBUG In particular, need at least -0 calls to RequestConnect
+2024-09-24 12:55:03.8591 DEBUG In particular, need at least -0 calls to RemoveUser
+2024-09-24 12:55:03.8591 DEBUG In particular, need at least -0 calls to RequestResponse
+2024-09-24 12:55:03.8591 INFO The following method sequence is possible (heuristic=2): RemoveUser
+2024-09-24 12:55:03.8591 INFO New state is {} == this.users[1].requests, {} == this.users[1].friends, this.users[0].requests == {}, this.users[0].friends == {}, this.users.Keys == {0, 0, 1, 1}, receiver.IsValid.requires(), ¬(receiver == null), 0 in this.users, 1 in this.users, true == this.IsValid()
+2024-09-24 12:55:03.8591 DEBUG Trying method sequence: RequestResponse
+2024-09-24 12:55:03.8591 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: int, argument_5_0_0: nat, argument_5_0_1: nat, argument_5_0_2: bool, receiver: SocialNetwork)
+    modifies receiver {assume !(receiver.users.Keys == {0});
+assume true && receiver.IsValid() && argument_5_0_0 != argument_5_0_1 && argument_5_0_0 in receiver.users && argument_5_0_1 in receiver.users && argument_5_0_1 in receiver.users[argument_5_0_0].requests && argument_5_0_1 !in receiver.users[argument_5_0_0].friends && argument_5_0_0 !in receiver.users[argument_5_0_1].friends;
+receiver.RequestResponse(argument_5_0_0, argument_5_0_1, argument_5_0_2);
+assert {:keepAssertion} !(receiver.users.Keys == {0});}
+2024-09-24 12:55:03.8591 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: int, argument_5_0_0: nat, argument_5_0_1: nat, argument_5_0_2: bool, receiver: SocialNetwork)
+      modifies receiver
+    {
+      assume {:formal} formal_0_337_0 == 0;
+      assume !(receiver.users.Keys == {formal_0_337_0});
+      assume true && receiver.IsValid() && argument_5_0_0 != argument_5_0_1 && argument_5_0_0 in receiver.users && argument_5_0_1 in receiver.users && argument_5_0_1 in receiver.users[argument_5_0_0].requests && argument_5_0_1 !in receiver.users[argument_5_0_0].friends && argument_5_0_0 !in receiver.users[argument_5_0_1].friends;
+      receiver.RequestResponse(argument_5_0_0, argument_5_0_1, argument_5_0_2);
+      assert {:keepAssertion} !(receiver.users.Keys == {formal_0_337_0});
+    }
+2024-09-24 12:55:04.1814 INFO Expanding method sequence AddUser -- estimated distance to start = 0, distance to end = 1
+2024-09-24 12:55:04.1846 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_248_0: bool) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} !(!(receiver == null) && receiver.IsValid.requires() && true == receiver.IsValid() && map[] == receiver.users);}
+2024-09-24 12:55:04.1846 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_248_0: bool) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_2_248_0 == true;
+      assert {:keepAssertion} !(!(receiver == null) && receiver.IsValid.requires() && formal_2_248_0 == receiver.IsValid() && map[] == receiver.users);
+    }
+2024-09-24 12:55:04.5124 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_248_0: bool) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} !(receiver == null) && receiver.IsValid.requires() && true == receiver.IsValid() && map[] == receiver.users;}
+2024-09-24 12:55:04.5124 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_248_0: bool) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_2_248_0 == true;
+      assert {:keepAssertion} !(receiver == null) && receiver.IsValid.requires() && formal_2_248_0 == receiver.IsValid() && map[] == receiver.users;
+    }
+2024-09-24 12:55:04.8769 INFO Have found the following solution to a subproblem!
+{
+result := new SocialNetwork();
+result.AddUser(0);
+}
+2024-09-24 12:55:04.8769 INFO Time spend on subproblem: 00:00:05.1228059
+2024-09-24 12:55:04.8769 INFO Number of Regular queries to Dafny used to solve subproblem: 9 (00:00:04.0808095)
+2024-09-24 12:55:04.8769 INFO Number of Simplify queries to Dafny used to solve subproblem: 2 (00:00:00.9377947)
+2024-09-24 12:55:04.8769 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-24 12:55:04.8769 INFO Have found the following solution!
+static method solution() returns (result:SocialNetwork)
+ensures Goal(result)
+{
+result := new SocialNetwork();
+result.AddUser(0);
+}
+2024-09-24 12:55:04.8785 INFO Total time spend on synthesis: 00:00:05.3368055
+2024-09-24 12:55:04.8785 INFO Total number of Regular queries to Dafny: 9 (00:00:04.0808095)
+2024-09-24 12:55:04.8785 INFO Total number of Simplify queries to Dafny: 2 (00:00:00.9377947)
+2024-09-24 12:55:04.8785 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

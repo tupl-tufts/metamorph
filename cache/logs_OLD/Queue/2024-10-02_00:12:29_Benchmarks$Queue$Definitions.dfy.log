@@ -1,0 +1,223 @@
+2024-10-02 00:12:30.5674 INFO Starting heuristic learning for classes: Definitions.Queue
+2024-10-02 00:12:30.5768 INFO Trying out Rotate
+2024-10-02 00:12:30.6206 TRACE Verifying the body of the following method:
+static method synthesized(receiver: Queue)
+    modifies receiver, receiver.Repr {assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+receiver.Rotate();
+assert {:keepAssertion} false;}
+2024-10-02 00:12:30.6206 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: Queue)
+      modifies receiver, receiver.Repr
+    {
+      assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+      receiver.Rotate();
+      assert {:keepAssertion} false;
+    }
+2024-10-02 00:12:31.8351 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_3_0: int, formal_4_5_0: int, formal_5_7_0: int, formal_6_9_0: int, formal_7_11_0: int, formal_8_13_0: int, formal_9_15_0: int, formal_10_17_0: int, formal_11_19_0: int, formal_12_21_0: int, formal_13_23_0: int, formal_14_25_0: int, formal_15_27_0: int, formal_16_29_0: int, formal_17_31_0: int, formal_18_33_0: int, formal_19_35_0: int, formal_20_37_0: int, formal_21_39_0: int, formal_22_41_0: int, formal_23_43_0: int, formal_24_45_0: int, formal_25_47_0: int, formal_26_49_0: int, formal_27_51_0: int, formal_28_53_0: int, formal_29_55_0: int, formal_30_57_0: int, formal_31_59_0: int, formal_32_61_0: int, formal_33_63_0: int, formal_34_65_0: int, formal_35_67_0: int, formal_36_69_0: int, formal_37_71_0: int, formal_38_73_0: int, formal_39_75_0: int, formal_40_77_0: int, formal_41_79_0: int, formal_42_81_0: int, formal_43_83_0: int, formal_44_85_0: int, formal_45_87_0: int, formal_46_89_0: int, formal_47_91_0: int, formal_48_93_0: int, formal_49_95_0: int, formal_50_97_0: int, formal_51_99_0: int, formal_52_101_0: int, formal_53_103_0: int, formal_59_110_0: bool, formal_60_112_0: int, formal_61_114_0: int, formal_62_116_0: int, formal_63_118_0: int, formal_64_120_0: int, formal_65_122_0: int, formal_66_124_0: int, formal_67_126_0: int, formal_68_128_0: int, formal_69_130_0: int, formal_70_132_0: int, formal_71_134_0: int, formal_72_136_0: int, formal_73_138_0: int, formal_74_140_0: int, formal_75_142_0: int, formal_76_144_0: int, formal_77_146_0: int, formal_78_148_0: int, formal_79_150_0: int, formal_80_152_0: int, formal_81_154_0: int, formal_82_156_0: int, formal_83_158_0: int, formal_84_160_0: int, formal_85_162_0: int, formal_86_164_0: int, formal_87_166_0: int, formal_88_168_0: int, formal_89_170_0: int, formal_90_172_0: int, formal_91_174_0: int, formal_93_177_0: int, formal_94_179_0: int, formal_95_181_0: int, formal_96_183_0: int, formal_97_185_0: int, formal_98_187_0: int, formal_99_189_0: int, formal_100_191_0: int, formal_101_193_0: int, formal_102_195_0: int, formal_103_197_0: int, formal_104_199_0: int, formal_105_201_0: int, formal_106_203_0: int, formal_107_205_0: int, formal_108_207_0: int, formal_109_209_0: int, formal_110_211_0: int, formal_111_213_0: int, formal_112_215_0: int, formal_114_218_0: int, receiver: Queue)
+    modifies receiver, receiver.Repr {assume !(receiver == null);
+assume !(receiver.head == null);
+assume !(receiver.tail == null);
+assume |receiver.Repr| > 0;
+assume |receiver.Repr| > 1;
+assume |receiver.Repr| > 10;
+assume |receiver.Repr| > 11;
+assume |receiver.Repr| > 12;
+assume |receiver.Repr| > 13;
+assume |receiver.Repr| > 14;
+assume |receiver.Repr| > 15;
+assume |receiver.Repr| > 16;
+assume |receiver.Repr| > 17;
+assume |receiver.Repr| > 18;
+assume |receiver.Repr| > 19;
+assume |receiver.Repr| > 2;
+assume |receiver.Repr| > 20;
+assume |receiver.Repr| > 21;
+assume |receiver.Repr| > 22;
+assume |receiver.Repr| > 23;
+assume |receiver.Repr| > 2331;
+assume |receiver.Repr| > 24;
+assume |receiver.Repr| > 25;
+assume |receiver.Repr| > 26;
+assume |receiver.Repr| > 27;
+assume |receiver.Repr| > 28;
+assume |receiver.Repr| > 29;
+assume |receiver.Repr| > 3;
+assume |receiver.Repr| > 30;
+assume |receiver.Repr| > 31;
+assume |receiver.Repr| > 32;
+assume |receiver.Repr| > 33;
+assume |receiver.Repr| > 34;
+assume |receiver.Repr| > 35;
+assume |receiver.Repr| > 36;
+assume |receiver.Repr| > 37;
+assume |receiver.Repr| > 38;
+assume |receiver.Repr| > 39;
+assume |receiver.Repr| > 4;
+assume |receiver.Repr| > 40;
+assume |receiver.Repr| > 41;
+assume |receiver.Repr| > 42;
+assume |receiver.Repr| > 43;
+assume |receiver.Repr| > 44;
+assume |receiver.Repr| > 45;
+assume |receiver.Repr| > 46;
+assume |receiver.Repr| > 47;
+assume |receiver.Repr| > 48;
+assume |receiver.Repr| > 49;
+assume |receiver.Repr| > 5;
+assume |receiver.Repr| > 6;
+assume |receiver.Repr| > 7;
+assume |receiver.Repr| > 8;
+assume |receiver.Repr| > 9;
+assume !(receiver.head.next == null);
+assume !(receiver.head.next.next == null);
+assume !(receiver.head.next.next.next == null);
+assume !(receiver.head.next.next.next.next == null);
+assume receiver.IsValid.requires();
+assume true == receiver.IsValid();
+assume receiver.head == receiver.Repr[0];
+assume receiver.head.next == receiver.Repr[1];
+assume receiver.head.next == receiver.Repr[11];
+assume receiver.head.next == receiver.Repr[16];
+assume receiver.head.next == receiver.Repr[21];
+assume receiver.head.next == receiver.Repr[26];
+assume receiver.head.next == receiver.Repr[31];
+assume receiver.head.next == receiver.Repr[36];
+assume receiver.head.next == receiver.Repr[41];
+assume receiver.head.next == receiver.Repr[46];
+assume receiver.head.next == receiver.Repr[6];
+assume receiver.head.next.next == receiver.Repr[12];
+assume receiver.head.next.next == receiver.Repr[17];
+assume receiver.head.next.next == receiver.Repr[2];
+assume receiver.head.next.next == receiver.Repr[22];
+assume receiver.head.next.next == receiver.Repr[27];
+assume receiver.head.next.next == receiver.Repr[32];
+assume receiver.head.next.next == receiver.Repr[37];
+assume receiver.head.next.next == receiver.Repr[42];
+assume receiver.head.next.next == receiver.Repr[47];
+assume receiver.head.next.next == receiver.Repr[7];
+assume receiver.head == receiver.Repr[10];
+assume receiver.head.next.next.next == receiver.Repr[13];
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 20732 LINES OF LOGS TO SAVE DISK SPACE *************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+var _ := receiver.IsEmpty();
+assert {:keepAssertion} !!([] == receiver.Repr);}
+2024-10-02 00:39:28.7111 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: Queue)
+    {
+      assume [] == receiver.Repr;
+      assume true && receiver.IsValid();
+      var _ := receiver.IsEmpty();
+      assert {:keepAssertion} !!([] == receiver.Repr);
+    }
+2024-10-02 00:39:28.9402 TRACE Verifying the body of the following method:
+static method synthesized(argument_1271_0_0: int, receiver: Queue)
+    modifies receiver, receiver.Repr {assume !([] == receiver.Repr);
+assume true && receiver.IsValid();
+receiver.Enqueue(argument_1271_0_0);
+assert {:keepAssertion} !([] == receiver.Repr);}
+2024-10-02 00:39:28.9402 TRACE Verifying the body of the following method (literal):
+ static method synthesized(argument_1271_0_0: int, receiver: Queue)
+      modifies receiver, receiver.Repr
+    {
+      assume !([] == receiver.Repr);
+      assume true && receiver.IsValid();
+      receiver.Enqueue(argument_1271_0_0);
+      assert {:keepAssertion} !([] == receiver.Repr);
+    }
+2024-10-02 00:39:29.1770 TRACE Verifying the body of the following method:
+static method synthesized(argument_1272_0_0: int, receiver: Queue)
+    modifies receiver, receiver.Repr {assume [] == receiver.Repr;
+assume true && receiver.IsValid();
+receiver.Enqueue(argument_1272_0_0);
+assert {:keepAssertion} !!([] == receiver.Repr);}
+2024-10-02 00:39:29.1770 TRACE Verifying the body of the following method (literal):
+ static method synthesized(argument_1272_0_0: int, receiver: Queue)
+      modifies receiver, receiver.Repr
+    {
+      assume [] == receiver.Repr;
+      assume true && receiver.IsValid();
+      receiver.Enqueue(argument_1272_0_0);
+      assert {:keepAssertion} !!([] == receiver.Repr);
+    }
+2024-10-02 00:39:29.4315 DEBUG A single call to Enqueue can flip up to 1 properties of the form [] == this.Repr from True to False.
+2024-10-02 00:39:29.4315 TRACE Verifying the body of the following method:
+static method synthesized(receiver: Queue)
+    modifies  {assume !([] == receiver.Repr);
+assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+var _ := receiver.Front();
+assert {:keepAssertion} !([] == receiver.Repr);}
+2024-10-02 00:39:29.4315 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: Queue)
+    {
+      assume !([] == receiver.Repr);
+      assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+      var _ := receiver.Front();
+      assert {:keepAssertion} !([] == receiver.Repr);
+    }
+2024-10-02 00:39:29.6469 TRACE Verifying the body of the following method:
+static method synthesized(receiver: Queue)
+    modifies  {assume [] == receiver.Repr;
+assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+var _ := receiver.Front();
+assert {:keepAssertion} !!([] == receiver.Repr);}
+2024-10-02 00:39:29.6469 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: Queue)
+    {
+      assume [] == receiver.Repr;
+      assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+      var _ := receiver.Front();
+      assert {:keepAssertion} !!([] == receiver.Repr);
+    }
+2024-10-02 00:39:29.8689 TRACE Verifying the body of the following method:
+static method synthesized(receiver: Queue)
+    modifies receiver, receiver.Repr {assume !([] == receiver.Repr);
+assume true && receiver.IsValid() && |receiver.Repr| > 0;
+var _ := receiver.Dequeue();
+assert {:keepAssertion} !([] == receiver.Repr);}
+2024-10-02 00:39:29.8689 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: Queue)
+      modifies receiver, receiver.Repr
+    {
+      assume !([] == receiver.Repr);
+      assume true && receiver.IsValid() && |receiver.Repr| > 0;
+      var _ := receiver.Dequeue();
+      assert {:keepAssertion} !([] == receiver.Repr);
+    }
+2024-10-02 00:39:30.1409 DEBUG A single call to Dequeue can flip up to 1 properties of the form [] == this.Repr from False to True.
+2024-10-02 00:39:30.1409 TRACE Verifying the body of the following method:
+static method synthesized(receiver: Queue)
+    modifies receiver, receiver.Repr {assume [] == receiver.Repr;
+assume true && receiver.IsValid() && |receiver.Repr| > 0;
+var _ := receiver.Dequeue();
+assert {:keepAssertion} !!([] == receiver.Repr);}
+2024-10-02 00:39:30.1409 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: Queue)
+      modifies receiver, receiver.Repr
+    {
+      assume [] == receiver.Repr;
+      assume true && receiver.IsValid() && |receiver.Repr| > 0;
+      var _ := receiver.Dequeue();
+      assert {:keepAssertion} !!([] == receiver.Repr);
+    }

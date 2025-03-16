@@ -1,0 +1,223 @@
+2025-02-25 20:31:36.3212 DEBUG Using integer programming to estimating the distance to receiver.exitCode == INVALID_JUMP
+2025-02-25 20:31:36.3373 TRACE Minimizing value: ((((((((((Push + Pop) + Add) + Sub) + Div) + Mul) + Jump) + Jz) + NOP) + Store) + Load)
+2025-02-25 20:31:36.3387 DEBUG The integer programming gives the lower bound of 0 methods.
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Push
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Pop
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Add
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Sub
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Div
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Mul
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Jump
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Jz
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to NOP
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Store
+2025-02-25 20:31:36.3387 DEBUG In particular, need at least -0 calls to Load
+2025-02-25 20:31:36.3387 INFO Initial heuristic value is 0
+2025-02-25 20:31:36.3399 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2025-02-25 20:31:36.3619 TRACE Verifying the body of the following method:
+static method synthesized(argument_1_0_0: nat) returns (receiver: VM) {receiver := new VM(argument_1_0_0);
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:36.3619 TRACE Verifying the body of the following method (literal):
+ static method synthesized(argument_1_0_0: nat) returns (receiver: VM)
+    {
+      assume true;
+      receiver := new VM(argument_1_0_0);
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);
+    }
+2025-02-25 20:31:37.0524 DEBUG Trying method sequence: Push
+2025-02-25 20:31:37.0558 TRACE Verifying the body of the following method:
+static method synthesized(argument_2_0_0: nat, receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_JUMP);
+assume true && receiver.IsValid() && receiver.IsRunning() && argument_2_0_0 <= MAX_WORD && receiver.pc > 0;
+receiver.Push(argument_2_0_0);
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:37.0558 TRACE Verifying the body of the following method (literal):
+ static method synthesized(argument_2_0_0: nat, receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_JUMP);
+      assume true && receiver.IsValid() && receiver.IsRunning() && argument_2_0_0 <= MAX_WORD && receiver.pc > 0;
+      receiver.Push(argument_2_0_0);
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);
+    }
+2025-02-25 20:31:37.3649 DEBUG Trying method sequence: Pop
+2025-02-25 20:31:37.3676 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_JUMP);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+var _ := receiver.Pop();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:37.3676 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_JUMP);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      var _ := receiver.Pop();
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);
+    }
+2025-02-25 20:31:37.6973 DEBUG Trying method sequence: Add
+2025-02-25 20:31:37.6984 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_JUMP);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.Add();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:37.6985 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_JUMP);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      receiver.Add();
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);
+    }
+2025-02-25 20:31:38.0282 DEBUG Trying method sequence: Sub
+2025-02-25 20:31:38.0302 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_JUMP);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.Sub();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:38.0302 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_JUMP);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      receiver.Sub();
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);
+    }
+2025-02-25 20:31:38.3664 DEBUG Trying method sequence: Div
+2025-02-25 20:31:38.3683 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_JUMP);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.Div();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:38.3684 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 296 LINES OF LOGS TO SAVE DISK SPACE ***************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+2025-02-25 20:31:43.1803 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_JUMP);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.NOP();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:43.1804 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_JUMP);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      receiver.NOP();
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);
+    }
+2025-02-25 20:31:43.4404 DEBUG Trying method sequence: Store
+2025-02-25 20:31:43.4425 TRACE Verifying the body of the following method:
+static method synthesized(argument_19_0_0: nat, receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_JUMP);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.Store(argument_19_0_0);
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:43.4425 TRACE Verifying the body of the following method (literal):
+ static method synthesized(argument_19_0_0: nat, receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_JUMP);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      receiver.Store(argument_19_0_0);
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);
+    }
+2025-02-25 20:31:43.7092 DEBUG Trying method sequence: Load
+2025-02-25 20:31:43.7114 TRACE Verifying the body of the following method:
+static method synthesized(argument_20_0_0: nat, receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_JUMP);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.Load(argument_20_0_0);
+assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);}
+2025-02-25 20:31:43.7114 TRACE Verifying the body of the following method (literal):
+ static method synthesized(argument_20_0_0: nat, receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_JUMP);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      receiver.Load(argument_20_0_0);
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_JUMP);
+    }
+2025-02-25 20:31:43.9793 INFO Expanding method sequence Jump -- estimated distance to start = 0, distance to end = 1
+2025-02-25 20:31:43.9815 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1161_0: int, formal_3_1140_0: bool, formal_5_600_0: bool, formal_7_533_0: int, argument_21_0_0: nat) returns (receiver: VM) {receiver := new VM(argument_21_0_0);
+assert {:keepAssertion} !(!(receiver == null) && 5854 == receiver.pc && receiver.IsRunning.requires() && true == receiver.IsRunning() && receiver.IsValid.requires() && true == receiver.IsValid() && [] == receiver.stack && 5 == |receiver.data| && receiver.exitCode == Imports.ExitCode.OK);}
+2025-02-25 20:31:43.9815 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1161_0: int, formal_3_1140_0: bool, formal_5_600_0: bool, formal_7_533_0: int, argument_21_0_0: nat)
+        returns (receiver: VM)
+    {
+      assume true;
+      receiver := new VM(argument_21_0_0);
+      assume {:formal} formal_1_1161_0 == 5854;
+      assume {:formal} formal_3_1140_0 == true;
+      assume {:formal} formal_5_600_0 == true;
+      assume {:formal} formal_7_533_0 == 5;
+      assert {:keepAssertion} !(!(receiver == null) && formal_1_1161_0 == receiver.pc && receiver.IsRunning.requires() && formal_3_1140_0 == receiver.IsRunning() && receiver.IsValid.requires() && formal_5_600_0 == receiver.IsValid() && [] == receiver.stack && formal_7_533_0 == |receiver.data| && receiver.exitCode == Imports.ExitCode.OK);
+    }
+2025-02-25 20:31:44.2540 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1161_0: int, formal_3_1140_0: bool, formal_5_600_0: bool, formal_7_533_0: int, argument_21_0_0: nat, formal_0_1158_0: int) returns (receiver: VM) {receiver := new VM(5854);
+assert {:keepAssertion} !(receiver == null) && 5854 == receiver.pc && receiver.IsRunning.requires() && true == receiver.IsRunning() && receiver.IsValid.requires() && true == receiver.IsValid() && [] == receiver.stack && 5 == |receiver.data| && receiver.exitCode == Imports.ExitCode.OK;}
+2025-02-25 20:31:44.2540 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1161_0: int, formal_3_1140_0: bool, formal_5_600_0: bool, formal_7_533_0: int, argument_21_0_0: nat, formal_0_1158_0: int)
+        returns (receiver: VM)
+    {
+      assume {:formal} formal_0_1158_0 == 5854;
+      assume {:attribute 63} argument_21_0_0 == formal_0_1158_0;
+      assume true;
+      receiver := new VM(argument_21_0_0);
+      assume {:formal} formal_1_1161_0 == 5854;
+      assume {:formal} formal_3_1140_0 == true;
+      assume {:formal} formal_5_600_0 == true;
+      assume {:formal} formal_7_533_0 == 5;
+      assert {:keepAssertion} !(receiver == null) && formal_1_1161_0 == receiver.pc && receiver.IsRunning.requires() && formal_3_1140_0 == receiver.IsRunning() && receiver.IsValid.requires() && formal_5_600_0 == receiver.IsValid() && [] == receiver.stack && formal_7_533_0 == |receiver.data| && receiver.exitCode == Imports.ExitCode.OK;
+    }
+2025-02-25 20:31:44.5236 INFO Have found the following solution to a subproblem!
+{
+result := new VM(5854);
+result.Jump(5854);
+}
+2025-02-25 20:31:44.5236 INFO Time spend on subproblem: 00:00:08.2080920
+2025-02-25 20:31:44.5245 INFO Number of Regular queries to Dafny used to solve subproblem: 16 (00:00:05.2815610)
+2025-02-25 20:31:44.5245 INFO Number of Simplify queries to Dafny used to solve subproblem: 2 (00:00:00.6588270)
+2025-02-25 20:31:44.5245 INFO Number of Heuristic queries to Dafny used to solve subproblem: 8 (00:00:02.2002630)
+2025-02-25 20:31:44.5245 INFO Have found the following solution!
+static method solution() returns (result:VM)
+ensures fresh(result) && Goal(result)
+{
+result := new VM(5854);
+result.Jump(5854);
+}
+2025-02-25 20:31:44.5245 INFO Total time spend on synthesis: 00:00:08.4331670
+2025-02-25 20:31:44.5245 INFO Total number of Regular queries to Dafny: 16 (00:00:05.2815610)
+2025-02-25 20:31:44.5245 INFO Total number of Simplify queries to Dafny: 2 (00:00:00.6588270)
+2025-02-25 20:31:44.5245 INFO Total number of Heuristic queries to Dafny: 8 (00:00:02.2002630)

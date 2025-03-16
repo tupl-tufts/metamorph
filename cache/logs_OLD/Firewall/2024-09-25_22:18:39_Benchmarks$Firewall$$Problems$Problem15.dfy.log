@@ -1,0 +1,223 @@
+2024-09-25 22:18:40.5476 DEBUG Using integer programming to estimating the distance to this.D == {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}, this.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 1)}, this.C == {1}
+2024-09-25 22:18:40.5662 TRACE Adding solver constraint for property this.C == {default0} from False to True: (((MakeCentral * 1) + (MakeCentral * 0)) + ((DeleteDevice * 1) + (DeleteDevice * 0))) >= 1
+2024-09-25 22:18:40.5670 TRACE Adding solver constraint for property this.C == {default0} from False to True: (((MakeCentral * 1) + (MakeCentral * 0)) + ((DeleteDevice * 1) + (DeleteDevice * 0))) >= 1
+2024-09-25 22:18:40.5670 TRACE Minimizing value: ((((AddDevice + DiffDevice) + AddConnection) + MakeCentral) + DeleteDevice)
+2024-09-25 22:18:40.5713 DEBUG The integer programming gives the lower bound of 1 methods.
+2024-09-25 22:18:40.5713 DEBUG In particular, need at least -0 calls to AddDevice
+2024-09-25 22:18:40.5713 DEBUG In particular, need at least -0 calls to DiffDevice
+2024-09-25 22:18:40.5713 DEBUG In particular, need at least -0 calls to AddConnection
+2024-09-25 22:18:40.5713 DEBUG In particular, need at least 1 calls to MakeCentral
+2024-09-25 22:18:40.5713 DEBUG In particular, need at least -0 calls to DeleteDevice
+2024-09-25 22:18:40.5713 INFO Initial heuristic value is 1
+2024-09-25 22:18:40.5713 INFO Expanding method sequence  -- estimated distance to start = 1, distance to end = 0
+2024-09-25 22:18:40.5713 DEBUG Trying method sequence: AddDevice
+2024-09-25 22:18:40.6451 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_0_286_5: int, formal_0_286_6: int, formal_0_286_7: int, formal_0_286_8: int, formal_0_286_9: int, formal_0_286_10: int, formal_0_286_11: int, formal_0_286_12: int, formal_0_286_13: int, formal_0_286_14: int, formal_0_286_15: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_1_288_10: int, formal_1_288_11: int, formal_1_288_12: int, formal_1_288_13: int, formal_1_288_14: int, formal_1_288_15: int, formal_1_288_16: int, formal_1_288_17: int, formal_1_288_18: int, formal_1_288_19: int, formal_1_288_20: int, formal_1_288_21: int, formal_1_288_22: int, formal_1_288_23: int, formal_1_288_24: int, formal_1_288_25: int, formal_1_288_26: int, formal_1_288_27: int, formal_1_288_28: int, formal_1_288_29: int, formal_1_288_30: int, formal_1_288_31: int, formal_2_290_0: int, argument_1_0_0: int, receiver: Database)
+    modifies receiver {assume !(receiver.D == {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 1)} && receiver.C == {1});
+assume true && receiver.IsValid() && argument_1_0_0 !in receiver.D;
+receiver.AddDevice(argument_1_0_0);
+assert {:keepAssertion} !(receiver.D == {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 1)} && receiver.C == {1});}
+2024-09-25 22:18:40.6451 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_0_286_5: int, formal_0_286_6: int, formal_0_286_7: int, formal_0_286_8: int, formal_0_286_9: int, formal_0_286_10: int, formal_0_286_11: int, formal_0_286_12: int, formal_0_286_13: int, formal_0_286_14: int, formal_0_286_15: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_1_288_10: int, formal_1_288_11: int, formal_1_288_12: int, formal_1_288_13: int, formal_1_288_14: int, formal_1_288_15: int, formal_1_288_16: int, formal_1_288_17: int, formal_1_288_18: int, formal_1_288_19: int, formal_1_288_20: int, formal_1_288_21: int, formal_1_288_22: int, formal_1_288_23: int, formal_1_288_24: int, formal_1_288_25: int, formal_1_288_26: int, formal_1_288_27: int, formal_1_288_28: int, formal_1_288_29: int, formal_1_288_30: int, formal_1_288_31: int, formal_2_290_0: int, argument_1_0_0: int, receiver: Database)
+      modifies receiver
+    {
+      assume {:formal} formal_0_286_0 == 1;
+      assume {:formal} formal_0_286_1 == 2;
+      assume {:formal} formal_0_286_2 == 3;
+      assume {:formal} formal_0_286_3 == 4;
+      assume {:formal} formal_0_286_4 == 5;
+      assume {:formal} formal_0_286_5 == 6;
+      assume {:formal} formal_0_286_6 == 7;
+      assume {:formal} formal_0_286_7 == 8;
+      assume {:formal} formal_0_286_8 == 9;
+      assume {:formal} formal_0_286_9 == 10;
+      assume {:formal} formal_0_286_10 == 11;
+      assume {:formal} formal_0_286_11 == 12;
+      assume {:formal} formal_0_286_12 == 13;
+      assume {:formal} formal_0_286_13 == 14;
+      assume {:formal} formal_0_286_14 == 15;
+      assume {:formal} formal_0_286_15 == 16;
+      assume {:formal} formal_1_288_0 == 1;
+      assume {:formal} formal_1_288_1 == 2;
+      assume {:formal} formal_1_288_2 == 2;
+      assume {:formal} formal_1_288_3 == 3;
+      assume {:formal} formal_1_288_4 == 3;
+      assume {:formal} formal_1_288_5 == 4;
+      assume {:formal} formal_1_288_6 == 4;
+      assume {:formal} formal_1_288_7 == 5;
+      assume {:formal} formal_1_288_8 == 5;
+      assume {:formal} formal_1_288_9 == 6;
+      assume {:formal} formal_1_288_10 == 6;
+      assume {:formal} formal_1_288_11 == 7;
+      assume {:formal} formal_1_288_12 == 7;
+      assume {:formal} formal_1_288_13 == 8;
+      assume {:formal} formal_1_288_14 == 8;
+      assume {:formal} formal_1_288_15 == 9;
+      assume {:formal} formal_1_288_16 == 9;
+      assume {:formal} formal_1_288_17 == 10;
+      assume {:formal} formal_1_288_18 == 10;
+      assume {:formal} formal_1_288_19 == 11;
+      assume {:formal} formal_1_288_20 == 11;
+      assume {:formal} formal_1_288_21 == 12;
+      assume {:formal} formal_1_288_22 == 12;
+      assume {:formal} formal_1_288_23 == 13;
+      assume {:formal} formal_1_288_24 == 13;
+      assume {:formal} formal_1_288_25 == 14;
+      assume {:formal} formal_1_288_26 == 14;
+      assume {:formal} formal_1_288_27 == 15;
+      assume {:formal} formal_1_288_28 == 15;
+      assume {:formal} formal_1_288_29 == 16;
+      assume {:formal} formal_1_288_30 == 16;
+      assume {:formal} formal_1_288_31 == 1;
+      assume {:formal} formal_2_290_0 == 1;
+      assume !(receiver.D == {formal_0_286_0, formal_0_286_1, formal_0_286_2, formal_0_286_3, formal_0_286_4, formal_0_286_5, formal_0_286_6, formal_0_286_7, formal_0_286_8, formal_0_286_9, formal_0_286_10, formal_0_286_11, formal_0_286_12, formal_0_286_13, formal_0_286_14, formal_0_286_15} && receiver.CS == {(formal_1_288_0, formal_1_288_1), (formal_1_288_2, formal_1_288_3), (formal_1_288_4, formal_1_288_5), (formal_1_288_6, formal_1_288_7), (formal_1_288_8, formal_1_288_9), (formal_1_288_10, formal_1_288_11), (formal_1_288_12, formal_1_288_13), (formal_1_288_14, formal_1_288_15), (formal_1_288_16, formal_1_288_17), (formal_1_288_18, formal_1_288_19), (formal_1_288_20, formal_1_288_21), (formal_1_288_22, formal_1_288_23), (formal_1_288_24, formal_1_288_25), (formal_1_288_26, formal_1_288_27), (formal_1_288_28, formal_1_288_29), (formal_1_288_30, formal_1_288_31)} && receiver.C == {formal_2_290_0});
+      assume true && receiver.IsValid() && argument_1_0_0 !in receiver.D;
+      receiver.AddDevice(argument_1_0_0);
+      assert {:keepAssertion} !(receiver.D == {formal_0_286_0, formal_0_286_1, formal_0_286_2, formal_0_286_3, formal_0_286_4, formal_0_286_5, formal_0_286_6, formal_0_286_7, formal_0_286_8, formal_0_286_9, formal_0_286_10, formal_0_286_11, formal_0_286_12, formal_0_286_13, formal_0_286_14, formal_0_286_15} && receiver.CS == {(formal_1_288_0, formal_1_288_1), (formal_1_288_2, formal_1_288_3), (formal_1_288_4, formal_1_288_5), (formal_1_288_6, formal_1_288_7), (formal_1_288_8, formal_1_288_9), (formal_1_288_10, formal_1_288_11), (formal_1_288_12, formal_1_288_13), (formal_1_288_14, formal_1_288_15), (formal_1_288_16, formal_1_288_17), (formal_1_288_18, formal_1_288_19), (formal_1_288_20, formal_1_288_21), (formal_1_288_22, formal_1_288_23), (formal_1_288_24, formal_1_288_25), (formal_1_288_26, formal_1_288_27), (formal_1_288_28, formal_1_288_29), (formal_1_288_30, formal_1_288_31)} && receiver.C == {formal_2_290_0});
+    }
+2024-09-25 22:18:41.7981 DEBUG Trying method sequence: DiffDevice
+2024-09-25 22:18:41.8025 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_0_286_5: int, formal_0_286_6: int, formal_0_286_7: int, formal_0_286_8: int, formal_0_286_9: int, formal_0_286_10: int, formal_0_286_11: int, formal_0_286_12: int, formal_0_286_13: int, formal_0_286_14: int, formal_0_286_15: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_1_288_10: int, formal_1_288_11: int, formal_1_288_12: int, formal_1_288_13: int, formal_1_288_14: int, formal_1_288_15: int, formal_1_288_16: int, formal_1_288_17: int, formal_1_288_18: int, formal_1_288_19: int, formal_1_288_20: int, formal_1_288_21: int, formal_1_288_22: int, formal_1_288_23: int, formal_1_288_24: int, formal_1_288_25: int, formal_1_288_26: int, formal_1_288_27: int, formal_1_288_28: int, formal_1_288_29: int, formal_1_288_30: int, formal_1_288_31: int, formal_2_290_0: int, argument_2_0_0: int, receiver: Database)
+    modifies  {assume !(receiver.D == {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 1)} && receiver.C == {1});
+assume true && exists v: int {:trigger v in receiver.D} :: v in receiver.D && v != argument_2_0_0;
+var _ := receiver.DiffDevice(argument_2_0_0);
+assert {:keepAssertion} !(receiver.D == {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (15, 16), (16, 1)} && receiver.C == {1});}
+2024-09-25 22:18:41.8031 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_0_286_5: int, formal_0_286_6: int, formal_0_286_7: int, formal_0_286_8: int, formal_0_286_9: int, formal_0_286_10: int, formal_0_286_11: int, formal_0_286_12: int, formal_0_286_13: int, formal_0_286_14: int, formal_0_286_15: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_1_288_10: int, formal_1_288_11: int, formal_1_288_12: int, formal_1_288_13: int, formal_1_288_14: int, formal_1_288_15: int, formal_1_288_16: int, formal_1_288_17: int, formal_1_288_18: int, formal_1_288_19: int, formal_1_288_20: int, formal_1_288_21: int, formal_1_288_22: int, formal_1_288_23: int, formal_1_288_24: int, formal_1_288_25: int, formal_1_288_26: int, formal_1_288_27: int, formal_1_288_28: int, formal_1_288_29: int, formal_1_288_30: int, formal_1_288_31: int, formal_2_290_0: int, argument_2_0_0: int, receiver: Database)
+    {
+      assume {:formal} formal_0_286_0 == 1;
+      assume {:formal} formal_0_286_1 == 2;
+      assume {:formal} formal_0_286_2 == 3;
+      assume {:formal} formal_0_286_3 == 4;
+      assume {:formal} formal_0_286_4 == 5;
+      assume {:formal} formal_0_286_5 == 6;
+      assume {:formal} formal_0_286_6 == 7;
+      assume {:formal} formal_0_286_7 == 8;
+      assume {:formal} formal_0_286_8 == 9;
+      assume {:formal} formal_0_286_9 == 10;
+      assume {:formal} formal_0_286_10 == 11;
+      assume {:formal} formal_0_286_11 == 12;
+      assume {:formal} formal_0_286_12 == 13;
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 54607 LINES OF LOGS TO SAVE DISK SPACE *************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+result.AddConnection(argument_233_0_0);
+assume {:attribute 5502} argument_228_0_0 == (12, 13);
+result.AddConnection(argument_228_0_0);
+result.AddDevice(7);
+assume {:attribute 5358} argument_218_0_0 == (7, 8);
+result.AddConnection(argument_218_0_0);
+result.AddDevice(5);
+result.AddDevice(6);
+assume {:attribute 4900} argument_193_0_0 == (5, 6);
+result.AddConnection(argument_193_0_0);
+result.AddDevice(4);
+assume {:attribute 3784} argument_133_0_0 == (6, 7);
+result.AddConnection(argument_133_0_0);
+assume {:attribute 3654} argument_128_0_0 == (4, 5);
+result.AddConnection(argument_128_0_0);
+result.AddDevice(14);
+assume {:attribute 3438} argument_118_0_0 == (13, 14);
+result.AddConnection(argument_118_0_0);
+result.AddDevice(15);
+assume {:attribute 3204} argument_108_0_0 == (14, 15);
+result.AddConnection(argument_108_0_0);
+result.AddDevice(16);
+result.AddDevice(1);
+assume {:attribute 2782} argument_93_0_0 == (16, 1);
+result.AddConnection(argument_93_0_0);
+result.AddDevice(3);
+assume {:attribute 2506} argument_83_0_0 == (3, 4);
+result.AddConnection(argument_83_0_0);
+result.AddDevice(2);
+assume {:attribute 1038} argument_33_0_0 == (2, 3);
+result.AddConnection(argument_33_0_0);
+assume {:attribute 826} argument_23_0_0 == (15, 16);
+result.AddConnection(argument_23_0_0);
+result.MakeCentral(1);
+assume {:attribute 60} argument_3_0_0 == (1, 2);
+result.AddConnection(argument_3_0_0);
+}
+2024-09-25 22:23:35.8360 INFO Time spend on subproblem: 00:04:55.3011476
+2024-09-25 22:23:35.8360 INFO Number of Regular queries to Dafny used to solve subproblem: 404 (00:04:02.1011534)
+2024-09-25 22:23:35.8360 INFO Number of Simplify queries to Dafny used to solve subproblem: 92 (00:00:46.7806059)
+2024-09-25 22:23:35.8360 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-25 22:23:35.8394 INFO Have found the following solution!
+static method solution() returns (result:Database)
+ensures Goal(result)
+{
+result := new Database();
+result.AddDevice(11);
+result.AddDevice(10);
+assume {:attribute 6264} argument_298_0_0 == (10, 11);
+result.AddConnection(argument_298_0_0);
+result.AddDevice(9);
+assume {:attribute 6192} argument_288_0_0 == (9, 10);
+result.AddConnection(argument_288_0_0);
+result.AddDevice(8);
+assume {:attribute 6102} argument_278_0_0 == (8, 9);
+result.AddConnection(argument_278_0_0);
+result.AddDevice(12);
+result.AddDevice(13);
+assume {:attribute 5584} argument_233_0_0 == (11, 12);
+result.AddConnection(argument_233_0_0);
+assume {:attribute 5502} argument_228_0_0 == (12, 13);
+result.AddConnection(argument_228_0_0);
+result.AddDevice(7);
+assume {:attribute 5358} argument_218_0_0 == (7, 8);
+result.AddConnection(argument_218_0_0);
+result.AddDevice(5);
+result.AddDevice(6);
+assume {:attribute 4900} argument_193_0_0 == (5, 6);
+result.AddConnection(argument_193_0_0);
+result.AddDevice(4);
+assume {:attribute 3784} argument_133_0_0 == (6, 7);
+result.AddConnection(argument_133_0_0);
+assume {:attribute 3654} argument_128_0_0 == (4, 5);
+result.AddConnection(argument_128_0_0);
+result.AddDevice(14);
+assume {:attribute 3438} argument_118_0_0 == (13, 14);
+result.AddConnection(argument_118_0_0);
+result.AddDevice(15);
+assume {:attribute 3204} argument_108_0_0 == (14, 15);
+result.AddConnection(argument_108_0_0);
+result.AddDevice(16);
+result.AddDevice(1);
+assume {:attribute 2782} argument_93_0_0 == (16, 1);
+result.AddConnection(argument_93_0_0);
+result.AddDevice(3);
+assume {:attribute 2506} argument_83_0_0 == (3, 4);
+result.AddConnection(argument_83_0_0);
+result.AddDevice(2);
+assume {:attribute 1038} argument_33_0_0 == (2, 3);
+result.AddConnection(argument_33_0_0);
+assume {:attribute 826} argument_23_0_0 == (15, 16);
+result.AddConnection(argument_23_0_0);
+result.MakeCentral(1);
+assume {:attribute 60} argument_3_0_0 == (1, 2);
+result.AddConnection(argument_3_0_0);
+}
+2024-09-25 22:23:35.8394 INFO Total time spend on synthesis: 00:04:55.4840388
+2024-09-25 22:23:35.8394 INFO Total number of Regular queries to Dafny: 404 (00:04:02.1011534)
+2024-09-25 22:23:35.8394 INFO Total number of Simplify queries to Dafny: 92 (00:00:46.7806059)
+2024-09-25 22:23:35.8394 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

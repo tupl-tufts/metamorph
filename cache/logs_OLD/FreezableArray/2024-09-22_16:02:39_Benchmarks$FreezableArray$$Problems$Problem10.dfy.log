@@ -1,0 +1,223 @@
+2024-09-22 16:02:40.1252 DEBUG Using integer programming to estimating the distance to |this.data| == 10, this.data[0] == 0, this.data[1] == 1, this.data[2] == 2, this.data[3] == 3, this.data[4] == 4, this.data[5] == 5, this.data[6] == 6, this.data[7] == 7, this.data[8] == 8, this.data[9] == 9
+2024-09-22 16:02:40.1406 TRACE Minimizing value: ((Put + Freeze) + Unfreeze)
+2024-09-22 16:02:40.1441 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-09-22 16:02:40.1441 DEBUG In particular, need at least -0 calls to Put
+2024-09-22 16:02:40.1441 DEBUG In particular, need at least -0 calls to Freeze
+2024-09-22 16:02:40.1441 DEBUG In particular, need at least -0 calls to Unfreeze
+2024-09-22 16:02:40.1441 INFO Initial heuristic value is 0
+2024-09-22 16:02:40.1441 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-22 16:02:40.1875 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_107_0: int, formal_1_109_0: int, formal_1_109_1: int, formal_2_111_0: int, formal_2_111_1: int, formal_3_113_0: int, formal_3_113_1: int, formal_4_115_0: int, formal_4_115_1: int, formal_5_117_0: int, formal_5_117_1: int, formal_6_119_0: int, formal_6_119_1: int, formal_7_121_0: int, formal_7_121_1: int, formal_8_123_0: int, formal_8_123_1: int, formal_9_125_0: int, formal_9_125_1: int, formal_10_127_0: int, formal_10_127_1: int, argument_1_0_0: nat) returns (receiver: Array) {assume true;
+receiver := new Array(argument_1_0_0);
+assert {:keepAssertion} !(|receiver.data| == 10 && receiver.data[0] == 0 && receiver.data[1] == 1 && receiver.data[2] == 2 && receiver.data[3] == 3 && receiver.data[4] == 4 && receiver.data[5] == 5 && receiver.data[6] == 6 && receiver.data[7] == 7 && receiver.data[8] == 8 && receiver.data[9] == 9);}
+2024-09-22 16:02:40.1875 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_107_0: int, formal_1_109_0: int, formal_1_109_1: int, formal_2_111_0: int, formal_2_111_1: int, formal_3_113_0: int, formal_3_113_1: int, formal_4_115_0: int, formal_4_115_1: int, formal_5_117_0: int, formal_5_117_1: int, formal_6_119_0: int, formal_6_119_1: int, formal_7_121_0: int, formal_7_121_1: int, formal_8_123_0: int, formal_8_123_1: int, formal_9_125_0: int, formal_9_125_1: int, formal_10_127_0: int, formal_10_127_1: int, argument_1_0_0: nat)
+        returns (receiver: Array)
+    {
+      assume true;
+      receiver := new Array(argument_1_0_0);
+      assume {:formal} formal_0_107_0 == 10;
+      assume {:formal} formal_1_109_0 == 0;
+      assume {:formal} formal_1_109_1 == 0;
+      assume {:formal} formal_2_111_0 == 1;
+      assume {:formal} formal_2_111_1 == 1;
+      assume {:formal} formal_3_113_0 == 2;
+      assume {:formal} formal_3_113_1 == 2;
+      assume {:formal} formal_4_115_0 == 3;
+      assume {:formal} formal_4_115_1 == 3;
+      assume {:formal} formal_5_117_0 == 4;
+      assume {:formal} formal_5_117_1 == 4;
+      assume {:formal} formal_6_119_0 == 5;
+      assume {:formal} formal_6_119_1 == 5;
+      assume {:formal} formal_7_121_0 == 6;
+      assume {:formal} formal_7_121_1 == 6;
+      assume {:formal} formal_8_123_0 == 7;
+      assume {:formal} formal_8_123_1 == 7;
+      assume {:formal} formal_9_125_0 == 8;
+      assume {:formal} formal_9_125_1 == 8;
+      assume {:formal} formal_10_127_0 == 9;
+      assume {:formal} formal_10_127_1 == 9;
+      assert {:keepAssertion} !(|receiver.data| == formal_0_107_0 && receiver.data[formal_1_109_0] == formal_1_109_1 && receiver.data[formal_2_111_0] == formal_2_111_1 && receiver.data[formal_3_113_0] == formal_3_113_1 && receiver.data[formal_4_115_0] == formal_4_115_1 && receiver.data[formal_5_117_0] == formal_5_117_1 && receiver.data[formal_6_119_0] == formal_6_119_1 && receiver.data[formal_7_121_0] == formal_7_121_1 && receiver.data[formal_8_123_0] == formal_8_123_1 && receiver.data[formal_9_125_0] == formal_9_125_1 && receiver.data[formal_10_127_0] == formal_10_127_1);
+    }
+2024-09-22 16:02:41.1874 DEBUG Trying method sequence: Put
+2024-09-22 16:02:41.1927 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_107_0: int, formal_1_109_0: int, formal_1_109_1: int, formal_2_111_0: int, formal_2_111_1: int, formal_3_113_0: int, formal_3_113_1: int, formal_4_115_0: int, formal_4_115_1: int, formal_5_117_0: int, formal_5_117_1: int, formal_6_119_0: int, formal_6_119_1: int, formal_7_121_0: int, formal_7_121_1: int, formal_8_123_0: int, formal_8_123_1: int, formal_9_125_0: int, formal_9_125_1: int, formal_10_127_0: int, formal_10_127_1: int, argument_2_0_0: nat, argument_2_0_1: int, receiver: Array)
+    modifies receiver {assume !(|receiver.data| == 10 && receiver.data[0] == 0 && receiver.data[1] == 1 && receiver.data[2] == 2 && receiver.data[3] == 3 && receiver.data[4] == 4 && receiver.data[5] == 5 && receiver.data[6] == 6 && receiver.data[7] == 7 && receiver.data[8] == 8 && receiver.data[9] == 9);
+assume true && argument_2_0_0 < |receiver.data| && !receiver.frozen;
+receiver.Put(argument_2_0_0, argument_2_0_1);
+assert {:keepAssertion} !(|receiver.data| == 10 && receiver.data[0] == 0 && receiver.data[1] == 1 && receiver.data[2] == 2 && receiver.data[3] == 3 && receiver.data[4] == 4 && receiver.data[5] == 5 && receiver.data[6] == 6 && receiver.data[7] == 7 && receiver.data[8] == 8 && receiver.data[9] == 9);}
+2024-09-22 16:02:41.1927 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_107_0: int, formal_1_109_0: int, formal_1_109_1: int, formal_2_111_0: int, formal_2_111_1: int, formal_3_113_0: int, formal_3_113_1: int, formal_4_115_0: int, formal_4_115_1: int, formal_5_117_0: int, formal_5_117_1: int, formal_6_119_0: int, formal_6_119_1: int, formal_7_121_0: int, formal_7_121_1: int, formal_8_123_0: int, formal_8_123_1: int, formal_9_125_0: int, formal_9_125_1: int, formal_10_127_0: int, formal_10_127_1: int, argument_2_0_0: nat, argument_2_0_1: int, receiver: Array)
+      modifies receiver
+    {
+      assume {:formal} formal_0_107_0 == 10;
+      assume {:formal} formal_1_109_0 == 0;
+      assume {:formal} formal_1_109_1 == 0;
+      assume {:formal} formal_2_111_0 == 1;
+      assume {:formal} formal_2_111_1 == 1;
+      assume {:formal} formal_3_113_0 == 2;
+      assume {:formal} formal_3_113_1 == 2;
+      assume {:formal} formal_4_115_0 == 3;
+      assume {:formal} formal_4_115_1 == 3;
+      assume {:formal} formal_5_117_0 == 4;
+      assume {:formal} formal_5_117_1 == 4;
+      assume {:formal} formal_6_119_0 == 5;
+      assume {:formal} formal_6_119_1 == 5;
+      assume {:formal} formal_7_121_0 == 6;
+      assume {:formal} formal_7_121_1 == 6;
+      assume {:formal} formal_8_123_0 == 7;
+      assume {:formal} formal_8_123_1 == 7;
+      assume {:formal} formal_9_125_0 == 8;
+      assume {:formal} formal_9_125_1 == 8;
+      assume {:formal} formal_10_127_0 == 9;
+      assume {:formal} formal_10_127_1 == 9;
+      assume !(|receiver.data| == formal_0_107_0 && receiver.data[formal_1_109_0] == formal_1_109_1 && receiver.data[formal_2_111_0] == formal_2_111_1 && receiver.data[formal_3_113_0] == formal_3_113_1 && receiver.data[formal_4_115_0] == formal_4_115_1 && receiver.data[formal_5_117_0] == formal_5_117_1 && receiver.data[formal_6_119_0] == formal_6_119_1 && receiver.data[formal_7_121_0] == formal_7_121_1 && receiver.data[formal_8_123_0] == formal_8_123_1 && receiver.data[formal_9_125_0] == formal_9_125_1 && receiver.data[formal_10_127_0] == formal_10_127_1);
+      assume true && argument_2_0_0 < |receiver.data| && !receiver.frozen;
+      receiver.Put(argument_2_0_0, argument_2_0_1);
+      assert {:keepAssertion} !(|receiver.data| == formal_0_107_0 && receiver.data[formal_1_109_0] == formal_1_109_1 && receiver.data[formal_2_111_0] == formal_2_111_1 && receiver.data[formal_3_113_0] == formal_3_113_1 && receiver.data[formal_4_115_0] == formal_4_115_1 && receiver.data[formal_5_117_0] == formal_5_117_1 && receiver.data[formal_6_119_0] == formal_6_119_1 && receiver.data[formal_7_121_0] == formal_7_121_1 && receiver.data[formal_8_123_0] == formal_8_123_1 && receiver.data[formal_9_125_0] == formal_9_125_1 && receiver.data[formal_10_127_0] == formal_10_127_1);
+    }
+2024-09-22 16:02:41.5724 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_164_0: int, formal_2_166_0: int, formal_3_168_0: int, formal_4_170_0: int, formal_5_172_0: int, formal_6_174_0: int, formal_7_176_0: int, formal_8_178_0: int, formal_9_180_0: int, formal_10_182_0: int, formal_11_184_0: int, formal_11_184_1: int, formal_12_186_0: int, formal_13_188_0: int, formal_13_188_1: int, formal_14_190_0: int, formal_14_190_1: int, formal_15_192_0: int, formal_15_192_1: int, formal_16_194_0: int, formal_16_194_1: int, formal_17_196_0: int, formal_17_196_1: int, formal_18_198_0: int, formal_18_198_1: int, formal_19_200_0: int, formal_19_200_1: int, formal_20_202_0: int, formal_20_202_1: int, formal_21_204_0: int, formal_21_204_1: int, formal_22_99_0: bool, formal_0_107_0: int, formal_1_109_0: int, formal_1_109_1: int, formal_2_111_0: int, formal_2_111_1: int, formal_3_113_0: int, formal_3_113_1: int, formal_4_115_0: int, formal_4_115_1: int, formal_5_117_0: int, formal_5_117_1: int, formal_6_119_0: int, formal_6_119_1: int, formal_7_121_0: int, formal_7_121_1: int, formal_8_123_0: int, formal_8_123_1: int, formal_9_125_0: int, formal_9_125_1: int, formal_10_127_0: int, formal_10_127_1: int, argument_2_0_0: nat, argument_2_0_1: int, receiver: Array, formal_0_134_0: int)
+    modifies receiver {assume !(receiver == null);
+assume |receiver.data| > 1;
+assume |receiver.data| > 0;
+assume |receiver.data| > 9;
+assume |receiver.data| > 2;
+assume |receiver.data| > 3;
+assume |receiver.data| > 4;
+assume |receiver.data| > 5;
+assume |receiver.data| > 6;
+assume |receiver.data| > 7;
+assume |receiver.data| > 8;
+assume 24 == receiver.data[1];
+assume 10 == |receiver.data|;
+assume 0 == receiver.data[0];
+assume 9 == receiver.data[9];
+assume 2 == receiver.data[2];
+assume 3 == receiver.data[3];
+assume 4 == receiver.data[4];
+assume 5 == receiver.data[5];
+assume 6 == receiver.data[6];
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 6250 LINES OF LOGS TO SAVE DISK SPACE **************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+assume 10 == |receiver.data|;
+receiver.Unfreeze();
+assert {:keepAssertion} !(receiver == null);
+assert {:keepAssertion} |receiver.data| > 8;
+assert {:keepAssertion} false == receiver.frozen;
+assert {:keepAssertion} 10 == |receiver.data|;}
+2024-09-22 16:03:16.7839 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_186_0: int, formal_4_186_0: int, formal_1_182_0: int, formal_3_99_0: bool, receiver: Array)
+      modifies receiver
+    {
+      assume {:formal} formal_1_186_0 == 10;
+      assume !(receiver == null);
+      assume formal_1_186_0 == |receiver.data|;
+      receiver.Unfreeze();
+      assume {:formal} formal_1_182_0 == 8;
+      assume {:formal} formal_3_99_0 == false;
+      assume {:formal} formal_4_186_0 == 10;
+      assert {:keepAssertion} !(receiver == null);
+      assert {:keepAssertion} |receiver.data| > formal_1_182_0;
+      assert {:keepAssertion} formal_3_99_0 == receiver.frozen;
+      assert {:keepAssertion} formal_4_186_0 == |receiver.data|;
+    }
+2024-09-22 16:03:16.9674 DEBUG Using integer programming to estimating the distance to ¬(receiver == null), 10 == |this.data|
+2024-09-22 16:03:16.9708 TRACE Minimizing value: ((Put + Freeze) + Unfreeze)
+2024-09-22 16:03:16.9708 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-09-22 16:03:16.9708 DEBUG In particular, need at least -0 calls to Put
+2024-09-22 16:03:16.9708 DEBUG In particular, need at least -0 calls to Freeze
+2024-09-22 16:03:16.9708 DEBUG In particular, need at least -0 calls to Unfreeze
+2024-09-22 16:03:16.9708 INFO The following method sequence is possible (heuristic=0): Unfreeze, Put, Put, Put, Put, Put, Put, Put, Put, Put, Put, Put
+2024-09-22 16:03:16.9708 INFO New state is ¬(receiver == null), 10 == |this.data|
+2024-09-22 16:03:16.9708 INFO Expanding method sequence Unfreeze, Put, Put, Put, Put, Put, Put, Put, Put, Put, Put, Put -- estimated distance to start = 0, distance to end = 12
+2024-09-22 16:03:16.9708 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_186_0: int, argument_111_0_0: nat) returns (receiver: Array) {assume true;
+receiver := new Array(argument_111_0_0);
+assert {:keepAssertion} !(!(receiver == null) && 10 == |receiver.data|);}
+2024-09-22 16:03:16.9708 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_186_0: int, argument_111_0_0: nat) returns (receiver: Array)
+    {
+      assume true;
+      receiver := new Array(argument_111_0_0);
+      assume {:formal} formal_1_186_0 == 10;
+      assert {:keepAssertion} !(!(receiver == null) && formal_1_186_0 == |receiver.data|);
+    }
+2024-09-22 16:03:17.1883 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_186_0: int, argument_111_0_0: nat, formal_0_129_0: int) returns (receiver: Array) {assume true;
+receiver := new Array(10);
+assert {:keepAssertion} !(receiver == null) && 10 == |receiver.data|;}
+2024-09-22 16:03:17.1883 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_186_0: int, argument_111_0_0: nat, formal_0_129_0: int)
+        returns (receiver: Array)
+    {
+      assume {:formal} formal_0_129_0 == 10;
+      assume {:attribute 791} argument_111_0_0 == formal_0_129_0;
+      assume true;
+      receiver := new Array(argument_111_0_0);
+      assume {:formal} formal_1_186_0 == 10;
+      assert {:keepAssertion} !(receiver == null) && formal_1_186_0 == |receiver.data|;
+    }
+2024-09-22 16:03:17.3813 INFO Have found the following solution to a subproblem!
+{
+result := new Array(10);
+result.Unfreeze();
+result.Put(8, 8);
+result.Put(3, 3);
+result.Put(0, 0);
+result.Put(9, 9);
+result.Put(6, 6);
+result.Put(5, 5);
+result.Put(1, 24);
+result.Put(2, 2);
+result.Put(4, 4);
+result.Put(7, 7);
+result.Put(1, 1);
+}
+2024-09-22 16:03:17.3827 INFO Time spend on subproblem: 00:00:37.2681297
+2024-09-22 16:03:17.3827 INFO Number of Regular queries to Dafny used to solve subproblem: 61 (00:00:16.2274493)
+2024-09-22 16:03:17.3827 INFO Number of Simplify queries to Dafny used to solve subproblem: 22 (00:00:04.7433594)
+2024-09-22 16:03:17.3827 INFO Number of Heuristic queries to Dafny used to solve subproblem: 73 (00:00:15.7284120)
+2024-09-22 16:03:17.3827 INFO Have found the following solution!
+static method solution() returns (result:Array)
+ensures Goal(result)
+{
+result := new Array(10);
+result.Unfreeze();
+result.Put(8, 8);
+result.Put(3, 3);
+result.Put(0, 0);
+result.Put(9, 9);
+result.Put(6, 6);
+result.Put(5, 5);
+result.Put(1, 24);
+result.Put(2, 2);
+result.Put(4, 4);
+result.Put(7, 7);
+result.Put(1, 1);
+}
+2024-09-22 16:03:17.3827 INFO Total time spend on synthesis: 00:00:37.4054027
+2024-09-22 16:03:17.3827 INFO Total number of Regular queries to Dafny: 61 (00:00:16.2274493)
+2024-09-22 16:03:17.3827 INFO Total number of Simplify queries to Dafny: 22 (00:00:04.7433594)
+2024-09-22 16:03:17.3827 INFO Total number of Heuristic queries to Dafny: 73 (00:00:15.7284120)

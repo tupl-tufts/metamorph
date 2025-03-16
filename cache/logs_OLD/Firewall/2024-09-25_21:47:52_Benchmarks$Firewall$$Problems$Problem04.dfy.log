@@ -1,0 +1,223 @@
+2024-09-25 21:47:53.7072 DEBUG Using integer programming to estimating the distance to this.D == {1, 2, 3, 4, 5}, this.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 1)}, this.C == {1}
+2024-09-25 21:47:53.7255 TRACE Adding solver constraint for property this.C == {default0} from False to True: (((MakeCentral * 1) + (MakeCentral * 0)) + ((DeleteDevice * 1) + (DeleteDevice * 0))) >= 1
+2024-09-25 21:47:53.7255 TRACE Adding solver constraint for property this.C == {default0} from False to True: (((MakeCentral * 1) + (MakeCentral * 0)) + ((DeleteDevice * 1) + (DeleteDevice * 0))) >= 1
+2024-09-25 21:47:53.7287 TRACE Minimizing value: ((((AddDevice + DiffDevice) + AddConnection) + MakeCentral) + DeleteDevice)
+2024-09-25 21:47:53.7308 DEBUG The integer programming gives the lower bound of 1 methods.
+2024-09-25 21:47:53.7308 DEBUG In particular, need at least -0 calls to AddDevice
+2024-09-25 21:47:53.7308 DEBUG In particular, need at least -0 calls to DiffDevice
+2024-09-25 21:47:53.7308 DEBUG In particular, need at least -0 calls to AddConnection
+2024-09-25 21:47:53.7308 DEBUG In particular, need at least 1 calls to MakeCentral
+2024-09-25 21:47:53.7308 DEBUG In particular, need at least -0 calls to DeleteDevice
+2024-09-25 21:47:53.7308 INFO Initial heuristic value is 1
+2024-09-25 21:47:53.7308 INFO Expanding method sequence  -- estimated distance to start = 1, distance to end = 0
+2024-09-25 21:47:53.7308 DEBUG Trying method sequence: AddDevice
+2024-09-25 21:47:53.8167 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_2_290_0: int, argument_1_0_0: int, receiver: Database)
+    modifies receiver {assume !(receiver.D == {1, 2, 3, 4, 5} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 1)} && receiver.C == {1});
+assume true && receiver.IsValid() && argument_1_0_0 !in receiver.D;
+receiver.AddDevice(argument_1_0_0);
+assert {:keepAssertion} !(receiver.D == {1, 2, 3, 4, 5} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 1)} && receiver.C == {1});}
+2024-09-25 21:47:53.8167 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_2_290_0: int, argument_1_0_0: int, receiver: Database)
+      modifies receiver
+    {
+      assume {:formal} formal_0_286_0 == 1;
+      assume {:formal} formal_0_286_1 == 2;
+      assume {:formal} formal_0_286_2 == 3;
+      assume {:formal} formal_0_286_3 == 4;
+      assume {:formal} formal_0_286_4 == 5;
+      assume {:formal} formal_1_288_0 == 1;
+      assume {:formal} formal_1_288_1 == 2;
+      assume {:formal} formal_1_288_2 == 2;
+      assume {:formal} formal_1_288_3 == 3;
+      assume {:formal} formal_1_288_4 == 3;
+      assume {:formal} formal_1_288_5 == 4;
+      assume {:formal} formal_1_288_6 == 4;
+      assume {:formal} formal_1_288_7 == 5;
+      assume {:formal} formal_1_288_8 == 5;
+      assume {:formal} formal_1_288_9 == 1;
+      assume {:formal} formal_2_290_0 == 1;
+      assume !(receiver.D == {formal_0_286_0, formal_0_286_1, formal_0_286_2, formal_0_286_3, formal_0_286_4} && receiver.CS == {(formal_1_288_0, formal_1_288_1), (formal_1_288_2, formal_1_288_3), (formal_1_288_4, formal_1_288_5), (formal_1_288_6, formal_1_288_7), (formal_1_288_8, formal_1_288_9)} && receiver.C == {formal_2_290_0});
+      assume true && receiver.IsValid() && argument_1_0_0 !in receiver.D;
+      receiver.AddDevice(argument_1_0_0);
+      assert {:keepAssertion} !(receiver.D == {formal_0_286_0, formal_0_286_1, formal_0_286_2, formal_0_286_3, formal_0_286_4} && receiver.CS == {(formal_1_288_0, formal_1_288_1), (formal_1_288_2, formal_1_288_3), (formal_1_288_4, formal_1_288_5), (formal_1_288_6, formal_1_288_7), (formal_1_288_8, formal_1_288_9)} && receiver.C == {formal_2_290_0});
+    }
+2024-09-25 21:47:54.9096 DEBUG Trying method sequence: DiffDevice
+2024-09-25 21:47:54.9136 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_2_290_0: int, argument_2_0_0: int, receiver: Database)
+    modifies  {assume !(receiver.D == {1, 2, 3, 4, 5} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 1)} && receiver.C == {1});
+assume true && exists v: int {:trigger v in receiver.D} :: v in receiver.D && v != argument_2_0_0;
+var _ := receiver.DiffDevice(argument_2_0_0);
+assert {:keepAssertion} !(receiver.D == {1, 2, 3, 4, 5} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 1)} && receiver.C == {1});}
+2024-09-25 21:47:54.9136 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_2_290_0: int, argument_2_0_0: int, receiver: Database)
+    {
+      assume {:formal} formal_0_286_0 == 1;
+      assume {:formal} formal_0_286_1 == 2;
+      assume {:formal} formal_0_286_2 == 3;
+      assume {:formal} formal_0_286_3 == 4;
+      assume {:formal} formal_0_286_4 == 5;
+      assume {:formal} formal_1_288_0 == 1;
+      assume {:formal} formal_1_288_1 == 2;
+      assume {:formal} formal_1_288_2 == 2;
+      assume {:formal} formal_1_288_3 == 3;
+      assume {:formal} formal_1_288_4 == 3;
+      assume {:formal} formal_1_288_5 == 4;
+      assume {:formal} formal_1_288_6 == 4;
+      assume {:formal} formal_1_288_7 == 5;
+      assume {:formal} formal_1_288_8 == 5;
+      assume {:formal} formal_1_288_9 == 1;
+      assume {:formal} formal_2_290_0 == 1;
+      assume !(receiver.D == {formal_0_286_0, formal_0_286_1, formal_0_286_2, formal_0_286_3, formal_0_286_4} && receiver.CS == {(formal_1_288_0, formal_1_288_1), (formal_1_288_2, formal_1_288_3), (formal_1_288_4, formal_1_288_5), (formal_1_288_6, formal_1_288_7), (formal_1_288_8, formal_1_288_9)} && receiver.C == {formal_2_290_0});
+      assume true && exists v: int {:trigger v in receiver.D} :: v in receiver.D && v != argument_2_0_0;
+      var _ := receiver.DiffDevice(argument_2_0_0);
+      assert {:keepAssertion} !(receiver.D == {formal_0_286_0, formal_0_286_1, formal_0_286_2, formal_0_286_3, formal_0_286_4} && receiver.CS == {(formal_1_288_0, formal_1_288_1), (formal_1_288_2, formal_1_288_3), (formal_1_288_4, formal_1_288_5), (formal_1_288_6, formal_1_288_7), (formal_1_288_8, formal_1_288_9)} && receiver.C == {formal_2_290_0});
+    }
+2024-09-25 21:47:55.2506 DEBUG Trying method sequence: AddConnection
+2024-09-25 21:47:55.2506 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_2_290_0: int, argument_3_0_0: (int, int), receiver: Database)
+    modifies receiver {assume !(receiver.D == {1, 2, 3, 4, 5} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 1)} && receiver.C == {1});
+assume true && receiver.IsValid() && argument_3_0_0.0 in receiver.D && argument_3_0_0.1 in receiver.D;
+receiver.AddConnection(argument_3_0_0);
+assert {:keepAssertion} !(receiver.D == {1, 2, 3, 4, 5} && receiver.CS == {(1, 2), (2, 3), (3, 4), (4, 5), (5, 1)} && receiver.C == {1});}
+2024-09-25 21:47:55.2506 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_286_0: int, formal_0_286_1: int, formal_0_286_2: int, formal_0_286_3: int, formal_0_286_4: int, formal_1_288_0: int, formal_1_288_1: int, formal_1_288_2: int, formal_1_288_3: int, formal_1_288_4: int, formal_1_288_5: int, formal_1_288_6: int, formal_1_288_7: int, formal_1_288_8: int, formal_1_288_9: int, formal_2_290_0: int, argument_3_0_0: (int, int), receiver: Database)
+      modifies receiver
+    {
+      assume {:formal} formal_0_286_0 == 1;
+      assume {:formal} formal_0_286_1 == 2;
+      assume {:formal} formal_0_286_2 == 3;
+      assume {:formal} formal_0_286_3 == 4;
+      assume {:formal} formal_0_286_4 == 5;
+      assume {:formal} formal_1_288_0 == 1;
+      assume {:formal} formal_1_288_1 == 2;
+      assume {:formal} formal_1_288_2 == 2;
+      assume {:formal} formal_1_288_3 == 3;
+      assume {:formal} formal_1_288_4 == 3;
+      assume {:formal} formal_1_288_5 == 4;
+      assume {:formal} formal_1_288_6 == 4;
+      assume {:formal} formal_1_288_7 == 5;
+      assume {:formal} formal_1_288_8 == 5;
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 5733 LINES OF LOGS TO SAVE DISK SPACE **************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+      assume {:formal} formal_4_245_0 == true;
+      assume !(!(receiver == null) && formal_1_325_0 in receiver.D && receiver.D == {formal_2_1018_0} && receiver.IsValid.requires() && formal_4_245_0 == receiver.IsValid() && {} == receiver.CS && {} == receiver.C);
+      assume true && receiver.IsValid() && argument_69_0_0 in receiver.D;
+      receiver.MakeCentral(argument_69_0_0);
+      assert {:keepAssertion} !(!(receiver == null) && formal_1_325_0 in receiver.D && receiver.D == {formal_2_1018_0} && receiver.IsValid.requires() && formal_4_245_0 == receiver.IsValid() && {} == receiver.CS && {} == receiver.C);
+    }
+2024-09-25 21:48:32.5050 DEBUG Trying method sequence: DeleteDevice, AddDevice, AddConnection, AddDevice, AddConnection, AddDevice, AddConnection, AddDevice, AddConnection, AddConnection, MakeCentral
+2024-09-25 21:48:32.5071 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_325_0: int, formal_2_1018_0: int, formal_4_245_0: bool, argument_70_0_0: int, argument_70_0_1: int, receiver: Database)
+    modifies receiver {assume !(!(receiver == null) && 5 in receiver.D && receiver.D == {5} && receiver.IsValid.requires() && true == receiver.IsValid() && {} == receiver.CS && {} == receiver.C);
+assume true && receiver.IsValid() && argument_70_0_0 in receiver.D && argument_70_0_1 in receiver.D && argument_70_0_1 != argument_70_0_0 && argument_70_0_1 in receiver.C;
+receiver.DeleteDevice(argument_70_0_0, argument_70_0_1);
+assert {:keepAssertion} !(!(receiver == null) && 5 in receiver.D && receiver.D == {5} && receiver.IsValid.requires() && true == receiver.IsValid() && {} == receiver.CS && {} == receiver.C);}
+2024-09-25 21:48:32.5071 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_325_0: int, formal_2_1018_0: int, formal_4_245_0: bool, argument_70_0_0: int, argument_70_0_1: int, receiver: Database)
+      modifies receiver
+    {
+      assume {:formal} formal_1_325_0 == 5;
+      assume {:formal} formal_2_1018_0 == 5;
+      assume {:formal} formal_4_245_0 == true;
+      assume !(!(receiver == null) && formal_1_325_0 in receiver.D && receiver.D == {formal_2_1018_0} && receiver.IsValid.requires() && formal_4_245_0 == receiver.IsValid() && {} == receiver.CS && {} == receiver.C);
+      assume true && receiver.IsValid() && argument_70_0_0 in receiver.D && argument_70_0_1 in receiver.D && argument_70_0_1 != argument_70_0_0 && argument_70_0_1 in receiver.C;
+      receiver.DeleteDevice(argument_70_0_0, argument_70_0_1);
+      assert {:keepAssertion} !(!(receiver == null) && formal_1_325_0 in receiver.D && receiver.D == {formal_2_1018_0} && receiver.IsValid.requires() && formal_4_245_0 == receiver.IsValid() && {} == receiver.CS && {} == receiver.C);
+    }
+2024-09-25 21:48:32.7733 INFO Expanding method sequence AddDevice, AddDevice, AddConnection, AddDevice, AddConnection, AddDevice, AddConnection, AddDevice, AddConnection, AddConnection, MakeCentral -- estimated distance to start = 0, distance to end = 11
+2024-09-25 21:48:32.7784 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_245_0: bool) returns (receiver: Database) {assume true;
+receiver := new Database();
+assert {:keepAssertion} !(!(receiver == null) && receiver.D == {} && receiver.IsValid.requires() && true == receiver.IsValid() && {} == receiver.CS && {} == receiver.C);}
+2024-09-25 21:48:32.7788 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_3_245_0: bool) returns (receiver: Database)
+    {
+      assume true;
+      receiver := new Database();
+      assume {:formal} formal_3_245_0 == true;
+      assert {:keepAssertion} !(!(receiver == null) && receiver.D == {} && receiver.IsValid.requires() && formal_3_245_0 == receiver.IsValid() && {} == receiver.CS && {} == receiver.C);
+    }
+2024-09-25 21:48:33.1188 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_245_0: bool) returns (receiver: Database) {assume true;
+receiver := new Database();
+assert {:keepAssertion} !(receiver == null) && receiver.D == {} && receiver.IsValid.requires() && true == receiver.IsValid() && {} == receiver.CS && {} == receiver.C;}
+2024-09-25 21:48:33.1188 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_3_245_0: bool) returns (receiver: Database)
+    {
+      assume true;
+      receiver := new Database();
+      assume {:formal} formal_3_245_0 == true;
+      assert {:keepAssertion} !(receiver == null) && receiver.D == {} && receiver.IsValid.requires() && formal_3_245_0 == receiver.IsValid() && {} == receiver.CS && {} == receiver.C;
+    }
+2024-09-25 21:48:33.3686 INFO Have found the following solution to a subproblem!
+{
+result := new Database();
+result.AddDevice(5);
+result.AddDevice(1);
+assume {:attribute 641} argument_58_0_0 == (5, 1);
+result.AddConnection(argument_58_0_0);
+result.AddDevice(4);
+assume {:attribute 569} argument_48_0_0 == (4, 5);
+result.AddConnection(argument_48_0_0);
+result.AddDevice(3);
+assume {:attribute 439} argument_33_0_0 == (3, 4);
+result.AddConnection(argument_33_0_0);
+result.AddDevice(2);
+assume {:attribute 167} argument_13_0_0 == (2, 3);
+result.AddConnection(argument_13_0_0);
+assume {:attribute 123} argument_8_0_0 == (1, 2);
+result.AddConnection(argument_8_0_0);
+result.MakeCentral(1);
+}
+2024-09-25 21:48:33.3686 INFO Time spend on subproblem: 00:00:39.6763817
+2024-09-25 21:48:33.3711 INFO Number of Regular queries to Dafny used to solve subproblem: 93 (00:00:31.2827234)
+2024-09-25 21:48:33.3711 INFO Number of Simplify queries to Dafny used to solve subproblem: 21 (00:00:08.0137806)
+2024-09-25 21:48:33.3711 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-25 21:48:33.3711 INFO Have found the following solution!
+static method solution() returns (result:Database)
+ensures Goal(result)
+{
+result := new Database();
+result.AddDevice(5);
+result.AddDevice(1);
+assume {:attribute 641} argument_58_0_0 == (5, 1);
+result.AddConnection(argument_58_0_0);
+result.AddDevice(4);
+assume {:attribute 569} argument_48_0_0 == (4, 5);
+result.AddConnection(argument_48_0_0);
+result.AddDevice(3);
+assume {:attribute 439} argument_33_0_0 == (3, 4);
+result.AddConnection(argument_33_0_0);
+result.AddDevice(2);
+assume {:attribute 167} argument_13_0_0 == (2, 3);
+result.AddConnection(argument_13_0_0);
+assume {:attribute 123} argument_8_0_0 == (1, 2);
+result.AddConnection(argument_8_0_0);
+result.MakeCentral(1);
+}
+2024-09-25 21:48:33.3711 INFO Total time spend on synthesis: 00:00:39.8551407
+2024-09-25 21:48:33.3711 INFO Total number of Regular queries to Dafny: 93 (00:00:31.2827234)
+2024-09-25 21:48:33.3711 INFO Total number of Simplify queries to Dafny: 21 (00:00:08.0137806)
+2024-09-25 21:48:33.3711 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

@@ -1,0 +1,223 @@
+2024-09-23 13:34:42.4659 INFO Initial heuristic value is 0
+2024-09-23 13:34:42.4684 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-23 13:34:42.5160 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1_0: int, formal_1_1_1: int, formal_1_1_2: int, formal_1_1_3: int, formal_1_1_4: int, formal_1_1_5: int, formal_1_1_6: int, formal_1_1_7: int, formal_1_1_8: int, formal_1_1_9: int, formal_1_1_10: int, formal_1_1_11: int, formal_1_1_12: int, formal_1_1_13: int, formal_1_1_14: int, formal_1_1_15: int, formal_1_1_16: int, formal_1_1_17: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int) returns (receiver: BinaryTree) {assume true && (if argument_1_0_0 == null then {} else argument_1_0_0.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (argument_1_0_0 == null || argument_1_0_0.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+receiver := new BinaryTree(argument_1_0_0, argument_1_0_1, argument_1_0_2);
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View == [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17] && receiver.Height == 4);}
+2024-09-23 13:34:42.5160 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1_0: int, formal_1_1_1: int, formal_1_1_2: int, formal_1_1_3: int, formal_1_1_4: int, formal_1_1_5: int, formal_1_1_6: int, formal_1_1_7: int, formal_1_1_8: int, formal_1_1_9: int, formal_1_1_10: int, formal_1_1_11: int, formal_1_1_12: int, formal_1_1_13: int, formal_1_1_14: int, formal_1_1_15: int, formal_1_1_16: int, formal_1_1_17: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int)
+        returns (receiver: BinaryTree)
+    {
+      assume true && (if argument_1_0_0 == null then {} else argument_1_0_0.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (argument_1_0_0 == null || argument_1_0_0.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+      receiver := new BinaryTree(argument_1_0_0, argument_1_0_1, argument_1_0_2);
+      assume {:formal} formal_1_1_0 == 0;
+      assume {:formal} formal_1_1_1 == 1;
+      assume {:formal} formal_1_1_2 == 2;
+      assume {:formal} formal_1_1_3 == 3;
+      assume {:formal} formal_1_1_4 == 4;
+      assume {:formal} formal_1_1_5 == 5;
+      assume {:formal} formal_1_1_6 == 6;
+      assume {:formal} formal_1_1_7 == 7;
+      assume {:formal} formal_1_1_8 == 8;
+      assume {:formal} formal_1_1_9 == 9;
+      assume {:formal} formal_1_1_10 == 10;
+      assume {:formal} formal_1_1_11 == 11;
+      assume {:formal} formal_1_1_12 == 12;
+      assume {:formal} formal_1_1_13 == 13;
+      assume {:formal} formal_1_1_14 == 14;
+      assume {:formal} formal_1_1_15 == 15;
+      assume {:formal} formal_1_1_16 == 16;
+      assume {:formal} formal_1_1_17 == 17;
+      assume {:formal} formal_2_3_0 == 4;
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View == [formal_1_1_0, formal_1_1_1, formal_1_1_2, formal_1_1_3, formal_1_1_4, formal_1_1_5, formal_1_1_6, formal_1_1_7, formal_1_1_8, formal_1_1_9, formal_1_1_10, formal_1_1_11, formal_1_1_12, formal_1_1_13, formal_1_1_14, formal_1_1_15, formal_1_1_16, formal_1_1_17] && receiver.Height == formal_2_3_0);
+    }
+2024-09-23 13:35:01.3489 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1_0: int, formal_1_1_1: int, formal_1_1_2: int, formal_1_1_3: int, formal_1_1_4: int, formal_1_1_5: int, formal_1_1_6: int, formal_1_1_7: int, formal_1_1_8: int, formal_1_1_9: int, formal_1_1_10: int, formal_1_1_11: int, formal_1_1_12: int, formal_1_1_13: int, formal_1_1_14: int, formal_1_1_15: int, formal_1_1_16: int, formal_1_1_17: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int, formal_6_48_0: int, formal_7_50_0: int, formal_8_52_0: int, formal_9_54_0: int, formal_10_56_0: int, formal_11_58_0: int, formal_12_60_0: int, formal_13_62_0: int, formal_14_64_0: int, formal_15_66_0: int, formal_21_73_0: int, formal_33_73_0: int, formal_22_75_0: int, formal_34_75_0: int, formal_30_84_0: int, formal_21_84_0: int, formal_31_86_0: int, formal_22_86_0: int, formal_32_88_0: int, formal_23_88_0: int, formal_33_90_0: int, formal_34_92_0: int, formal_35_94_0: int, formal_36_96_0: int, formal_39_100_0: int, formal_47_100_0: int, formal_50_112_0: int, formal_41_112_0: int, formal_51_114_0: int, formal_52_116_0: int, formal_65_130_0: int, formal_38_130_0: int, formal_66_132_0: int, formal_67_134_0: int, formal_70_138_0: int, formal_73_142_0: int, formal_76_146_0: int, formal_79_150_0: int, formal_80_152_0: int, formal_81_154_0: int, formal_82_156_0: int, formal_83_158_0: int, formal_83_158_1: int, formal_84_160_0: int, formal_54_160_0: int, formal_85_162_0: int, formal_85_162_1: int, formal_86_164_0: int, formal_87_166_0: int, formal_88_168_0: int, formal_89_170_0: int, formal_90_172_0: int, formal_91_174_0: int, formal_91_174_1: int, formal_92_176_0: int, formal_92_176_1: int, formal_93_178_0: int, formal_93_178_1: int, formal_94_180_0: int, formal_94_180_1: int, formal_95_182_0: int, formal_95_182_1: int, formal_96_184_0: int, formal_96_184_1: int, formal_97_186_0: int, formal_97_186_1: int, formal_98_188_0: int, formal_98_188_1: int, formal_99_190_0: int, formal_62_190_0: int, formal_100_192_0: int, formal_100_192_1: int, formal_101_194_0: int, formal_101_194_1: int, formal_102_196_0: int, formal_103_198_0: int, formal_104_200_0: int, formal_105_202_0: int, formal_105_202_1: int, formal_106_204_0: int, formal_69_204_0: int, formal_107_206_0: int, formal_107_206_1: int, formal_108_208_0: int, formal_108_208_1: int, formal_109_210_0: int, formal_110_212_0: int, formal_111_214_0: int, formal_112_216_0: int, formal_113_218_0: int, formal_114_220_0: int, formal_114_220_1: int, formal_115_222_0: int, formal_116_224_0: int, formal_117_226_0: int, formal_117_226_1: int, formal_118_228_0: int, formal_118_228_1: int, formal_119_230_0: int, formal_119_230_1: int, formal_120_232_0: int, formal_121_234_0: int, formal_121_234_1: int, formal_122_236_0: int, formal_122_236_1: int, formal_123_238_0: int, formal_124_240_0: int, formal_125_242_0: int, formal_125_242_1: int, formal_126_244_0: int, formal_127_246_0: int, formal_127_246_1: int, formal_128_248_0: int, formal_128_248_1: int, formal_129_250_0: int, formal_130_252_0: int, formal_130_252_1: int, formal_131_254_0: int, formal_131_254_1: int, formal_132_256_0: int, formal_133_258_0: int, formal_133_258_1: int, formal_134_260_0: int, formal_134_260_1: int, formal_135_262_0: int, formal_136_264_0: int, formal_136_264_1: int, formal_137_266_0: int, formal_138_268_0: int, formal_139_270_0: int, formal_139_270_1: int, formal_35_318_0: int, formal_44_328_0: int, formal_48_333_0: int, formal_49_335_0: int, formal_50_337_0: int, formal_50_337_1: int, formal_51_339_0: int, formal_52_341_0: int, formal_53_343_0: int, formal_55_346_0: int, formal_55_346_1: int, formal_56_348_0: int, formal_56_348_1: int, formal_57_350_0: int, formal_57_350_1: int, formal_58_352_0: int, formal_58_352_1: int, formal_59_354_0: int, formal_59_354_1: int, formal_60_356_0: int, formal_60_356_1: int, formal_61_358_0: int, formal_63_361_0: int, formal_63_361_1: int, formal_64_363_0: int, formal_64_363_1: int, formal_65_365_0: int, formal_65_365_1: int, formal_66_367_0: int, formal_67_369_0: int, formal_68_371_0: int, formal_70_374_0: int, formal_71_376_0: int, formal_72_378_0: int, formal_72_378_1: int, formal_73_380_0: int, formal_74_382_0: int, formal_74_382_1: int, formal_75_384_0: int, formal_75_384_1: int, formal_76_386_0: int, formal_76_386_1: int, formal_77_388_0: int, formal_78_390_0: int, formal_79_392_0: int, formal_79_392_1: int, formal_80_394_0: int, formal_80_394_1: int, formal_81_396_0: int, formal_82_398_0: int, formal_82_398_1: int, formal_83_400_0: int, formal_84_402_0: int, formal_85_404_0: int, formal_0_25_0: int) returns (receiver: BinaryTree) {assume {:attribute 25} !(argument_1_0_0 == null);
+assume {:attribute 25} !(argument_1_0_0.left == null);
+assume {:attribute 25} !(argument_1_0_0.right == null);
+assume {:attribute 25} argument_1_0_0 in argument_1_0_0.Repr;
+assume {:attribute 25} argument_1_0_0.right in argument_1_0_0.Repr;
+assume {:attribute 25} argument_1_0_0.left in argument_1_0_0.Repr;
+assume {:attribute 25} |argument_1_0_0.View| > 0;
+assume {:attribute 25} |argument_1_0_0.View| > 1;
+assume {:attribute 25} |argument_1_0_0.View| > 2;
+assume {:attribute 25} |argument_1_0_0.View| > 3;
+assume {:attribute 25} |argument_1_0_0.View| > 4;
+assume {:attribute 25} |argument_1_0_0.View| > 5;
+assume {:attribute 25} |argument_1_0_0.View| > 6;
+assume {:attribute 25} |argument_1_0_0.View| > 7;
+assume {:attribute 25} |argument_1_0_0.View| > 8;
+assume {:attribute 25} |argument_1_0_0.View| > 9;
+assume {:attribute 25} argument_1_0_0.right.left in argument_1_0_0.Repr;
+assume {:attribute 25} !(argument_1_0_0.right.left == null);
+assume {:attribute 25} argument_1_0_0.right in argument_1_0_0.right.Repr;
+assume {:attribute 25} argument_1_0_0.right.Repr == {argument_1_0_0.right, argument_1_0_0.right.left};
+assume {:attribute 25} argument_1_0_0.right.left in argument_1_0_0.right.Repr;
+assume {:attribute 25} |argument_1_0_0.right.View| > 0;
+assume {:attribute 25} |argument_1_0_0.right.View| > 1;
+assume {:attribute 25} argument_1_0_0.left.left in argument_1_0_0.Repr;
+assume {:attribute 25} !(argument_1_0_0.left.left == null);
+assume {:attribute 25} argument_1_0_0.left.right in argument_1_0_0.Repr;
+assume {:attribute 25} !(argument_1_0_0.left.right == null);
+assume {:attribute 25} argument_1_0_0.left in argument_1_0_0.left.Repr;
+assume {:attribute 25} argument_1_0_0.left.left in argument_1_0_0.left.Repr;
+assume {:attribute 25} argument_1_0_0.left.right in argument_1_0_0.left.Repr;
+assume {:attribute 25} |argument_1_0_0.left.View| > 0;
+assume {:attribute 25} |argument_1_0_0.left.View| > 1;
+assume {:attribute 25} |argument_1_0_0.left.View| > 2;
+assume {:attribute 25} |argument_1_0_0.left.View| > 3;
+assume {:attribute 25} |argument_1_0_0.left.View| > 4;
+assume {:attribute 25} |argument_1_0_0.left.View| > 5;
+assume {:attribute 25} |argument_1_0_0.left.View| > 6;
+assume {:attribute 25} argument_1_0_0.right.left in argument_1_0_0.right.left.Repr;
+assume {:attribute 25} argument_1_0_0.right.left.Repr == {argument_1_0_0.right.left};
+assume {:attribute 25} |argument_1_0_0.right.left.View| > 0;
+assume {:attribute 25} argument_1_0_0.left.left.left in argument_1_0_0.left.Repr;
+assume {:attribute 25} argument_1_0_0.left.left.left in argument_1_0_0.Repr;
+assume {:attribute 25} !(argument_1_0_0.left.left.left == null);
+assume {:attribute 25} argument_1_0_0.left.left.right in argument_1_0_0.left.Repr;
+assume {:attribute 25} argument_1_0_0.left.left.right in argument_1_0_0.Repr;
+assume {:attribute 25} !(argument_1_0_0.left.left.right == null);
+assume {:attribute 25} argument_1_0_0.left.left in argument_1_0_0.left.left.Repr;
+assume {:attribute 25} argument_1_0_0.left.left.Repr == {argument_1_0_0.left.left, argument_1_0_0.left.left.right, argument_1_0_0.left.left.left};
+assume {:attribute 25} argument_1_0_0.left.left.right in argument_1_0_0.left.left.Repr;
+assume {:attribute 25} argument_1_0_0.left.left.left in argument_1_0_0.left.left.Repr;
+assume {:attribute 25} |argument_1_0_0.left.left.View| > 0;
+assume {:attribute 25} |argument_1_0_0.left.left.View| > 1;
+assume {:attribute 25} |argument_1_0_0.left.left.View| > 2;
+assume {:attribute 25} argument_1_0_0.left.right.left in argument_1_0_0.left.Repr;
+assume {:attribute 25} argument_1_0_0.left.right.left in argument_1_0_0.Repr;
+assume {:attribute 25} !(argument_1_0_0.left.right.left == null);
+assume {:attribute 25} argument_1_0_0.Repr == {argument_1_0_0.right, argument_1_0_0.left, argument_1_0_0.left.left, argument_1_0_0.left.right, argument_1_0_0.left.left.right, argument_1_0_0.left.left.left, argument_1_0_0.left.right.left, argument_1_0_0.left.right.right, argument_1_0_0.right.left, argument_1_0_0};
+assume {:attribute 25} argument_1_0_0.left.Repr == {argument_1_0_0.left, argument_1_0_0.left.left, argument_1_0_0.left.right, argument_1_0_0.left.left.right, argument_1_0_0.left.left.left, argument_1_0_0.left.right.left, argument_1_0_0.left.right.right};
+assume {:attribute 25} argument_1_0_0.left.right.right in argument_1_0_0.left.Repr;
+assume {:attribute 25} argument_1_0_0.left.right.right in argument_1_0_0.Repr;
+assume {:attribute 25} !(argument_1_0_0.left.right.right == null);
+assume {:attribute 25} argument_1_0_0.left.right in argument_1_0_0.left.right.Repr;
+assume {:attribute 25} argument_1_0_0.left.right.Repr == {argument_1_0_0.left.right, argument_1_0_0.left.right.left, argument_1_0_0.left.right.right};
+assume {:attribute 25} argument_1_0_0.left.right.left in argument_1_0_0.left.right.Repr;
+assume {:attribute 25} argument_1_0_0.left.right.right in argument_1_0_0.left.right.Repr;
+assume {:attribute 25} |argument_1_0_0.left.right.View| > 0;
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 3549 LINES OF LOGS TO SAVE DISK SPACE **************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+    {
+      assume {:attribute 576} argument_17_0_0 == null;
+      assume {:attribute 577} argument_17_0_1 == null;
+      assume {:formal} formal_0_35_0 == 15;
+      assume {:attribute 578} argument_17_0_2 == formal_0_35_0;
+      assume true && (if argument_17_0_0 == null then {} else argument_17_0_0.Repr) * (if argument_17_0_1 == null then {} else argument_17_0_1.Repr) == {} && (argument_17_0_0 == null || argument_17_0_0.IsValid()) && (argument_17_0_1 == null || argument_17_0_1.IsValid());
+      receiver := new BinaryTree(argument_17_0_0, argument_17_0_1, argument_17_0_2);
+      assume {:formal} formal_3_48_0 == 0;
+      assume {:formal} formal_6_860_0 == 0;
+      assume {:formal} formal_7_1251_0 == 15;
+      assume {:formal} formal_8_1132_0 == 15;
+      assume {:formal} formal_8_1132_1 == 0;
+      assume {:formal} formal_9_864_0 == 1;
+      assert {:keepAssertion} !(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > formal_3_48_0 && null == receiver.left && null == receiver.right && formal_6_860_0 == receiver.Height && formal_7_1251_0 == receiver.value && formal_8_1132_0 == receiver.View[formal_8_1132_1] && formal_9_864_0 == |receiver.View|;
+    }
+2024-09-23 13:35:32.6885 INFO Have found the following solution to a subproblem!
+{
+argument_16_0_0 := new BinaryTree(null, null, 15);
+}
+2024-09-23 13:35:32.6885 INFO Time spend on subproblem: 00:00:00.6371983
+2024-09-23 13:35:32.6885 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:00.6360022)
+2024-09-23 13:35:32.6885 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:35:32.6885 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:35:32.6885 INFO Initial heuristic value is 0
+2024-09-23 13:35:32.6885 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-23 13:35:32.6913 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_48_0: int, formal_6_860_0: int, formal_7_1262_0: int, formal_8_1264_0: int, formal_8_1264_1: int, formal_9_864_0: int, argument_18_0_0: BinaryTree?, argument_18_0_1: BinaryTree?, argument_18_0_2: int) returns (receiver: BinaryTree) {assume true && (if argument_18_0_0 == null then {} else argument_18_0_0.Repr) * (if argument_18_0_1 == null then {} else argument_18_0_1.Repr) == {} && (argument_18_0_0 == null || argument_18_0_0.IsValid()) && (argument_18_0_1 == null || argument_18_0_1.IsValid());
+receiver := new BinaryTree(argument_18_0_0, argument_18_0_1, argument_18_0_2);
+assert {:keepAssertion} !(!(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > 0 && null == receiver.left && null == receiver.right && 0 == receiver.Height && 17 == receiver.value && 17 == receiver.View[0] && 1 == |receiver.View|);}
+2024-09-23 13:35:32.6913 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_3_48_0: int, formal_6_860_0: int, formal_7_1262_0: int, formal_8_1264_0: int, formal_8_1264_1: int, formal_9_864_0: int, argument_18_0_0: BinaryTree?, argument_18_0_1: BinaryTree?, argument_18_0_2: int)
+        returns (receiver: BinaryTree)
+    {
+      assume true && (if argument_18_0_0 == null then {} else argument_18_0_0.Repr) * (if argument_18_0_1 == null then {} else argument_18_0_1.Repr) == {} && (argument_18_0_0 == null || argument_18_0_0.IsValid()) && (argument_18_0_1 == null || argument_18_0_1.IsValid());
+      receiver := new BinaryTree(argument_18_0_0, argument_18_0_1, argument_18_0_2);
+      assume {:formal} formal_3_48_0 == 0;
+      assume {:formal} formal_6_860_0 == 0;
+      assume {:formal} formal_7_1262_0 == 17;
+      assume {:formal} formal_8_1264_0 == 17;
+      assume {:formal} formal_8_1264_1 == 0;
+      assume {:formal} formal_9_864_0 == 1;
+      assert {:keepAssertion} !(!(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > formal_3_48_0 && null == receiver.left && null == receiver.right && formal_6_860_0 == receiver.Height && formal_7_1262_0 == receiver.value && formal_8_1264_0 == receiver.View[formal_8_1264_1] && formal_9_864_0 == |receiver.View|);
+    }
+2024-09-23 13:35:33.1484 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_48_0: int, formal_6_860_0: int, formal_7_1262_0: int, formal_8_1264_0: int, formal_8_1264_1: int, formal_9_864_0: int, argument_18_0_0: BinaryTree?, argument_18_0_1: BinaryTree?, argument_18_0_2: int, formal_0_39_0: int) returns (receiver: BinaryTree) {assume true && (if null == null then {} else null.Repr) * (if null == null then {} else null.Repr) == {} && (null == null || null.IsValid()) && (null == null || null.IsValid());
+receiver := new BinaryTree(null, null, 17);
+assert {:keepAssertion} !(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > 0 && null == receiver.left && null == receiver.right && 0 == receiver.Height && 17 == receiver.value && 17 == receiver.View[0] && 1 == |receiver.View|;}
+2024-09-23 13:35:33.1484 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_3_48_0: int, formal_6_860_0: int, formal_7_1262_0: int, formal_8_1264_0: int, formal_8_1264_1: int, formal_9_864_0: int, argument_18_0_0: BinaryTree?, argument_18_0_1: BinaryTree?, argument_18_0_2: int, formal_0_39_0: int)
+        returns (receiver: BinaryTree)
+    {
+      assume {:attribute 590} argument_18_0_0 == null;
+      assume {:attribute 591} argument_18_0_1 == null;
+      assume {:formal} formal_0_39_0 == 17;
+      assume {:attribute 592} argument_18_0_2 == formal_0_39_0;
+      assume true && (if argument_18_0_0 == null then {} else argument_18_0_0.Repr) * (if argument_18_0_1 == null then {} else argument_18_0_1.Repr) == {} && (argument_18_0_0 == null || argument_18_0_0.IsValid()) && (argument_18_0_1 == null || argument_18_0_1.IsValid());
+      receiver := new BinaryTree(argument_18_0_0, argument_18_0_1, argument_18_0_2);
+      assume {:formal} formal_3_48_0 == 0;
+      assume {:formal} formal_6_860_0 == 0;
+      assume {:formal} formal_7_1262_0 == 17;
+      assume {:formal} formal_8_1264_0 == 17;
+      assume {:formal} formal_8_1264_1 == 0;
+      assume {:formal} formal_9_864_0 == 1;
+      assert {:keepAssertion} !(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > formal_3_48_0 && null == receiver.left && null == receiver.right && formal_6_860_0 == receiver.Height && formal_7_1262_0 == receiver.value && formal_8_1264_0 == receiver.View[formal_8_1264_1] && formal_9_864_0 == |receiver.View|;
+    }
+2024-09-23 13:35:33.3967 INFO Have found the following solution to a subproblem!
+{
+argument_16_0_1 := new BinaryTree(null, null, 17);
+}
+2024-09-23 13:35:33.3967 INFO Time spend on subproblem: 00:00:00.7077771
+2024-09-23 13:35:33.3967 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:00.7064291)
+2024-09-23 13:35:33.3967 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:35:33.3967 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:35:33.4114 INFO Have found the following solution!
+static method solution() returns (result:BinaryTree)
+ensures Goal(result)
+{
+var argument_4_0_0 := new BinaryTree(null, null, 0);
+var argument_4_0_1 := new BinaryTree(null, null, 2);
+var argument_3_0_0 := new BinaryTree(argument_4_0_0, argument_4_0_1, 1);
+var argument_7_0_0 := new BinaryTree(null, null, 4);
+var argument_7_0_1 := new BinaryTree(null, null, 6);
+var argument_3_0_1 := new BinaryTree(argument_7_0_0, argument_7_0_1, 5);
+var argument_2_0_0 := new BinaryTree(argument_3_0_0, argument_3_0_1, 3);
+var argument_10_0_0 := new BinaryTree(null, null, 8);
+var argument_2_0_1 := new BinaryTree(argument_10_0_0, null, 9);
+var argument_1_0_0 := new BinaryTree(argument_2_0_0, argument_2_0_1, 7);
+var argument_13_0_0 := new BinaryTree(null, null, 11);
+var argument_13_0_1 := new BinaryTree(null, null, 13);
+var argument_12_0_0 := new BinaryTree(argument_13_0_0, argument_13_0_1, 12);
+var argument_16_0_0 := new BinaryTree(null, null, 15);
+var argument_16_0_1 := new BinaryTree(null, null, 17);
+var argument_12_0_1 := new BinaryTree(argument_16_0_0, argument_16_0_1, 16);
+var argument_1_0_1 := new BinaryTree(argument_12_0_0, argument_12_0_1, 14);
+result := new BinaryTree(argument_1_0_0, argument_1_0_1, 10);
+}
+2024-09-23 13:35:33.4114 INFO Total time spend on synthesis: 00:00:51.0481468
+2024-09-23 13:35:33.4114 INFO Total number of Regular queries to Dafny: 36 (00:00:49.2414021)
+2024-09-23 13:35:33.4114 INFO Total number of Simplify queries to Dafny: 0 (00:00:00)
+2024-09-23 13:35:33.4114 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

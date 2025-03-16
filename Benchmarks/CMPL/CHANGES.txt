@@ -1,0 +1,9 @@
+The file HKDF.dfy in this directory is derived from the AWS Cryptographic Material Providers Library (CMPL), licensed under Apache 2.0. 
+Specifically, it is based on commit 1c08aa75bed81e031fb102ddb8ea803c9ce97296 of the [CMPL GitHub repository](https://github.com/aws/aws-cryptographic-material-providers-library/). 
+The following modifications were made to the original code:
+- Only the code from the `AwsCryptographyPrimitives/src/HKDF` directory in the original repository was included.
+- The two files in the above-mentioned directory (HKDF.dfy and HMAC.dfy) were merged into one. 
+- Any references to Dafny Standard Library and other dependencies were removed to ease installation. Constants like INT32_MAX_LIMIT were inlined into a new Imports module.
+- {:use} annotations were added to certain methods to enable their invocation by Metamorph in synthesized programs.
+- A file `Externs.cs` was added to provide an implementation for external methods defined in the Dafny code. 
+This allows compiling and running the code.

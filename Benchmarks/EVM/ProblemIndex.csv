@@ -1,0 +1,9 @@
+Template,File,BASELINE_INLINING_DEPTH
+BaselineTemplate.dfy,Problems/IntegerOverflow.dfy,4
+BaselineTemplate.dfy,Problems/InvalidMemoryStore.dfy,3
+BaselineTemplate.dfy,Problems/DivByZero.dfy,4
+BaselineTemplate.dfy,Problems/IntegerUnderflow.dfy,4
+BaselineTemplate.dfy,Problems/InvalidJump.dfy,2
+BaselineTemplate.dfy,Problems/InvalidMemoryLoad.dfy,2
+BaselineTemplate.dfy,Problems/StackOverflow.dfy,11
+BaselineTemplate.dfy,Problems/StackUnderflow.dfy,2

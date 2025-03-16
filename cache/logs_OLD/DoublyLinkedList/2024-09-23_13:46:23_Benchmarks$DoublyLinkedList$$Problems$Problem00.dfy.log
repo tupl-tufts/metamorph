@@ -1,0 +1,49 @@
+2024-09-23 13:46:24.7748 DEBUG Using integer programming to estimating the distance to receiver.View() == [], receiver.IsValid()
+2024-09-23 13:46:24.7888 TRACE Minimizing value: (((PushBack + PushFront) + PopFront) + PopBack)
+2024-09-23 13:46:24.7922 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-09-23 13:46:24.7922 DEBUG In particular, need at least -0 calls to PushBack
+2024-09-23 13:46:24.7922 DEBUG In particular, need at least -0 calls to PushFront
+2024-09-23 13:46:24.7922 DEBUG In particular, need at least -0 calls to PopFront
+2024-09-23 13:46:24.7922 DEBUG In particular, need at least -0 calls to PopBack
+2024-09-23 13:46:24.7922 INFO Initial heuristic value is 0
+2024-09-23 13:46:24.7922 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-23 13:46:24.8346 TRACE Verifying the body of the following method:
+static method synthesized() returns (receiver: List) {assume true;
+receiver := new List();
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == []);}
+2024-09-23 13:46:24.8346 TRACE Verifying the body of the following method (literal):
+ static method synthesized() returns (receiver: List)
+    {
+      assume true;
+      receiver := new List();
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == []);
+    }
+2024-09-23 13:46:26.0693 TRACE Verifying the body of the following method:
+static method synthesized() returns (receiver: List) {assume true;
+receiver := new List();
+assert {:keepAssertion} receiver.IsValid() && receiver.View() == [];}
+2024-09-23 13:46:26.0693 TRACE Verifying the body of the following method (literal):
+ static method synthesized() returns (receiver: List)
+    {
+      assume true;
+      receiver := new List();
+      assert {:keepAssertion} receiver.IsValid() && receiver.View() == [];
+    }
+2024-09-23 13:46:26.3829 INFO Have found the following solution to a subproblem!
+{
+result := new List();
+}
+2024-09-23 13:46:26.3829 INFO Time spend on subproblem: 00:00:01.6203912
+2024-09-23 13:46:26.3829 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:01.5719522)
+2024-09-23 13:46:26.3829 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:46:26.3829 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:46:26.3866 INFO Have found the following solution!
+static method solution() returns (result:List)
+ensures Goal(result)
+{
+result := new List();
+}
+2024-09-23 13:46:26.3866 INFO Total time spend on synthesis: 00:00:01.9562976
+2024-09-23 13:46:26.3866 INFO Total number of Regular queries to Dafny: 2 (00:00:01.5719522)
+2024-09-23 13:46:26.3866 INFO Total number of Simplify queries to Dafny: 0 (00:00:00)
+2024-09-23 13:46:26.3866 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

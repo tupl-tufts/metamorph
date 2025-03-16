@@ -1,0 +1,223 @@
+2024-10-02 03:24:34.8360 DEBUG Using integer programming to estimating the distance to this.View() == [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], receiver.IsValid()
+2024-10-02 03:24:34.8515 TRACE Minimizing value: ((((Rotate + IsEmpty) + Enqueue) + Front) + Dequeue)
+2024-10-02 03:24:34.8548 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-10-02 03:24:34.8548 DEBUG In particular, need at least -0 calls to Rotate
+2024-10-02 03:24:34.8548 DEBUG In particular, need at least -0 calls to IsEmpty
+2024-10-02 03:24:34.8548 DEBUG In particular, need at least -0 calls to Enqueue
+2024-10-02 03:24:34.8548 DEBUG In particular, need at least -0 calls to Front
+2024-10-02 03:24:34.8548 DEBUG In particular, need at least -0 calls to Dequeue
+2024-10-02 03:24:34.8548 INFO Initial heuristic value is 0
+2024-10-02 03:24:34.8548 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-10-02 03:24:34.8966 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int, formal_1_1492_13: int, formal_1_1492_14: int, formal_1_1492_15: int, formal_1_1492_16: int, formal_1_1492_17: int, formal_1_1492_18: int) returns (receiver: Queue) {assume true;
+receiver := new Queue();
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);}
+2024-10-02 03:24:34.8966 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int, formal_1_1492_13: int, formal_1_1492_14: int, formal_1_1492_15: int, formal_1_1492_16: int, formal_1_1492_17: int, formal_1_1492_18: int)
+        returns (receiver: Queue)
+    {
+      assume true;
+      receiver := new Queue();
+      assume {:formal} formal_1_1492_0 == 0;
+      assume {:formal} formal_1_1492_1 == 1;
+      assume {:formal} formal_1_1492_2 == 2;
+      assume {:formal} formal_1_1492_3 == 4;
+      assume {:formal} formal_1_1492_4 == 5;
+      assume {:formal} formal_1_1492_5 == 6;
+      assume {:formal} formal_1_1492_6 == 7;
+      assume {:formal} formal_1_1492_7 == 8;
+      assume {:formal} formal_1_1492_8 == 9;
+      assume {:formal} formal_1_1492_9 == 10;
+      assume {:formal} formal_1_1492_10 == 11;
+      assume {:formal} formal_1_1492_11 == 12;
+      assume {:formal} formal_1_1492_12 == 13;
+      assume {:formal} formal_1_1492_13 == 14;
+      assume {:formal} formal_1_1492_14 == 15;
+      assume {:formal} formal_1_1492_15 == 16;
+      assume {:formal} formal_1_1492_16 == 17;
+      assume {:formal} formal_1_1492_17 == 18;
+      assume {:formal} formal_1_1492_18 == 19;
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == [formal_1_1492_0, formal_1_1492_1, formal_1_1492_2, formal_1_1492_3, formal_1_1492_4, formal_1_1492_5, formal_1_1492_6, formal_1_1492_7, formal_1_1492_8, formal_1_1492_9, formal_1_1492_10, formal_1_1492_11, formal_1_1492_12, formal_1_1492_13, formal_1_1492_14, formal_1_1492_15, formal_1_1492_16, formal_1_1492_17, formal_1_1492_18]);
+    }
+2024-10-02 03:24:35.9592 DEBUG Trying method sequence: Rotate
+2024-10-02 03:24:35.9592 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int, formal_1_1492_13: int, formal_1_1492_14: int, formal_1_1492_15: int, formal_1_1492_16: int, formal_1_1492_17: int, formal_1_1492_18: int, receiver: Queue)
+    modifies receiver, receiver.Repr {assume !(receiver.IsValid() && receiver.View() == [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);
+assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+receiver.Rotate();
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);}
+2024-10-02 03:24:35.9628 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int, formal_1_1492_13: int, formal_1_1492_14: int, formal_1_1492_15: int, formal_1_1492_16: int, formal_1_1492_17: int, formal_1_1492_18: int, receiver: Queue)
+      modifies receiver, receiver.Repr
+    {
+      assume {:formal} formal_1_1492_0 == 0;
+      assume {:formal} formal_1_1492_1 == 1;
+      assume {:formal} formal_1_1492_2 == 2;
+      assume {:formal} formal_1_1492_3 == 4;
+      assume {:formal} formal_1_1492_4 == 5;
+      assume {:formal} formal_1_1492_5 == 6;
+      assume {:formal} formal_1_1492_6 == 7;
+      assume {:formal} formal_1_1492_7 == 8;
+      assume {:formal} formal_1_1492_8 == 9;
+      assume {:formal} formal_1_1492_9 == 10;
+      assume {:formal} formal_1_1492_10 == 11;
+      assume {:formal} formal_1_1492_11 == 12;
+      assume {:formal} formal_1_1492_12 == 13;
+      assume {:formal} formal_1_1492_13 == 14;
+      assume {:formal} formal_1_1492_14 == 15;
+      assume {:formal} formal_1_1492_15 == 16;
+      assume {:formal} formal_1_1492_16 == 17;
+      assume {:formal} formal_1_1492_17 == 18;
+      assume {:formal} formal_1_1492_18 == 19;
+      assume !(receiver.IsValid() && receiver.View() == [formal_1_1492_0, formal_1_1492_1, formal_1_1492_2, formal_1_1492_3, formal_1_1492_4, formal_1_1492_5, formal_1_1492_6, formal_1_1492_7, formal_1_1492_8, formal_1_1492_9, formal_1_1492_10, formal_1_1492_11, formal_1_1492_12, formal_1_1492_13, formal_1_1492_14, formal_1_1492_15, formal_1_1492_16, formal_1_1492_17, formal_1_1492_18]);
+      assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+      receiver.Rotate();
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == [formal_1_1492_0, formal_1_1492_1, formal_1_1492_2, formal_1_1492_3, formal_1_1492_4, formal_1_1492_5, formal_1_1492_6, formal_1_1492_7, formal_1_1492_8, formal_1_1492_9, formal_1_1492_10, formal_1_1492_11, formal_1_1492_12, formal_1_1492_13, formal_1_1492_14, formal_1_1492_15, formal_1_1492_16, formal_1_1492_17, formal_1_1492_18]);
+    }
+2024-10-02 03:24:38.1469 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_1010_0: int, formal_4_1012_0: int, formal_5_1016_0: int, formal_6_1018_0: int, formal_7_1020_0: int, formal_8_1022_0: int, formal_9_1024_0: int, formal_10_1026_0: int, formal_11_1028_0: int, formal_12_1030_0: int, formal_13_1034_0: int, formal_14_1082_0: int, formal_15_1104_0: int, formal_16_1106_0: int, formal_17_1108_0: int, formal_18_1110_0: int, formal_19_1112_0: int, formal_20_1014_0: int, formal_21_1060_0: int, formal_22_1554_0: int, formal_23_1124_0: int, formal_24_1126_0: int, formal_25_1128_0: int, formal_26_1130_0: int, formal_27_1132_0: int, formal_28_1134_0: int, formal_29_1136_0: int, formal_30_1142_0: int, formal_31_1186_0: int, formal_32_1206_0: int, formal_33_1208_0: int, formal_34_1210_0: int, formal_35_1212_0: int, formal_36_1214_0: int, formal_37_1122_0: int, formal_38_1571_0: int, formal_39_1573_0: int, formal_39_1573_1: int, formal_40_1218_0: int, formal_41_1576_0: int, formal_41_1576_1: int, formal_42_1578_0: int, formal_42_1578_1: int, formal_43_1580_0: int, formal_43_1580_1: int, formal_44_1582_0: int, formal_44_1582_1: int, formal_45_1584_0: int, formal_45_1584_1: int, formal_46_1586_0: int, formal_46_1586_1: int, formal_47_1588_0: int, formal_47_1588_1: int, formal_48_1590_0: int, formal_48_1590_1: int, formal_49_1592_0: int, formal_50_1594_0: int, formal_51_1596_0: int, formal_52_1598_0: int, formal_52_1598_1: int, formal_53_1600_0: int, formal_53_1600_1: int, formal_54_1602_0: int, formal_54_1602_1: int, formal_55_1604_0: int, formal_55_1604_1: int, formal_56_1606_0: int, formal_56_1606_1: int, formal_57_1608_0: int, formal_57_1608_1: int, formal_58_1610_0: int, formal_58_1610_1: int, formal_59_1612_0: int, formal_59_1612_1: int, formal_61_734_0: bool, formal_62_1616_0: int, formal_62_1616_1: int, formal_63_1618_0: int, formal_64_1360_0: int, formal_64_1360_1: int, formal_65_1358_0: int, formal_65_1358_1: int, formal_66_1362_0: int, formal_66_1362_1: int, formal_67_1364_0: int, formal_67_1364_1: int, formal_68_1366_0: int, formal_68_1366_1: int, formal_69_1368_0: int, formal_69_1368_1: int, formal_70_1370_0: int, formal_70_1370_1: int, formal_71_1627_0: int, formal_73_1630_0: int, formal_73_1630_1: int, formal_74_1632_0: int, formal_74_1632_1: int, formal_75_1438_0: int, formal_75_1438_1: int, formal_76_1440_0: int, formal_76_1440_1: int, formal_77_1442_0: int, formal_77_1442_1: int, formal_78_1444_0: int, formal_78_1444_1: int, formal_79_217_0: int, formal_79_217_1: int, formal_80_1356_0: int, formal_80_1356_1: int, formal_81_1640_0: int, formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int, formal_1_1492_13: int, formal_1_1492_14: int, formal_1_1492_15: int, formal_1_1492_16: int, formal_1_1492_17: int, formal_1_1492_18: int, receiver: Queue)
+    modifies receiver, receiver.Repr {assume !(receiver == null);
+assume !(receiver.head == null);
+assume !(receiver.tail == null);
+assume |receiver.Repr| > 0;
+assume |receiver.Repr| > 1;
+assume |receiver.Repr| > 11;
+assume |receiver.Repr| > 12;
+assume |receiver.Repr| > 13;
+assume |receiver.Repr| > 14;
+assume |receiver.Repr| > 15;
+assume |receiver.Repr| > 16;
+assume |receiver.Repr| > 17;
+assume |receiver.Repr| > 18;
+assume |receiver.Repr| > 2;
+assume |receiver.Repr| > 4;
+assume |receiver.Repr| > 5;
+assume |receiver.Repr| > 6;
+assume |receiver.Repr| > 7;
+assume |receiver.Repr| > 8;
+assume |receiver.Repr| > 9;
+assume |receiver.Repr| > 10;
+assume |receiver.Repr| > 3;
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 10070 LINES OF LOGS TO SAVE DISK SPACE *************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+      assume receiver.Repr[formal_70_1444_0] == receiver.Repr[formal_70_1444_1].next;
+      assume receiver.Repr[formal_71_217_0] == receiver.Repr[formal_71_217_1].next;
+      assume receiver.Repr[formal_72_1356_0] == receiver.Repr[formal_72_1356_1].next;
+      assume formal_73_3438_0 == receiver.head.data;
+      assume formal_74_2201_0 == |receiver.Repr|;
+      var _ := receiver.Dequeue();
+      assume {:formal} formal_3_1112_0 == 9;
+      assume {:formal} formal_4_1014_0 == 10;
+      assume {:formal} formal_5_1060_0 == 3;
+      assume {:formal} formal_6_1012_0 == 1;
+      assume {:formal} formal_7_1016_0 == 11;
+      assume {:formal} formal_8_1018_0 == 12;
+      assume {:formal} formal_9_1020_0 == 13;
+      assume {:formal} formal_10_1022_0 == 14;
+      assume {:formal} formal_11_1024_0 == 15;
+      assume {:formal} formal_12_1010_0 == 0;
+      assume {:formal} formal_13_1034_0 == 2;
+      assume {:formal} formal_14_1082_0 == 4;
+      assume {:formal} formal_15_1104_0 == 5;
+      assume {:formal} formal_16_1106_0 == 6;
+      assume {:formal} formal_17_1108_0 == 7;
+      assume {:formal} formal_18_1110_0 == 8;
+      assume {:formal} formal_19_1214_0 == 9;
+      assume {:formal} formal_20_1122_0 == 10;
+      assume {:formal} formal_21_1164_0 == 3;
+      assume {:formal} formal_22_1554_0 == 1;
+      assume {:formal} formal_23_1124_0 == 11;
+      assume {:formal} formal_24_1126_0 == 12;
+      assume {:formal} formal_25_1128_0 == 13;
+      assume {:formal} formal_26_1130_0 == 14;
+      assume {:formal} formal_27_1142_0 == 2;
+      assume {:formal} formal_28_1186_0 == 4;
+      assume {:formal} formal_29_1206_0 == 5;
+      assume {:formal} formal_30_1208_0 == 6;
+      assume {:formal} formal_31_1210_0 == 7;
+      assume {:formal} formal_32_1212_0 == 8;
+      assume {:formal} formal_33_1735_0 == 9;
+      assume {:formal} formal_33_1735_1 == 8;
+      assume {:formal} formal_34_1737_0 == 10;
+      assume {:formal} formal_34_1737_1 == 9;
+      assume {:formal} formal_35_1702_0 == 1;
+      assume {:formal} formal_35_1702_1 == 1;
+      assume {:formal} formal_36_1704_0 == 11;
+      assume {:formal} formal_36_1704_1 == 10;
+      assume {:formal} formal_37_1706_0 == 12;
+      assume {:formal} formal_37_1706_1 == 11;
+      assume {:formal} formal_38_1708_0 == 13;
+      assume {:formal} formal_38_1708_1 == 12;
+      assume {:formal} formal_39_1710_0 == 14;
+      assume {:formal} formal_39_1710_1 == 13;
+      assume {:formal} formal_40_1712_0 == 15;
+      assume {:formal} formal_40_1712_1 == 14;
+      assume {:formal} formal_41_2739_0 == 15;
+      assume {:formal} formal_42_1699_0 == 0;
+      assume {:formal} formal_43_1218_0 == 0;
+      assume {:formal} formal_44_1723_0 == 2;
+      assume {:formal} formal_44_1723_1 == 2;
+      assume {:formal} formal_45_2204_0 == 4;
+      assume {:formal} formal_45_2204_1 == 3;
+      assume {:formal} formal_46_1727_0 == 5;
+      assume {:formal} formal_46_1727_1 == 4;
+      assume {:formal} formal_47_1729_0 == 6;
+      assume {:formal} formal_47_1729_1 == 5;
+      assume {:formal} formal_48_1731_0 == 7;
+      assume {:formal} formal_48_1731_1 == 6;
+      assume {:formal} formal_49_1733_0 == 8;
+      assume {:formal} formal_49_1733_1 == 7;
+      assume {:formal} formal_50_2749_0 == 16;
+      assume {:formal} formal_51_2751_0 == 16;
+      assume {:formal} formal_53_734_0 == true;
+      assume {:formal} formal_54_1616_0 == 2;
+      assume {:formal} formal_54_1616_1 == 1;
+      assume {:formal} formal_55_1618_0 == 1;
+      assume {:formal} formal_56_1396_0 == 3;
+      assume {:formal} formal_56_1396_1 == 2;
+      assume {:formal} formal_57_1360_0 == 12;
+      assume {:formal} formal_57_1360_1 == 11;
+      assume {:formal} formal_58_1358_0 == 11;
+      assume {:formal} formal_58_1358_1 == 10;
+      assume {:formal} formal_59_1362_0 == 13;
+      assume {:formal} formal_59_1362_1 == 12;
+      assume {:formal} formal_60_1364_0 == 14;
+      assume {:formal} formal_60_1364_1 == 13;
+      assume {:formal} formal_61_2762_0 == 14;
+      assume {:formal} formal_63_1418_0 == 4;
+      assume {:formal} formal_63_1418_1 == 3;
+      assume {:formal} formal_64_1438_0 == 5;
+      assume {:formal} formal_64_1438_1 == 4;
+      assume {:formal} formal_65_1440_0 == 6;
+      assume {:formal} formal_65_1440_1 == 5;
+      assume {:formal} formal_66_1442_0 == 7;
+      assume {:formal} formal_66_1442_1 == 6;
+      assume {:formal} formal_67_1444_0 == 8;
+      assume {:formal} formal_67_1444_1 == 7;
+      assume {:formal} formal_68_217_0 == 9;
+      assume {:formal} formal_68_217_1 == 8;
+      assume {:formal} formal_69_1356_0 == 10;
+      assume {:formal} formal_69_1356_1 == 9;
+      assert {:keepAssertion} !(receiver == null) && !(receiver.head == null) && !(receiver.tail == null) && |receiver.Repr| > formal_3_1112_0 && |receiver.Repr| > formal_4_1014_0 && |receiver.Repr| > formal_5_1060_0 && |receiver.Repr| > formal_6_1012_0 && |receiver.Repr| > formal_7_1016_0 && |receiver.Repr| > formal_8_1018_0 && |receiver.Repr| > formal_9_1020_0 && |receiver.Repr| > formal_10_1022_0 && |receiver.Repr| > formal_11_1024_0 && |receiver.Repr| > formal_12_1010_0 && |receiver.Repr| > formal_13_1034_0 && |receiver.Repr| > formal_14_1082_0 && |receiver.Repr| > formal_15_1104_0 && |receiver.Repr| > formal_16_1106_0 && |receiver.Repr| > formal_17_1108_0 && |receiver.Repr| > formal_18_1110_0 && !(receiver.Repr[formal_19_1214_0] == null) && !(receiver.Repr[formal_20_1122_0] == null) && !(receiver.Repr[formal_21_1164_0] == null) && !(receiver.Repr[formal_22_1554_0] == null) && !(receiver.Repr[formal_23_1124_0] == null) && !(receiver.Repr[formal_24_1126_0] == null) && !(receiver.Repr[formal_25_1128_0] == null) && !(receiver.Repr[formal_26_1130_0] == null) && !(receiver.Repr[formal_27_1142_0] == null) && !(receiver.Repr[formal_28_1186_0] == null) && !(receiver.Repr[formal_29_1206_0] == null) && !(receiver.Repr[formal_30_1208_0] == null) && !(receiver.Repr[formal_31_1210_0] == null) && !(receiver.Repr[formal_32_1212_0] == null) && formal_33_1735_0 == receiver.Repr[formal_33_1735_1].data && formal_34_1737_0 == receiver.Repr[formal_34_1737_1].data && formal_35_1702_0 == receiver.Repr[formal_35_1702_1].data && formal_36_1704_0 == receiver.Repr[formal_36_1704_1].data && formal_37_1706_0 == receiver.Repr[formal_37_1706_1].data && formal_38_1708_0 == receiver.Repr[formal_38_1708_1].data && formal_39_1710_0 == receiver.Repr[formal_39_1710_1].data && formal_40_1712_0 == receiver.Repr[formal_40_1712_1].data && receiver.tail == receiver.Repr[formal_41_2739_0] && formal_42_1699_0 == receiver.head.data && receiver.head == receiver.Repr[formal_43_1218_0] && formal_44_1723_0 == receiver.Repr[formal_44_1723_1].data && formal_45_2204_0 == receiver.Repr[formal_45_2204_1].data && formal_46_1727_0 == receiver.Repr[formal_46_1727_1].data && formal_47_1729_0 == receiver.Repr[formal_47_1729_1].data && formal_48_1731_0 == receiver.Repr[formal_48_1731_1].data && formal_49_1733_0 == receiver.Repr[formal_49_1733_1].data && formal_50_2749_0 == receiver.tail.data && formal_51_2751_0 == |receiver.Repr| && receiver.IsValid.requires() && formal_53_734_0 == receiver.IsValid() && receiver.Repr[formal_54_1616_0] == receiver.Repr[formal_54_1616_1].next && receiver.Repr[formal_55_1618_0] == receiver.head.next && receiver.Repr[formal_56_1396_0] == receiver.Repr[formal_56_1396_1].next && receiver.Repr[formal_57_1360_0] == receiver.Repr[formal_57_1360_1].next && receiver.Repr[formal_58_1358_0] == receiver.Repr[formal_58_1358_1].next && receiver.Repr[formal_59_1362_0] == receiver.Repr[formal_59_1362_1].next && receiver.Repr[formal_60_1364_0] == receiver.Repr[formal_60_1364_1].next && receiver.tail == receiver.Repr[formal_61_2762_0].next && null == receiver.tail.next && receiver.Repr[formal_63_1418_0] == receiver.Repr[formal_63_1418_1].next && receiver.Repr[formal_64_1438_0] == receiver.Repr[formal_64_1438_1].next && receiver.Repr[formal_65_1440_0] == receiver.Repr[formal_65_1440_1].next && receiver.Repr[formal_66_1442_0] == receiver.Repr[formal_66_1442_1].next && receiver.Repr[formal_67_1444_0] == receiver.Repr[formal_67_1444_1].next && receiver.Repr[formal_68_217_0] == receiver.Repr[formal_68_217_1].next && receiver.Repr[formal_69_1356_0] == receiver.Repr[formal_69_1356_1].next;
+    }

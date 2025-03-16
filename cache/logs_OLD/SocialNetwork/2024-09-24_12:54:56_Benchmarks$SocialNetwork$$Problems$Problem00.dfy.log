@@ -1,0 +1,125 @@
+2024-09-24 12:54:56.9842 DEBUG Using integer programming to estimating the distance to true
+2024-09-24 12:54:57.0000 TRACE Minimizing value: (((AddUser + RequestConnect) + RemoveUser) + RequestResponse)
+2024-09-24 12:54:57.0034 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-09-24 12:54:57.0034 DEBUG In particular, need at least -0 calls to AddUser
+2024-09-24 12:54:57.0034 DEBUG In particular, need at least -0 calls to RequestConnect
+2024-09-24 12:54:57.0034 DEBUG In particular, need at least -0 calls to RemoveUser
+2024-09-24 12:54:57.0034 DEBUG In particular, need at least -0 calls to RequestResponse
+2024-09-24 12:54:57.0034 INFO Initial heuristic value is 0
+2024-09-24 12:54:57.0034 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-24 12:54:57.0784 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: bool) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} !true;}
+2024-09-24 12:54:57.0786 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: bool) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_0_337_0 == true;
+      assert {:keepAssertion} !formal_0_337_0;
+    }
+2024-09-24 12:54:58.2637 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: bool) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} true;}
+2024-09-24 12:54:58.2637 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: bool) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_0_337_0 == true;
+      assert {:keepAssertion} formal_0_337_0;
+    }
+2024-09-24 12:54:58.6042 INFO Have found the following solution to a subproblem!
+{
+result := new SocialNetwork();
+}
+2024-09-24 12:54:58.6042 INFO Time spend on subproblem: 00:00:01.6320370
+2024-09-24 12:54:58.6072 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:01.5820638)
+2024-09-24 12:54:58.6072 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-24 12:54:58.6072 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-24 12:54:58.6072 INFO Have found the following solution!
+static method solution() returns (result:SocialNetwork)
+ensures Goal(result)
+{
+result := new SocialNetwork();
+}
+2024-09-24 12:54:58.6072 INFO Total time spend on synthesis: 00:00:01.8507675
+2024-09-24 12:54:58.6072 INFO Total number of Regular queries to Dafny: 2 (00:00:01.5820638)
+2024-09-24 12:54:58.6072 INFO Total number of Simplify queries to Dafny: 0 (00:00:00)
+2024-09-24 12:54:58.6072 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING -149 LINES OF LOGS TO SAVE DISK SPACE **************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+2024-09-24 12:54:56.9842 DEBUG Using integer programming to estimating the distance to true
+2024-09-24 12:54:57.0000 TRACE Minimizing value: (((AddUser + RequestConnect) + RemoveUser) + RequestResponse)
+2024-09-24 12:54:57.0034 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-09-24 12:54:57.0034 DEBUG In particular, need at least -0 calls to AddUser
+2024-09-24 12:54:57.0034 DEBUG In particular, need at least -0 calls to RequestConnect
+2024-09-24 12:54:57.0034 DEBUG In particular, need at least -0 calls to RemoveUser
+2024-09-24 12:54:57.0034 DEBUG In particular, need at least -0 calls to RequestResponse
+2024-09-24 12:54:57.0034 INFO Initial heuristic value is 0
+2024-09-24 12:54:57.0034 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-24 12:54:57.0784 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: bool) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} !true;}
+2024-09-24 12:54:57.0786 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: bool) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_0_337_0 == true;
+      assert {:keepAssertion} !formal_0_337_0;
+    }
+2024-09-24 12:54:58.2637 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: bool) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} true;}
+2024-09-24 12:54:58.2637 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: bool) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_0_337_0 == true;
+      assert {:keepAssertion} formal_0_337_0;
+    }
+2024-09-24 12:54:58.6042 INFO Have found the following solution to a subproblem!
+{
+result := new SocialNetwork();
+}
+2024-09-24 12:54:58.6042 INFO Time spend on subproblem: 00:00:01.6320370
+2024-09-24 12:54:58.6072 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:01.5820638)
+2024-09-24 12:54:58.6072 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-24 12:54:58.6072 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-24 12:54:58.6072 INFO Have found the following solution!
+static method solution() returns (result:SocialNetwork)
+ensures Goal(result)
+{
+result := new SocialNetwork();
+}
+2024-09-24 12:54:58.6072 INFO Total time spend on synthesis: 00:00:01.8507675
+2024-09-24 12:54:58.6072 INFO Total number of Regular queries to Dafny: 2 (00:00:01.5820638)
+2024-09-24 12:54:58.6072 INFO Total number of Simplify queries to Dafny: 0 (00:00:00)
+2024-09-24 12:54:58.6072 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

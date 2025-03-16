@@ -1,0 +1,15 @@
+*.idea/
+DafnyPrelude*
+dotnet/
+Table1.csv
+!cache/Results_OLD.csv
+!BaselineConfig.csv
+*.pdf
+dependencies/
+z3
+Metamorph/Binaries/*
+Metamorph/Source/bin/*
+Metamorph/Source/obj/*
+**/.DS_STORE
+**/.DS_Store
+*.zip

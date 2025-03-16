@@ -1,0 +1,442 @@
+Benchmark,TimeLimit,Method,Problem,Outcome,RunningTime
+DoublyLinkedList,-1,Pretrain,Pretrain,SUCCESS,493.3447370529175
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem00.dfy,SUCCESS,3.849390983581543
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem01.dfy,SUCCESS,8.28931975364685
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem02.dfy,SUCCESS,15.406781435012817
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem03.dfy,SUCCESS,60.31215167045593
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem04.dfy,SUCCESS,72.72179770469666
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem05.dfy,SUCCESS,270.04327416419983
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem06.dfy,SUCCESS,313.47150349617004
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem07.dfy,SUCCESS,408.23918533325195
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem08.dfy,SUCCESS,684.7024192810059
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem09.dfy,SUCCESS,706.202752828598
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem10.dfy,SUCCESS,871.8785111904144
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem11.dfy,SUCCESS,956.0893280506134
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem12.dfy,SUCCESS,1135.8723282814026
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem13.dfy,SUCCESS,1311.6942541599274
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem14.dfy,SUCCESS,1352.8550238609314
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem15.dfy,SUCCESS,1550.5980846881866
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem16.dfy,SUCCESS,1832.7332882881165
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem17.dfy,SUCCESS,2042.6829512119293
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem18.dfy,SUCCESS,2498.8788135051727
+DoublyLinkedList,14400,Metamorph (Piecewise Metric),Problems/Problem19.dfy,SUCCESS,2238.476304292679
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem00.dfy,SUCCESS,3.6278016567230225
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem01.dfy,SUCCESS,12.581376552581787
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem02.dfy,SUCCESS,23.429525136947632
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem03.dfy,SUCCESS,70.73952102661133
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem04.dfy,SUCCESS,110.81274461746216
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem05.dfy,SUCCESS,401.92693185806274
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem06.dfy,SUCCESS,429.31281661987305
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem07.dfy,SUCCESS,471.9665117263794
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem08.dfy,SUCCESS,782.0868511199951
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem09.dfy,SUCCESS,719.094272851944
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem10.dfy,SUCCESS,932.4624247550964
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem11.dfy,SUCCESS,1094.6445953845978
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem12.dfy,SUCCESS,1111.8384292125702
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem13.dfy,SUCCESS,1221.2626371383667
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem14.dfy,SUCCESS,1438.4372658729553
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem15.dfy,SUCCESS,1627.9654879570007
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem16.dfy,SUCCESS,2032.7282419204712
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem17.dfy,SUCCESS,2151.897137403488
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem18.dfy,SUCCESS,2490.049292087555
+DoublyLinkedList,14400,Metamorph (Greedy Metric),Problems/Problem19.dfy,SUCCESS,2148.9157724380493
+DoublyLinkedList,14400,Baseline,Problems/Problem00.dfy,SUCCESS,3.7793190479278564
+DoublyLinkedList,14400,Baseline,Problems/Problem01.dfy,SUCCESS,3.7678356170654297
+DoublyLinkedList,14400,Baseline,Problems/Problem02.dfy,SUCCESS,4.003056764602661
+DoublyLinkedList,14400,Baseline,Problems/Problem03.dfy,SUCCESS,4.326803922653198
+DoublyLinkedList,14400,Baseline,Problems/Problem04.dfy,SUCCESS,14.415755033493042
+DoublyLinkedList,14400,Baseline,Problems/Problem05.dfy,SUCCESS,271.89967155456543
+DoublyLinkedList,14400,Baseline,Problems/Problem06.dfy,TIMEOUT,14403.143936395645
+DoublyLinkedList,14400,Metamorph (No Distance Metric),Problems/Problem00.dfy,SUCCESS,3.4853708744049072
+DoublyLinkedList,14400,Metamorph (No Distance Metric),Problems/Problem01.dfy,SUCCESS,7.869453430175781
+DoublyLinkedList,14400,Metamorph (No Distance Metric),Problems/Problem02.dfy,SUCCESS,842.6900131702423
+DoublyLinkedList,14400,Metamorph (No Distance Metric),Problems/Problem03.dfy,SUCCESS,3325.9306683540344
+DoublyLinkedList,14400,Metamorph (No Distance Metric),Problems/Problem04.dfy,SUCCESS,12327.227344751358
+DoublyLinkedList,14400,Metamorph (No Distance Metric),Problems/Problem05.dfy,TIMEOUT,14410.546792507172
+BinaryTree,-1,Pretrain,Pretrain,SUCCESS,1.890587568283081
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem00.dfy,SUCCESS,3.397475242614746
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem01.dfy,SUCCESS,4.037580490112305
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem02.dfy,SUCCESS,4.705242395401001
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem03.dfy,SUCCESS,5.737574338912964
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem04.dfy,SUCCESS,6.305490493774414
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem05.dfy,SUCCESS,7.285644769668579
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem06.dfy,SUCCESS,8.08546257019043
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem07.dfy,SUCCESS,9.857491254806519
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem08.dfy,SUCCESS,11.533371686935425
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem09.dfy,SUCCESS,15.679555892944336
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem10.dfy,SUCCESS,16.411497831344604
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem11.dfy,SUCCESS,19.365520238876343
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem12.dfy,SUCCESS,22.577481746673584
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem13.dfy,SUCCESS,25.49746346473694
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem14.dfy,SUCCESS,28.297508716583252
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem15.dfy,SUCCESS,63.41759133338928
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem16.dfy,SUCCESS,43.97364902496338
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem17.dfy,SUCCESS,50.18352389335632
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem18.dfy,SUCCESS,63.2115535736084
+BinaryTree,14400,Metamorph (Piecewise Metric),Problems/Problem19.dfy,SUCCESS,92.14556312561035
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem00.dfy,SUCCESS,3.3974852561950684
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem01.dfy,SUCCESS,4.02952241897583
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem02.dfy,SUCCESS,4.723635911941528
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem03.dfy,SUCCESS,5.6595048904418945
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem04.dfy,SUCCESS,6.307868242263794
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem05.dfy,SUCCESS,7.258008718490601
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem06.dfy,SUCCESS,8.189494371414185
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem07.dfy,SUCCESS,9.879518270492554
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem08.dfy,SUCCESS,11.631525993347168
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem09.dfy,SUCCESS,15.605372428894043
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem10.dfy,SUCCESS,16.513675212860107
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem11.dfy,SUCCESS,19.563771724700928
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem12.dfy,SUCCESS,22.383572816848755
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem13.dfy,SUCCESS,25.519791841506958
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem14.dfy,SUCCESS,28.351588487625122
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem15.dfy,SUCCESS,62.92556595802307
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem16.dfy,SUCCESS,44.225523948669434
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem17.dfy,SUCCESS,50.30556559562683
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem18.dfy,SUCCESS,62.97358441352844
+BinaryTree,14400,Metamorph (Greedy Metric),Problems/Problem19.dfy,SUCCESS,92.24354338645935
+BinaryTree,14400,Baseline,Problems/Problem00.dfy,SUCCESS,3.7993011474609375
+BinaryTree,14400,Baseline,Problems/Problem01.dfy,SUCCESS,4.201959848403931
+BinaryTree,14400,Baseline,Problems/Problem02.dfy,SUCCESS,6.653477430343628
+BinaryTree,14400,Baseline,Problems/Problem03.dfy,SUCCESS,22.728960752487183
+BinaryTree,14400,Baseline,Problems/Problem04.dfy,SUCCESS,64.70286107063293
+BinaryTree,14400,Baseline,Problems/Problem05.dfy,SUCCESS,267.36670994758606
+BinaryTree,14400,Baseline,Problems/Problem06.dfy,SUCCESS,2960.714242696762
+BinaryTree,14400,Baseline,Problems/Problem07.dfy,SUCCESS,10178.829409837723
+BinaryTree,14400,Baseline,Problems/Problem08.dfy,TIMEOUT,14400.00
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem00.dfy,SUCCESS,3.4232194423675537
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem01.dfy,SUCCESS,4.0388219356536865
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem02.dfy,SUCCESS,4.755131959915161
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem03.dfy,SUCCESS,5.925140619277954
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem04.dfy,SUCCESS,6.425023555755615
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem05.dfy,SUCCESS,7.44370698928833
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem06.dfy,SUCCESS,8.327818632125854
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem07.dfy,SUCCESS,10.08504867553711
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem08.dfy,SUCCESS,12.020382165908813
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem09.dfy,SUCCESS,16.069787979125977
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem10.dfy,SUCCESS,17.28565263748169
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem11.dfy,SUCCESS,20.45100975036621
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem12.dfy,SUCCESS,23.537885427474976
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem13.dfy,SUCCESS,26.94871473312378
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem14.dfy,SUCCESS,29.723716259002686
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem15.dfy,SUCCESS,64.89942002296448
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem16.dfy,SUCCESS,45.456690549850464
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem17.dfy,SUCCESS,52.96748876571655
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem18.dfy,SUCCESS,63.80209136009216
+BinaryTree,14400,Metamorph (No Distance Metric),Problems/Problem19.dfy,SUCCESS,95.39501523971558
+Firewall,-1,Pretrain,Pretrain,SUCCESS,36.773311614990234
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem00.dfy,SUCCESS,8.294863224029541
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem01.dfy,SUCCESS,13.6074378490448
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem02.dfy,SUCCESS,26.898725271224976
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem03.dfy,SUCCESS,35.36310172080994
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem04.dfy,SUCCESS,41.868520736694336
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem05.dfy,SUCCESS,48.73320198059082
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem06.dfy,SUCCESS,68.23808264732361
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem07.dfy,SUCCESS,98.45778369903564
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem08.dfy,SUCCESS,139.70224952697754
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem09.dfy,SUCCESS,174.12328386306763
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem10.dfy,SUCCESS,198.58005213737488
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem11.dfy,SUCCESS,175.0597062110901
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem12.dfy,SUCCESS,283.1129698753357
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem13.dfy,SUCCESS,316.11300921440125
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem14.dfy,SUCCESS,312.5436100959778
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem15.dfy,SUCCESS,298.09976053237915
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem16.dfy,SUCCESS,455.49565744400024
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem17.dfy,SUCCESS,402.45365834236145
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem18.dfy,SUCCESS,488.1794967651367
+Firewall,14400,Metamorph (Piecewise Metric),Problems/Problem19.dfy,SUCCESS,420.3393397331238
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem00.dfy,SUCCESS,12.03153920173645
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem01.dfy,SUCCESS,24.001616716384888
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem02.dfy,SUCCESS,35.01753330230713
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem03.dfy,SUCCESS,36.18566918373108
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem04.dfy,SUCCESS,41.96562695503235
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem05.dfy,SUCCESS,47.73765277862549
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem06.dfy,SUCCESS,54.713643074035645
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem07.dfy,SUCCESS,63.055625915527344
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem08.dfy,SUCCESS,72.64962458610535
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem09.dfy,SUCCESS,79.34784722328186
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem10.dfy,SUCCESS,88.71766567230225
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem11.dfy,SUCCESS,102.08961606025696
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem12.dfy,SUCCESS,112.71165585517883
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem13.dfy,SUCCESS,123.42163038253784
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem14.dfy,SUCCESS,136.46163606643677
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem15.dfy,SUCCESS,151.2615909576416
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem16.dfy,SUCCESS,166.79765129089355
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem17.dfy,SUCCESS,186.481609582901
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem18.dfy,SUCCESS,200.68559408187866
+Firewall,14400,Metamorph (Greedy Metric),Problems/Problem19.dfy,SUCCESS,218.95333051681519
+Firewall,14400,Baseline,Problems/Problem00.dfy,SUCCESS,3.938946485519409
+Firewall,14400,Baseline,Problems/Problem01.dfy,SUCCESS,4.563490390777588
+Firewall,14400,Baseline,Problems/Problem02.dfy,SUCCESS,12.740221738815308
+Firewall,14400,Baseline,Problems/Problem03.dfy,SUCCESS,41.57788133621216
+Firewall,14400,Baseline,Problems/Problem04.dfy,SUCCESS,117.96946597099304
+Firewall,14400,Baseline,Problems/Problem05.dfy,TIMEOUT,14403.573123455048
+Firewall,14400,Metamorph (No Distance Metric),Problems/Problem00.dfy,SUCCESS,8.451383352279663
+Firewall,14400,Metamorph (No Distance Metric),Problems/Problem01.dfy,SUCCESS,123.34960341453552
+Firewall,14400,Metamorph (No Distance Metric),Problems/Problem02.dfy,SUCCESS,4480.635634422302
+Firewall,14400,Metamorph (No Distance Metric),Problems/Problem03.dfy,TIMEOUT,14419.62537264824
+FreezableArray,-1,Pretrain,Pretrain,SUCCESS,17.583266019821167
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem00.dfy,SUCCESS,3.3104374408721924
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem01.dfy,SUCCESS,8.832926750183105
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem02.dfy,SUCCESS,12.560457229614258
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem03.dfy,SUCCESS,15.77759599685669
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem04.dfy,SUCCESS,18.49741268157959
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem05.dfy,SUCCESS,21.44959592819214
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem06.dfy,SUCCESS,24.71542978286743
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem07.dfy,SUCCESS,28.16141963005066
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem08.dfy,SUCCESS,31.689544916152954
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem09.dfy,SUCCESS,35.55959868431091
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem10.dfy,SUCCESS,39.30758047103882
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem11.dfy,SUCCESS,43.4615740776062
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem12.dfy,SUCCESS,47.725754737854004
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem13.dfy,SUCCESS,52.18157196044922
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem14.dfy,SUCCESS,56.369627237319946
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem15.dfy,SUCCESS,62.011603593826294
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem16.dfy,SUCCESS,66.60564851760864
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem17.dfy,SUCCESS,71.65764570236206
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem18.dfy,SUCCESS,77.46958017349243
+FreezableArray,14400,Metamorph (Piecewise Metric),Problems/Problem19.dfy,SUCCESS,230.11162066459656
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem00.dfy,SUCCESS,3.177356004714966
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem01.dfy,SUCCESS,15.365504503250122
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem02.dfy,SUCCESS,19.44950556755066
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem03.dfy,SUCCESS,25.167523860931396
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem04.dfy,SUCCESS,29.201571464538574
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem05.dfy,SUCCESS,33.621586322784424
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem06.dfy,SUCCESS,40.445618867874146
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem07.dfy,SUCCESS,45.1536283493042
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem08.dfy,SUCCESS,51.491560220718384
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem09.dfy,SUCCESS,56.517603158950806
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem10.dfy,SUCCESS,62.0136034488678
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem11.dfy,SUCCESS,67.90761280059814
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem12.dfy,SUCCESS,73.27365636825562
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem13.dfy,SUCCESS,79.67560243606567
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem14.dfy,SUCCESS,92.51358890533447
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem15.dfy,SUCCESS,99.42115879058838
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem16.dfy,SUCCESS,102.96366739273071
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem17.dfy,SUCCESS,114.40762782096863
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem18.dfy,SUCCESS,125.91765189170837
+FreezableArray,14400,Metamorph (Greedy Metric),Problems/Problem19.dfy,SUCCESS,277.29765248298645
+FreezableArray,14400,Baseline,Problems/Problem00.dfy,SUCCESS,3.279923677444458
+FreezableArray,14400,Baseline,Problems/Problem01.dfy,SUCCESS,3.3503074645996094
+FreezableArray,14400,Baseline,Problems/Problem02.dfy,SUCCESS,3.4323134422302246
+FreezableArray,14400,Baseline,Problems/Problem03.dfy,SUCCESS,3.5475986003875732
+FreezableArray,14400,Baseline,Problems/Problem04.dfy,SUCCESS,3.8049476146698
+FreezableArray,14400,Baseline,Problems/Problem05.dfy,SUCCESS,4.4523704051971436
+FreezableArray,14400,Baseline,Problems/Problem06.dfy,SUCCESS,6.721954345703125
+FreezableArray,14400,Baseline,Problems/Problem07.dfy,SUCCESS,15.059120893478394
+FreezableArray,14400,Baseline,Problems/Problem08.dfy,SUCCESS,53.294169187545776
+FreezableArray,14400,Baseline,Problems/Problem09.dfy,SUCCESS,256.80925130844116
+FreezableArray,14400,Baseline,Problems/Problem10.dfy,SUCCESS,3218.2148897647858
+FreezableArray,14400,Baseline,Problems/Problem11.dfy,TIMEOUT,14402.875345468521
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem00.dfy,SUCCESS,3.193519115447998
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem01.dfy,SUCCESS,8.391372919082642
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem02.dfy,SUCCESS,14.15760087966919
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem03.dfy,SUCCESS,21.93755531311035
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem04.dfy,SUCCESS,36.06955599784851
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem05.dfy,SUCCESS,66.37157273292542
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem06.dfy,SUCCESS,144.65359926223755
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem07.dfy,SUCCESS,190.8636782169342
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem08.dfy,SUCCESS,345.9834167957306
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem09.dfy,SUCCESS,660.6116461753845
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem10.dfy,SUCCESS,924.8495988845825
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem11.dfy,SUCCESS,1743.0956282615662
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem12.dfy,SUCCESS,4154.92582154274
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem13.dfy,SUCCESS,5921.617609262466
+FreezableArray,14400,Metamorph (No Distance Metric),Problems/Problem14.dfy,TIMEOUT,14422.073679208755
+Queue,-1,Pretrain,Pretrain,SUCCESS,1622.6500453948975
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem00.dfy,SUCCESS,4.049601078033447
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem01.dfy,SUCCESS,12.583489894866943
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem02.dfy,SUCCESS,16.099406242370605
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem03.dfy,SUCCESS,25.979553699493408
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem04.dfy,SUCCESS,117.47528266906738
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem05.dfy,SUCCESS,199.84181213378906
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem06.dfy,SUCCESS,274.58648896217346
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem07.dfy,SUCCESS,208.95954585075378
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem08.dfy,SUCCESS,385.38030099868774
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem09.dfy,SUCCESS,464.9543282985687
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem10.dfy,SUCCESS,442.884610414505
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem11.dfy,SUCCESS,602.1237239837646
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem12.dfy,SUCCESS,795.0452263355255
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem13.dfy,SUCCESS,681.9634790420532
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem14.dfy,SUCCESS,874.6373219490051
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem15.dfy,SUCCESS,933.8271675109863
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem16.dfy,SUCCESS,1202.8757827281952
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem17.dfy,SUCCESS,1301.0065417289734
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem18.dfy,SUCCESS,1374.350534915924
+Queue,14400,Metamorph (Piecewise Metric),Problems/Problem19.dfy,SUCCESS,359.5018231868744
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem00.dfy,SUCCESS,3.4456734657287598
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem01.dfy,SUCCESS,12.81755805015564
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem02.dfy,SUCCESS,21.053569793701172
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem03.dfy,SUCCESS,32.09555172920227
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem04.dfy,SUCCESS,128.37938904762268
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem05.dfy,SUCCESS,208.81856560707092
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem06.dfy,SUCCESS,304.5664060115814
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem07.dfy,SUCCESS,219.8443660736084
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem08.dfy,SUCCESS,365.69101214408875
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem09.dfy,SUCCESS,485.73579382896423
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem10.dfy,SUCCESS,464.0246036052704
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem11.dfy,SUCCESS,697.7766914367676
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem12.dfy,SUCCESS,837.7769963741302
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem13.dfy,SUCCESS,729.5604040622711
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem14.dfy,SUCCESS,896.4342079162598
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem15.dfy,SUCCESS,924.5889234542847
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem16.dfy,SUCCESS,1269.3502650260925
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem17.dfy,SUCCESS,1347.0655963420868
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem18.dfy,SUCCESS,1451.8137516975403
+Queue,14400,Metamorph (Greedy Metric),Problems/Problem19.dfy,SUCCESS,1528.502656698227
+Queue,14400,Baseline,Problems/Problem00.dfy,SUCCESS,3.6818296909332275
+Queue,14400,Baseline,Problems/Problem01.dfy,SUCCESS,3.719973564147949
+Queue,14400,Baseline,Problems/Problem02.dfy,SUCCESS,3.981198310852051
+Queue,14400,Baseline,Problems/Problem03.dfy,SUCCESS,4.639946222305298
+Queue,14400,Baseline,Problems/Problem04.dfy,SUCCESS,8.65720009803772
+Queue,14400,Baseline,Problems/Problem05.dfy,SUCCESS,54.47485947608948
+Queue,14400,Baseline,Problems/Problem06.dfy,SUCCESS,61.168479442596436
+Queue,14400,Baseline,Problems/Problem07.dfy,SUCCESS,193.97824478149414
+Queue,14400,Baseline,Problems/Problem08.dfy,FAILED,507.6151204109192
+Queue,14400,Baseline,Problems/Problem09.dfy,SUCCESS,3102.9573554992676
+Queue,14400,Baseline,Problems/Problem10.dfy,SUCCESS,7590.26798582077
+Queue,14400,Baseline,Problems/Problem11.dfy,TIMEOUT,14403.195995807648
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem00.dfy,SUCCESS,3.4513983726501465
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem01.dfy,SUCCESS,11.213502645492554
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem02.dfy,SUCCESS,104.16936588287354
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem03.dfy,SUCCESS,359.0136115550995
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem04.dfy,SUCCESS,1026.009842634201
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem05.dfy,SUCCESS,1694.4653794765472
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem06.dfy,SUCCESS,4805.3790997
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem07.dfy,SUCCESS,7563.7786353
+Queue,14400,Metamorph (No Distance Metric),Problems/Problem08.dfy,TIMEOUT, 14400.0
+SocialNetworkMod,-1,Pretrain,Pretrain,SUCCESS,100.35996508598328
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem00.dfy,SUCCESS,3.790947675704956
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem01.dfy,SUCCESS,7.360202312469482
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem02.dfy,SUCCESS,20.345160245895386
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem03.dfy,SUCCESS,51.440242528915405
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem04.dfy,SUCCESS,85.41506385803223
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem05.dfy,SUCCESS,167.67539262771606
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem06.dfy,SUCCESS,196.76078462600708
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem07.dfy,SUCCESS,196.84525156021118
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem08.dfy,SUCCESS,240.61969542503357
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem09.dfy,SUCCESS,390.4812252521515
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem10.dfy,SUCCESS,378.3313913345337
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem11.dfy,SUCCESS,568.4246809482574
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem12.dfy,SUCCESS,866.3177790641785
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem13.dfy,SUCCESS,714.6217269897461
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem14.dfy,SUCCESS,885.7893936634064
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem15.dfy,SUCCESS,956.6529576778412
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem16.dfy,SUCCESS,11706.495765209198
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem17.dfy,SUCCESS,1154.5217678546906
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem18.dfy,SUCCESS,1361.639122724533
+SocialNetworkMod,14400,Metamorph (Piecewise Metric),Problems/Problem19.dfy,SUCCESS,2145.7056982517242
+SocialNetworkMod,14400,Metamorph (Greedy Metric),Problems/Problem00.dfy,SUCCESS,3.4321653842926025
+SocialNetworkMod,14400,Metamorph (Greedy Metric),Problems/Problem01.dfy,SUCCESS,9.859902620315552
+SocialNetworkMod,14400,Metamorph (Greedy Metric),Problems/Problem02.dfy,SUCCESS,35.69532775878906
+SocialNetworkMod,14400,Metamorph (Greedy Metric),Problems/Problem03.dfy,SUCCESS,170.88867139816284
+SocialNetworkMod,14400,Metamorph (Greedy Metric),Problems/Problem04.dfy,SUCCESS,835.2710678577423
+SocialNetworkMod,14400,Metamorph (Greedy Metric),Problems/Problem05.dfy,SUCCESS,12295.67483139038
+SocialNetworkMod,14400,Metamorph (Greedy Metric),Problems/Problem06.dfy,TIMEOUT,14417.170063495636
+SocialNetwork,-1,Pretrain,Pretrain,SUCCESS,102.77358555793762
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem00.dfy,SUCCESS,3.6807899475097656
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem01.dfy,SUCCESS,7.160964488983154
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem02.dfy,SUCCESS,17.684762239456177
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem03.dfy,SUCCESS,43.283310413360596
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem04.dfy,SUCCESS,161.56365060806274
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem05.dfy,SUCCESS,103.65764546394348
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem06.dfy,SUCCESS,136.10020804405212
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem07.dfy,SUCCESS,176.5171298980713
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem08.dfy,SUCCESS,228.0335569381714
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem09.dfy,SUCCESS,303.60967206954956
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem10.dfy,SUCCESS,333.4003176689148
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem11.dfy,SUCCESS,549.7747466564178
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem12.dfy,SUCCESS,600.7136144638062
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem13.dfy,SUCCESS,838.6597354412079
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem14.dfy,SUCCESS,814.3640599250793
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem15.dfy,SUCCESS,1004.5009233951569
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem16.dfy,SUCCESS,1114.1149275302887
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem17.dfy,SUCCESS,1238.0579521656036
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem18.dfy,SUCCESS,5582.681526422501
+SocialNetwork,14400,Metamorph (Piecewise Metric),Problems/Problem19.dfy,SUCCESS,1932.1379449367523
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem00.dfy,SUCCESS,3.450356960296631
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem01.dfy,SUCCESS,10.218262195587158
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem02.dfy,SUCCESS,35.87783885002136
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem03.dfy,SUCCESS,77.52762579917908
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem04.dfy,SUCCESS,139.72155117988586
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem05.dfy,SUCCESS,124.79910063743591
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem06.dfy,SUCCESS,149.12999367713928
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem07.dfy,SUCCESS,194.66949248313904
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem08.dfy,SUCCESS,258.37117743492126
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem09.dfy,SUCCESS,303.76910424232483
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem10.dfy,SUCCESS,370.0184292793274
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem11.dfy,SUCCESS,452.5413315296173
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem12.dfy,SUCCESS,552.5717363357544
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem13.dfy,SUCCESS,629.3696055412292
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem14.dfy,SUCCESS,805.3277812004089
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem15.dfy,SUCCESS,967.3896977901459
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem16.dfy,SUCCESS,1225.491462945938
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem17.dfy,SUCCESS,1296.9016950130463
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem18.dfy,SUCCESS,1462.1413016319275
+SocialNetwork,14400,Metamorph (Greedy Metric),Problems/Problem19.dfy,SUCCESS,2026.9612782001495
+SocialNetwork,14400,Baseline,Problems/Problem00.dfy,SUCCESS,3.9290099143981934
+SocialNetwork,14400,Baseline,Problems/Problem01.dfy,SUCCESS,4.157439231872559
+SocialNetwork,14400,Baseline,Problems/Problem02.dfy,SUCCESS,15.892003059387207
+SocialNetwork,14400,Baseline,Problems/Problem03.dfy,FAILED,2711.2959032058716
+SocialNetwork,14400,Baseline,Problems/Problem04.dfy,TIMEOUT,14403.831005811691
+SocialNetwork,14400,Metamorph (No Distance Metric),Problems/Problem00.dfy,SUCCESS,3.5135269165039062
+SocialNetwork,14400,Metamorph (No Distance Metric),Problems/Problem01.dfy,SUCCESS,6.947752237319946
+SocialNetwork,14400,Metamorph (No Distance Metric),Problems/Problem02.dfy,SUCCESS,116.90567803382874
+SocialNetwork,14400,Metamorph (No Distance Metric),Problems/Problem03.dfy,TIMEOUT,14418.635562896729
+FreezableArrayMod,-1,Pretrain,Pretrain,SUCCESS,13.057192087173462
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem00.dfy,SUCCESS,3.0194032192230225
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem01.dfy,SUCCESS,11.05907917022705
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem02.dfy,SUCCESS,14.072803974151611
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem03.dfy,SUCCESS,15.073918104171753
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem04.dfy,SUCCESS,16.08102583885193
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem05.dfy,SUCCESS,17.065186738967896
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem06.dfy,SUCCESS,19.09522795677185
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem07.dfy,SUCCESS,21.099939823150635
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem08.dfy,SUCCESS,22.097167015075684
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem09.dfy,SUCCESS,23.117906093597412
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem10.dfy,SUCCESS,25.13244891166687
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem11.dfy,SUCCESS,26.13572907447815
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem12.dfy,SUCCESS,28.133996963500977
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem13.dfy,SUCCESS,28.14559507369995
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem14.dfy,SUCCESS,33.16294288635254
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem15.dfy,SUCCESS,33.15847992897034
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem16.dfy,SUCCESS,35.162179946899414
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem17.dfy,SUCCESS,37.178117990493774
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem18.dfy,SUCCESS,40.18300986289978
+FreezableArrayMod,14400,Metamorph (Piecewise Metric),Problems/Problem19.dfy,SUCCESS,41.203734159469604
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem00.dfy,SUCCESS,3.023068904876709
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem01.dfy,SUCCESS,17.087468147277832
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem02.dfy,SUCCESS,18.08611488342285
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem03.dfy,SUCCESS,19.0949068069458
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem04.dfy,SUCCESS,21.079723834991455
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem05.dfy,SUCCESS,25.116682052612305
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem06.dfy,SUCCESS,27.13286018371582
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem07.dfy,SUCCESS,31.150843143463135
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem08.dfy,SUCCESS,34.159651041030884
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem09.dfy,SUCCESS,37.16705775260925
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem10.dfy,SUCCESS,42.18394732475281
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem11.dfy,SUCCESS,46.20057988166809
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem12.dfy,SUCCESS,49.21333599090576
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem13.dfy,SUCCESS,54.25229597091675
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem14.dfy,SUCCESS,55.26008319854736
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem15.dfy,SUCCESS,58.26637506484985
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem16.dfy,SUCCESS,65.2932698726654
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem17.dfy,SUCCESS,69.31130194664001
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem18.dfy,SUCCESS,71.32965612411499
+FreezableArrayMod,14400,Metamorph (Greedy Metric),Problems/Problem19.dfy,SUCCESS,76.35750579833984
+EVM,-1,Pretrain,Pretrain,SUCCESS,206.23318004608154
+EVM,14400,Metamorph (Piecewise Metric),Problems/IntegerOverflow.dfy,SUCCESS,46.05241298675537
+EVM,14400,Metamorph (Piecewise Metric),Problems/InvalidMemoryStore.dfy,SUCCESS,25.033304929733276
+EVM,14400,Metamorph (Piecewise Metric),Problems/DivByZero.dfy,SUCCESS,37.161370038986206
+EVM,14400,Metamorph (Piecewise Metric),Problems/IntegerUnderflow.dfy,SUCCESS,40.18771815299988
+EVM,14400,Metamorph (Piecewise Metric),Problems/InvalidJump.dfy,SUCCESS,10.013877153396606
+EVM,14400,Metamorph (Piecewise Metric),Problems/StackOverflow.dfy,SUCCESS,204.20425486564636
+EVM,14400,Metamorph (Piecewise Metric),Problems/StackUnderflow.dfy,SUCCESS,15.023741960525513
+EVM,14400,Metamorph (Greedy Metric),Problems/IntegerOverflow.dfy,SUCCESS,61.07528114318848
+EVM,14400,Metamorph (Greedy Metric),Problems/InvalidMemoryStore.dfy,SUCCESS,38.04439902305603
+EVM,14400,Metamorph (Greedy Metric),Problems/DivByZero.dfy,SUCCESS,59.06893992424011
+EVM,14400,Metamorph (Greedy Metric),Problems/IntegerUnderflow.dfy,SUCCESS,58.067660093307495
+EVM,14400,Metamorph (Greedy Metric),Problems/InvalidJump.dfy,SUCCESS,13.017490863800049
+EVM,14400,Metamorph (Greedy Metric),Problems/StackOverflow.dfy,SUCCESS,258.2871959209442
+EVM,14400,Metamorph (Greedy Metric),Problems/StackUnderflow.dfy,SUCCESS,19.02968692779541
+EVM,14400,Metamorph (Piecewise Metric),Problems/InvalidMemoryLoad.dfy,SUCCESS,9.014388084411621
+EVM,14400,Metamorph (Greedy Metric),Problems/InvalidMemoryLoad.dfy,SUCCESS,6.017889976501465

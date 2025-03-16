@@ -1,0 +1,140 @@
+2024-09-23 13:29:53.1604 INFO Initial heuristic value is 0
+2024-09-23 13:29:53.1627 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-23 13:29:53.2101 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1_0: int, formal_1_1_1: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int) returns (receiver: BinaryTree) {assume true && (if argument_1_0_0 == null then {} else argument_1_0_0.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (argument_1_0_0 == null || argument_1_0_0.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+receiver := new BinaryTree(argument_1_0_0, argument_1_0_1, argument_1_0_2);
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View == [0, 1] && receiver.Height == 1);}
+2024-09-23 13:29:53.2101 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1_0: int, formal_1_1_1: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int)
+        returns (receiver: BinaryTree)
+    {
+      assume true && (if argument_1_0_0 == null then {} else argument_1_0_0.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (argument_1_0_0 == null || argument_1_0_0.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+      receiver := new BinaryTree(argument_1_0_0, argument_1_0_1, argument_1_0_2);
+      assume {:formal} formal_1_1_0 == 0;
+      assume {:formal} formal_1_1_1 == 1;
+      assume {:formal} formal_2_3_0 == 1;
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View == [formal_1_1_0, formal_1_1_1] && receiver.Height == formal_2_3_0);
+    }
+2024-09-23 13:29:54.4136 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1_0: int, formal_1_1_1: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int, formal_3_14_0: int, formal_6_18_0: int, formal_7_20_0: int, formal_8_22_0: int, formal_8_22_1: int, formal_9_24_0: int, formal_0_5_0: int) returns (receiver: BinaryTree) {assume {:attribute 10} !(argument_1_0_1 == null);
+assume {:attribute 10} argument_1_0_1 in argument_1_0_1.Repr;
+assume {:attribute 10} argument_1_0_1.Repr == {argument_1_0_1};
+assume {:attribute 10} |argument_1_0_1.View| > 0;
+assume {:attribute 10} null == argument_1_0_1.left;
+assume {:attribute 10} null == argument_1_0_1.right;
+assume {:attribute 10} 0 == argument_1_0_1.Height;
+assume {:attribute 10} 1 == argument_1_0_1.value;
+assume {:attribute 10} 1 == argument_1_0_1.View[0];
+assume {:attribute 10} 1 == |argument_1_0_1.View|;
+assume true && (if null == null then {} else null.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (null == null || null.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+receiver := new BinaryTree(null, argument_1_0_1, 0);
+assert {:keepAssertion} receiver.IsValid() && receiver.View == [0, 1] && receiver.Height == 1;}
+2024-09-23 13:29:54.4136 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1_0: int, formal_1_1_1: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int, formal_3_14_0: int, formal_6_18_0: int, formal_7_20_0: int, formal_8_22_0: int, formal_8_22_1: int, formal_9_24_0: int, formal_0_5_0: int)
+        returns (receiver: BinaryTree)
+    {
+      assume {:attribute 9} argument_1_0_0 == null;
+      assume {:formal} formal_3_14_0 == 0;
+      assume {:formal} formal_6_18_0 == 0;
+      assume {:formal} formal_7_20_0 == 1;
+      assume {:formal} formal_8_22_0 == 1;
+      assume {:formal} formal_8_22_1 == 0;
+      assume {:formal} formal_9_24_0 == 1;
+      assume {:attribute 10} !(argument_1_0_1 == null);
+      assume {:attribute 10} argument_1_0_1 in argument_1_0_1.Repr;
+      assume {:attribute 10} argument_1_0_1.Repr == {argument_1_0_1};
+      assume {:attribute 10} |argument_1_0_1.View| > formal_3_14_0;
+      assume {:attribute 10} null == argument_1_0_1.left;
+      assume {:attribute 10} null == argument_1_0_1.right;
+      assume {:attribute 10} formal_6_18_0 == argument_1_0_1.Height;
+      assume {:attribute 10} formal_7_20_0 == argument_1_0_1.value;
+      assume {:attribute 10} formal_8_22_0 == argument_1_0_1.View[formal_8_22_1];
+      assume {:attribute 10} formal_9_24_0 == |argument_1_0_1.View|;
+      assume {:formal} formal_0_5_0 == 0;
+      assume {:attribute 11} argument_1_0_2 == formal_0_5_0;
+      assume true && (if argument_1_0_0 == null then {} else argument_1_0_0.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (argument_1_0_0 == null || argument_1_0_0.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+      receiver := new BinaryTree(argument_1_0_0, argument_1_0_1, argument_1_0_2);
+      assume {:formal} formal_1_1_0 == 0;
+      assume {:formal} formal_1_1_1 == 1;
+      assume {:formal} formal_2_3_0 == 1;
+      assert {:keepAssertion} receiver.IsValid() && receiver.View == [formal_1_1_0, formal_1_1_1] && receiver.Height == formal_2_3_0;
+    }
+2024-09-23 13:29:54.6962 INFO Have found the following solution to a subproblem!
+{
+assume {:attribute 10} !(argument_1_0_1 == null);
+assume {:attribute 10} argument_1_0_1 in argument_1_0_1.Repr;
+assume {:attribute 10} argument_1_0_1.Repr == {argument_1_0_1};
+assume {:attribute 10} |argument_1_0_1.View| > 0;
+assume {:attribute 10} null == argument_1_0_1.left;
+assume {:attribute 10} null == argument_1_0_1.right;
+assume {:attribute 10} 0 == argument_1_0_1.Height;
+assume {:attribute 10} 1 == argument_1_0_1.value;
+assume {:attribute 10} 1 == argument_1_0_1.View[0];
+assume {:attribute 10} 1 == |argument_1_0_1.View|;
+result := new BinaryTree(null, argument_1_0_1, 0);
+}
+2024-09-23 13:29:54.6962 INFO Time spend on subproblem: 00:00:01.5466599
+2024-09-23 13:29:54.6991 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:01.4913767)
+2024-09-23 13:29:54.6991 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:29:54.6991 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:29:54.6991 INFO Initial heuristic value is 0
+2024-09-23 13:29:54.6991 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-23 13:29:54.7026 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_14_0: int, formal_6_18_0: int, formal_7_20_0: int, formal_8_22_0: int, formal_8_22_1: int, formal_9_24_0: int, argument_2_0_0: BinaryTree?, argument_2_0_1: BinaryTree?, argument_2_0_2: int) returns (receiver: BinaryTree) {assume true && (if argument_2_0_0 == null then {} else argument_2_0_0.Repr) * (if argument_2_0_1 == null then {} else argument_2_0_1.Repr) == {} && (argument_2_0_0 == null || argument_2_0_0.IsValid()) && (argument_2_0_1 == null || argument_2_0_1.IsValid());
+receiver := new BinaryTree(argument_2_0_0, argument_2_0_1, argument_2_0_2);
+assert {:keepAssertion} !(!(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > 0 && null == receiver.left && null == receiver.right && 0 == receiver.Height && 1 == receiver.value && 1 == receiver.View[0] && 1 == |receiver.View|);}
+2024-09-23 13:29:54.7026 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_3_14_0: int, formal_6_18_0: int, formal_7_20_0: int, formal_8_22_0: int, formal_8_22_1: int, formal_9_24_0: int, argument_2_0_0: BinaryTree?, argument_2_0_1: BinaryTree?, argument_2_0_2: int)
+        returns (receiver: BinaryTree)
+    {
+      assume true && (if argument_2_0_0 == null then {} else argument_2_0_0.Repr) * (if argument_2_0_1 == null then {} else argument_2_0_1.Repr) == {} && (argument_2_0_0 == null || argument_2_0_0.IsValid()) && (argument_2_0_1 == null || argument_2_0_1.IsValid());
+      receiver := new BinaryTree(argument_2_0_0, argument_2_0_1, argument_2_0_2);
+      assume {:formal} formal_3_14_0 == 0;
+      assume {:formal} formal_6_18_0 == 0;
+      assume {:formal} formal_7_20_0 == 1;
+      assume {:formal} formal_8_22_0 == 1;
+      assume {:formal} formal_8_22_1 == 0;
+      assume {:formal} formal_9_24_0 == 1;
+      assert {:keepAssertion} !(!(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > formal_3_14_0 && null == receiver.left && null == receiver.right && formal_6_18_0 == receiver.Height && formal_7_20_0 == receiver.value && formal_8_22_0 == receiver.View[formal_8_22_1] && formal_9_24_0 == |receiver.View|);
+    }
+2024-09-23 13:29:55.0451 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_14_0: int, formal_6_18_0: int, formal_7_20_0: int, formal_8_22_0: int, formal_8_22_1: int, formal_9_24_0: int, argument_2_0_0: BinaryTree?, argument_2_0_1: BinaryTree?, argument_2_0_2: int, formal_0_7_0: int) returns (receiver: BinaryTree) {assume true && (if null == null then {} else null.Repr) * (if null == null then {} else null.Repr) == {} && (null == null || null.IsValid()) && (null == null || null.IsValid());
+receiver := new BinaryTree(null, null, 1);
+assert {:keepAssertion} !(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > 0 && null == receiver.left && null == receiver.right && 0 == receiver.Height && 1 == receiver.value && 1 == receiver.View[0] && 1 == |receiver.View|;}
+2024-09-23 13:29:55.0451 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_3_14_0: int, formal_6_18_0: int, formal_7_20_0: int, formal_8_22_0: int, formal_8_22_1: int, formal_9_24_0: int, argument_2_0_0: BinaryTree?, argument_2_0_1: BinaryTree?, argument_2_0_2: int, formal_0_7_0: int)
+        returns (receiver: BinaryTree)
+    {
+      assume {:attribute 23} argument_2_0_0 == null;
+      assume {:attribute 24} argument_2_0_1 == null;
+      assume {:formal} formal_0_7_0 == 1;
+      assume {:attribute 25} argument_2_0_2 == formal_0_7_0;
+      assume true && (if argument_2_0_0 == null then {} else argument_2_0_0.Repr) * (if argument_2_0_1 == null then {} else argument_2_0_1.Repr) == {} && (argument_2_0_0 == null || argument_2_0_0.IsValid()) && (argument_2_0_1 == null || argument_2_0_1.IsValid());
+      receiver := new BinaryTree(argument_2_0_0, argument_2_0_1, argument_2_0_2);
+      assume {:formal} formal_3_14_0 == 0;
+      assume {:formal} formal_6_18_0 == 0;
+      assume {:formal} formal_7_20_0 == 1;
+      assume {:formal} formal_8_22_0 == 1;
+      assume {:formal} formal_8_22_1 == 0;
+      assume {:formal} formal_9_24_0 == 1;
+      assert {:keepAssertion} !(receiver == null) && receiver in receiver.Repr && receiver.Repr == {receiver} && |receiver.View| > formal_3_14_0 && null == receiver.left && null == receiver.right && formal_6_18_0 == receiver.Height && formal_7_20_0 == receiver.value && formal_8_22_0 == receiver.View[formal_8_22_1] && formal_9_24_0 == |receiver.View|;
+    }
+2024-09-23 13:29:55.3014 INFO Have found the following solution to a subproblem!
+{
+argument_1_0_1 := new BinaryTree(null, null, 1);
+}
+2024-09-23 13:29:55.3014 INFO Time spend on subproblem: 00:00:00.6010209
+2024-09-23 13:29:55.3014 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:00.5996007)
+2024-09-23 13:29:55.3014 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:29:55.3014 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:29:55.3028 INFO Have found the following solution!
+static method solution() returns (result:BinaryTree)
+ensures Goal(result)
+{
+var argument_1_0_1 := new BinaryTree(null, null, 1);
+result := new BinaryTree(null, argument_1_0_1, 0);
+}
+2024-09-23 13:29:55.3028 INFO Total time spend on synthesis: 00:00:02.2480388
+2024-09-23 13:29:55.3028 INFO Total number of Regular queries to Dafny: 4 (00:00:02.0909774)
+2024-09-23 13:29:55.3028 INFO Total number of Simplify queries to Dafny: 0 (00:00:00)
+2024-09-23 13:29:55.3028 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

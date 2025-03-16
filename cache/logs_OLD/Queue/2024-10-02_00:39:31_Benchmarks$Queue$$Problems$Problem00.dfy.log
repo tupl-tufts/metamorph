@@ -1,0 +1,50 @@
+2024-10-02 00:39:32.9941 DEBUG Using integer programming to estimating the distance to receiver.View() == [], receiver.IsValid()
+2024-10-02 00:39:33.0098 TRACE Minimizing value: ((((Rotate + IsEmpty) + Enqueue) + Front) + Dequeue)
+2024-10-02 00:39:33.0132 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-10-02 00:39:33.0132 DEBUG In particular, need at least -0 calls to Rotate
+2024-10-02 00:39:33.0132 DEBUG In particular, need at least -0 calls to IsEmpty
+2024-10-02 00:39:33.0132 DEBUG In particular, need at least -0 calls to Enqueue
+2024-10-02 00:39:33.0132 DEBUG In particular, need at least -0 calls to Front
+2024-10-02 00:39:33.0132 DEBUG In particular, need at least -0 calls to Dequeue
+2024-10-02 00:39:33.0132 INFO Initial heuristic value is 0
+2024-10-02 00:39:33.0153 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-10-02 00:39:33.0546 TRACE Verifying the body of the following method:
+static method synthesized() returns (receiver: Queue) {assume true;
+receiver := new Queue();
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == []);}
+2024-10-02 00:39:33.0546 TRACE Verifying the body of the following method (literal):
+ static method synthesized() returns (receiver: Queue)
+    {
+      assume true;
+      receiver := new Queue();
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == []);
+    }
+2024-10-02 00:39:34.2045 TRACE Verifying the body of the following method:
+static method synthesized() returns (receiver: Queue) {assume true;
+receiver := new Queue();
+assert {:keepAssertion} receiver.IsValid() && receiver.View() == [];}
+2024-10-02 00:39:34.2045 TRACE Verifying the body of the following method (literal):
+ static method synthesized() returns (receiver: Queue)
+    {
+      assume true;
+      receiver := new Queue();
+      assert {:keepAssertion} receiver.IsValid() && receiver.View() == [];
+    }
+2024-10-02 00:39:34.5182 INFO Have found the following solution to a subproblem!
+{
+result := new Queue();
+}
+2024-10-02 00:39:34.5193 INFO Time spend on subproblem: 00:00:01.5361964
+2024-10-02 00:39:34.5193 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:01.4869113)
+2024-10-02 00:39:34.5193 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-10-02 00:39:34.5193 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-10-02 00:39:34.5193 INFO Have found the following solution!
+static method solution() returns (result:Queue)
+ensures Goal(result)
+{
+result := new Queue();
+}
+2024-10-02 00:39:34.5193 INFO Total time spend on synthesis: 00:00:02.1422431
+2024-10-02 00:39:34.5193 INFO Total number of Regular queries to Dafny: 2 (00:00:01.4869113)
+2024-10-02 00:39:34.5193 INFO Total number of Simplify queries to Dafny: 0 (00:00:00)
+2024-10-02 00:39:34.5193 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

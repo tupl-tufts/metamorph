@@ -1,0 +1,223 @@
+2025-02-25 21:06:35.8875 DEBUG Using integer programming to estimating the distance to receiver.exitCode == INVALID_MEMORY_LOAD
+2025-02-25 21:06:35.9030 TRACE Minimizing value: ((((((((((Push + Pop) + Add) + Sub) + Div) + Mul) + Jump) + Jz) + NOP) + Store) + Load)
+2025-02-25 21:06:35.9043 DEBUG The integer programming gives the lower bound of 0 methods.
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Push
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Pop
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Add
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Sub
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Div
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Mul
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Jump
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Jz
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to NOP
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Store
+2025-02-25 21:06:35.9043 DEBUG In particular, need at least -0 calls to Load
+2025-02-25 21:06:35.9043 INFO Initial heuristic value is 0
+2025-02-25 21:06:35.9055 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2025-02-25 21:06:35.9281 TRACE Verifying the body of the following method:
+static method synthesized(argument_1_0_0: nat) returns (receiver: VM) {receiver := new VM(argument_1_0_0);
+assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);}
+2025-02-25 21:06:35.9282 TRACE Verifying the body of the following method (literal):
+ static method synthesized(argument_1_0_0: nat) returns (receiver: VM)
+    {
+      assume true;
+      receiver := new VM(argument_1_0_0);
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);
+    }
+2025-02-25 21:06:36.6008 DEBUG Trying method sequence: Push
+2025-02-25 21:06:36.6044 TRACE Verifying the body of the following method:
+static method synthesized(argument_2_0_0: nat, receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+assume true && receiver.IsValid() && receiver.IsRunning() && argument_2_0_0 <= MAX_WORD && receiver.pc > 0;
+receiver.Push(argument_2_0_0);
+assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);}
+2025-02-25 21:06:36.6044 TRACE Verifying the body of the following method (literal):
+ static method synthesized(argument_2_0_0: nat, receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+      assume true && receiver.IsValid() && receiver.IsRunning() && argument_2_0_0 <= MAX_WORD && receiver.pc > 0;
+      receiver.Push(argument_2_0_0);
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);
+    }
+2025-02-25 21:06:36.8939 DEBUG Trying method sequence: Pop
+2025-02-25 21:06:36.8966 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+var _ := receiver.Pop();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);}
+2025-02-25 21:06:36.8966 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      var _ := receiver.Pop();
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);
+    }
+2025-02-25 21:06:37.2086 DEBUG Trying method sequence: Add
+2025-02-25 21:06:37.2100 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.Add();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);}
+2025-02-25 21:06:37.2100 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      receiver.Add();
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);
+    }
+2025-02-25 21:06:37.4863 DEBUG Trying method sequence: Sub
+2025-02-25 21:06:37.4883 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.Sub();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);}
+2025-02-25 21:06:37.4883 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+    {
+      assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+      assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+      receiver.Sub();
+      assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);
+    }
+2025-02-25 21:06:37.7993 DEBUG Trying method sequence: Div
+2025-02-25 21:06:37.8012 TRACE Verifying the body of the following method:
+static method synthesized(receiver: VM)
+    modifies receiver {assume !(receiver.exitCode == INVALID_MEMORY_LOAD);
+assume true && receiver.IsValid() && receiver.IsRunning() && receiver.pc > 0;
+receiver.Div();
+assert {:keepAssertion} !(receiver.exitCode == INVALID_MEMORY_LOAD);}
+2025-02-25 21:06:37.8012 TRACE Verifying the body of the following method (literal):
+ static method synthesized(receiver: VM)
+      modifies receiver
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 154 LINES OF LOGS TO SAVE DISK SPACE ***************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+ static method synthesized(formal_0_1166_0: int, argument_13_0_0: nat) returns (receiver: VM)
+    {
+      assume {:formal} formal_0_1166_0 == 1654;
+      assume true;
+      receiver := new VM(argument_13_0_0);
+      assert {:keepAssertion} true;
+      assert {:keepAssertion} true;
+    }
+2025-02-25 21:06:40.6161 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_1166_0: int, argument_14_0_0: nat) returns (receiver: VM) {receiver := new VM(argument_14_0_0);
+assert {:keepAssertion} 1654 == receiver.pc;}
+2025-02-25 21:06:40.6162 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_1166_0: int, argument_14_0_0: nat) returns (receiver: VM)
+    {
+      assume true;
+      receiver := new VM(argument_14_0_0);
+      assume {:formal} formal_0_1166_0 == 1654;
+      assert {:keepAssertion} formal_0_1166_0 == receiver.pc;
+    }
+2025-02-25 21:06:40.9604 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_1166_0: int, argument_15_0_0: nat) returns (receiver: VM) {receiver := new VM(argument_15_0_0);
+assert {:keepAssertion} !(1654 == receiver.pc);}
+2025-02-25 21:06:40.9604 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_1166_0: int, argument_15_0_0: nat) returns (receiver: VM)
+    {
+      assume true;
+      receiver := new VM(argument_15_0_0);
+      assume {:formal} formal_0_1166_0 == 1654;
+      assert {:keepAssertion} !(formal_0_1166_0 == receiver.pc);
+    }
+2025-02-25 21:06:41.2392 DEBUG The value of property 1654 == this.pc might vary in the beginning.
+2025-02-25 21:06:41.2392 DEBUG Using integer programming to estimating the distance to receiver.exitCode == Imports.ExitCode.OK, receiver.IsValid.requires(), receiver.IsRunning.requires(), ¬(receiver == null), 5 == |this.data|, 1654 == this.pc, true == this.IsValid(), true == this.IsRunning(), [] == receiver.stack
+2025-02-25 21:06:41.2403 TRACE Minimizing value: ((((((((((Push + Pop) + Add) + Sub) + Div) + Mul) + Jump) + Jz) + NOP) + Store) + Load)
+2025-02-25 21:06:41.2403 DEBUG The integer programming gives the lower bound of 0 methods.
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Push
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Pop
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Add
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Sub
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Div
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Mul
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Jump
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Jz
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to NOP
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Store
+2025-02-25 21:06:41.2403 DEBUG In particular, need at least -0 calls to Load
+2025-02-25 21:06:41.2415 INFO The following method sequence is possible (heuristic=0): Load
+2025-02-25 21:06:41.2415 INFO New state is receiver.exitCode == Imports.ExitCode.OK, receiver.IsValid.requires(), receiver.IsRunning.requires(), ¬(receiver == null), 5 == |this.data|, 1654 == this.pc, true == this.IsValid(), true == this.IsRunning(), [] == receiver.stack
+2025-02-25 21:06:41.2415 INFO Expanding method sequence Load -- estimated distance to start = 0, distance to end = 1
+2025-02-25 21:06:41.2436 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_1140_0: bool, formal_4_600_0: bool, formal_6_1166_0: int, formal_7_533_0: int, argument_16_0_0: nat) returns (receiver: VM) {receiver := new VM(argument_16_0_0);
+assert {:keepAssertion} !(!(receiver == null) && receiver.IsRunning.requires() && true == receiver.IsRunning() && receiver.IsValid.requires() && true == receiver.IsValid() && [] == receiver.stack && 1654 == receiver.pc && 5 == |receiver.data| && receiver.exitCode == Imports.ExitCode.OK);}
+2025-02-25 21:06:41.2436 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_1140_0: bool, formal_4_600_0: bool, formal_6_1166_0: int, formal_7_533_0: int, argument_16_0_0: nat)
+        returns (receiver: VM)
+    {
+      assume true;
+      receiver := new VM(argument_16_0_0);
+      assume {:formal} formal_2_1140_0 == true;
+      assume {:formal} formal_4_600_0 == true;
+      assume {:formal} formal_6_1166_0 == 1654;
+      assume {:formal} formal_7_533_0 == 5;
+      assert {:keepAssertion} !(!(receiver == null) && receiver.IsRunning.requires() && formal_2_1140_0 == receiver.IsRunning() && receiver.IsValid.requires() && formal_4_600_0 == receiver.IsValid() && [] == receiver.stack && formal_6_1166_0 == receiver.pc && formal_7_533_0 == |receiver.data| && receiver.exitCode == Imports.ExitCode.OK);
+    }
+2025-02-25 21:06:41.5288 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_1140_0: bool, formal_4_600_0: bool, formal_6_1166_0: int, formal_7_533_0: int, argument_16_0_0: nat, formal_0_1173_0: int) returns (receiver: VM) {receiver := new VM(1654);
+assert {:keepAssertion} !(receiver == null) && receiver.IsRunning.requires() && true == receiver.IsRunning() && receiver.IsValid.requires() && true == receiver.IsValid() && [] == receiver.stack && 1654 == receiver.pc && 5 == |receiver.data| && receiver.exitCode == Imports.ExitCode.OK;}
+2025-02-25 21:06:41.5288 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_1140_0: bool, formal_4_600_0: bool, formal_6_1166_0: int, formal_7_533_0: int, argument_16_0_0: nat, formal_0_1173_0: int)
+        returns (receiver: VM)
+    {
+      assume {:formal} formal_0_1173_0 == 1654;
+      assume {:attribute 45} argument_16_0_0 == formal_0_1173_0;
+      assume true;
+      receiver := new VM(argument_16_0_0);
+      assume {:formal} formal_2_1140_0 == true;
+      assume {:formal} formal_4_600_0 == true;
+      assume {:formal} formal_6_1166_0 == 1654;
+      assume {:formal} formal_7_533_0 == 5;
+      assert {:keepAssertion} !(receiver == null) && receiver.IsRunning.requires() && formal_2_1140_0 == receiver.IsRunning() && receiver.IsValid.requires() && formal_4_600_0 == receiver.IsValid() && [] == receiver.stack && formal_6_1166_0 == receiver.pc && formal_7_533_0 == |receiver.data| && receiver.exitCode == Imports.ExitCode.OK;
+    }
+2025-02-25 21:06:41.8024 INFO Have found the following solution to a subproblem!
+{
+result := new VM(1654);
+result.Load(5909);
+}
+2025-02-25 21:06:41.8024 INFO Time spend on subproblem: 00:00:05.9205500
+2025-02-25 21:06:41.8034 INFO Number of Regular queries to Dafny used to solve subproblem: 15 (00:00:04.6745770)
+2025-02-25 21:06:41.8034 INFO Number of Simplify queries to Dafny used to solve subproblem: 1 (00:00:00.3148440)
+2025-02-25 21:06:41.8034 INFO Number of Heuristic queries to Dafny used to solve subproblem: 3 (00:00:00.8785700)
+2025-02-25 21:06:41.8034 INFO Have found the following solution!
+static method solution() returns (result:VM)
+ensures fresh(result) && Goal(result)
+{
+result := new VM(1654);
+result.Load(5909);
+}
+2025-02-25 21:06:41.8034 INFO Total time spend on synthesis: 00:00:06.1512500
+2025-02-25 21:06:41.8034 INFO Total number of Regular queries to Dafny: 15 (00:00:04.6745770)
+2025-02-25 21:06:41.8034 INFO Total number of Simplify queries to Dafny: 1 (00:00:00.3148440)
+2025-02-25 21:06:41.8034 INFO Total number of Heuristic queries to Dafny: 3 (00:00:00.8785700)

@@ -1,0 +1,223 @@
+2024-09-24 13:00:28.7212 DEBUG Using integer programming to estimating the distance to this.users.Keys == {0, 1, 2, 3, 4, 5}, 0 in this.users[1].friends, 0 in this.users[5].friends, 1 in this.users[0].friends, 1 in this.users[2].friends, 2 in this.users[1].friends, 2 in this.users[3].friends, 3 in this.users[2].friends, 3 in this.users[4].friends, 4 in this.users[3].friends, 4 in this.users[5].friends, 5 in this.users[0].friends, 5 in this.users[4].friends
+2024-09-24 13:00:28.7414 TRACE Adding solver constraint for property default0 in this.users[default1].friends from Undefined to True: (((AddUser * 0) + (AddUser * 10000)) + ((RequestResponse * 0) + (RequestResponse * 0))) >= 12
+2024-09-24 13:00:28.7414 TRACE Adding solver constraint for property default0 in this.users[default1].friends from Undefined to True: (((AddUser * 0) + (AddUser * 0)) + ((RequestResponse * 0) + (RequestResponse * 2))) >= 12
+2024-09-24 13:00:28.7445 TRACE Minimizing value: (((AddUser + RequestConnect) + RemoveUser) + RequestResponse)
+2024-09-24 13:00:28.7445 DEBUG The integer programming gives the lower bound of 7 methods.
+2024-09-24 13:00:28.7466 DEBUG In particular, need at least 1 calls to AddUser
+2024-09-24 13:00:28.7466 DEBUG In particular, need at least -0 calls to RequestConnect
+2024-09-24 13:00:28.7466 DEBUG In particular, need at least -0 calls to RemoveUser
+2024-09-24 13:00:28.7466 DEBUG In particular, need at least 6 calls to RequestResponse
+2024-09-24 13:00:28.7466 INFO Initial heuristic value is 7
+2024-09-24 13:00:28.7466 INFO Expanding method sequence  -- estimated distance to start = 7, distance to end = 0
+2024-09-24 13:00:28.7466 DEBUG Trying method sequence: AddUser
+2024-09-24 13:00:28.8181 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: int, formal_0_337_1: int, formal_0_337_2: int, formal_0_337_3: int, formal_0_337_4: int, formal_0_337_5: int, formal_1_339_0: int, formal_1_339_1: int, formal_2_341_0: int, formal_2_341_1: int, formal_3_343_0: int, formal_3_343_1: int, formal_4_345_0: int, formal_4_345_1: int, formal_5_347_0: int, formal_5_347_1: int, formal_6_349_0: int, formal_6_349_1: int, formal_7_351_0: int, formal_7_351_1: int, formal_8_353_0: int, formal_8_353_1: int, formal_9_355_0: int, formal_9_355_1: int, formal_10_357_0: int, formal_10_357_1: int, formal_11_359_0: int, formal_11_359_1: int, formal_12_361_0: int, formal_12_361_1: int, argument_1_0_0: nat, receiver: SocialNetwork)
+    modifies receiver {assume !(receiver.users.Keys == {0, 1, 2, 3, 4, 5} && 1 in receiver.users[0].friends && 0 in receiver.users[1].friends && 1 in receiver.users[2].friends && 2 in receiver.users[1].friends && 2 in receiver.users[3].friends && 3 in receiver.users[2].friends && 3 in receiver.users[4].friends && 4 in receiver.users[3].friends && 5 in receiver.users[4].friends && 4 in receiver.users[5].friends && 0 in receiver.users[5].friends && 5 in receiver.users[0].friends);
+assume true && receiver.IsValid() && argument_1_0_0 !in receiver.users;
+receiver.AddUser(argument_1_0_0);
+assert {:keepAssertion} !(receiver.users.Keys == {0, 1, 2, 3, 4, 5} && 1 in receiver.users[0].friends && 0 in receiver.users[1].friends && 1 in receiver.users[2].friends && 2 in receiver.users[1].friends && 2 in receiver.users[3].friends && 3 in receiver.users[2].friends && 3 in receiver.users[4].friends && 4 in receiver.users[3].friends && 5 in receiver.users[4].friends && 4 in receiver.users[5].friends && 0 in receiver.users[5].friends && 5 in receiver.users[0].friends);}
+2024-09-24 13:00:28.8187 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: int, formal_0_337_1: int, formal_0_337_2: int, formal_0_337_3: int, formal_0_337_4: int, formal_0_337_5: int, formal_1_339_0: int, formal_1_339_1: int, formal_2_341_0: int, formal_2_341_1: int, formal_3_343_0: int, formal_3_343_1: int, formal_4_345_0: int, formal_4_345_1: int, formal_5_347_0: int, formal_5_347_1: int, formal_6_349_0: int, formal_6_349_1: int, formal_7_351_0: int, formal_7_351_1: int, formal_8_353_0: int, formal_8_353_1: int, formal_9_355_0: int, formal_9_355_1: int, formal_10_357_0: int, formal_10_357_1: int, formal_11_359_0: int, formal_11_359_1: int, formal_12_361_0: int, formal_12_361_1: int, argument_1_0_0: nat, receiver: SocialNetwork)
+      modifies receiver
+    {
+      assume {:formal} formal_0_337_0 == 0;
+      assume {:formal} formal_0_337_1 == 1;
+      assume {:formal} formal_0_337_2 == 2;
+      assume {:formal} formal_0_337_3 == 3;
+      assume {:formal} formal_0_337_4 == 4;
+      assume {:formal} formal_0_337_5 == 5;
+      assume {:formal} formal_1_339_0 == 1;
+      assume {:formal} formal_1_339_1 == 0;
+      assume {:formal} formal_2_341_0 == 0;
+      assume {:formal} formal_2_341_1 == 1;
+      assume {:formal} formal_3_343_0 == 1;
+      assume {:formal} formal_3_343_1 == 2;
+      assume {:formal} formal_4_345_0 == 2;
+      assume {:formal} formal_4_345_1 == 1;
+      assume {:formal} formal_5_347_0 == 2;
+      assume {:formal} formal_5_347_1 == 3;
+      assume {:formal} formal_6_349_0 == 3;
+      assume {:formal} formal_6_349_1 == 2;
+      assume {:formal} formal_7_351_0 == 3;
+      assume {:formal} formal_7_351_1 == 4;
+      assume {:formal} formal_8_353_0 == 4;
+      assume {:formal} formal_8_353_1 == 3;
+      assume {:formal} formal_9_355_0 == 5;
+      assume {:formal} formal_9_355_1 == 4;
+      assume {:formal} formal_10_357_0 == 4;
+      assume {:formal} formal_10_357_1 == 5;
+      assume {:formal} formal_11_359_0 == 0;
+      assume {:formal} formal_11_359_1 == 5;
+      assume {:formal} formal_12_361_0 == 5;
+      assume {:formal} formal_12_361_1 == 0;
+      assume !(receiver.users.Keys == {formal_0_337_0, formal_0_337_1, formal_0_337_2, formal_0_337_3, formal_0_337_4, formal_0_337_5} && formal_1_339_0 in receiver.users[formal_1_339_1].friends && formal_2_341_0 in receiver.users[formal_2_341_1].friends && formal_3_343_0 in receiver.users[formal_3_343_1].friends && formal_4_345_0 in receiver.users[formal_4_345_1].friends && formal_5_347_0 in receiver.users[formal_5_347_1].friends && formal_6_349_0 in receiver.users[formal_6_349_1].friends && formal_7_351_0 in receiver.users[formal_7_351_1].friends && formal_8_353_0 in receiver.users[formal_8_353_1].friends && formal_9_355_0 in receiver.users[formal_9_355_1].friends && formal_10_357_0 in receiver.users[formal_10_357_1].friends && formal_11_359_0 in receiver.users[formal_11_359_1].friends && formal_12_361_0 in receiver.users[formal_12_361_1].friends);
+      assume true && receiver.IsValid() && argument_1_0_0 !in receiver.users;
+      receiver.AddUser(argument_1_0_0);
+      assert {:keepAssertion} !(receiver.users.Keys == {formal_0_337_0, formal_0_337_1, formal_0_337_2, formal_0_337_3, formal_0_337_4, formal_0_337_5} && formal_1_339_0 in receiver.users[formal_1_339_1].friends && formal_2_341_0 in receiver.users[formal_2_341_1].friends && formal_3_343_0 in receiver.users[formal_3_343_1].friends && formal_4_345_0 in receiver.users[formal_4_345_1].friends && formal_5_347_0 in receiver.users[formal_5_347_1].friends && formal_6_349_0 in receiver.users[formal_6_349_1].friends && formal_7_351_0 in receiver.users[formal_7_351_1].friends && formal_8_353_0 in receiver.users[formal_8_353_1].friends && formal_9_355_0 in receiver.users[formal_9_355_1].friends && formal_10_357_0 in receiver.users[formal_10_357_1].friends && formal_11_359_0 in receiver.users[formal_11_359_1].friends && formal_12_361_0 in receiver.users[formal_12_361_1].friends);
+    }
+2024-09-24 13:00:30.1611 DEBUG Trying method sequence: RequestConnect
+2024-09-24 13:00:30.1640 TRACE Verifying the body of the following method:
+static method synthesized(formal_0_337_0: int, formal_0_337_1: int, formal_0_337_2: int, formal_0_337_3: int, formal_0_337_4: int, formal_0_337_5: int, formal_1_339_0: int, formal_1_339_1: int, formal_2_341_0: int, formal_2_341_1: int, formal_3_343_0: int, formal_3_343_1: int, formal_4_345_0: int, formal_4_345_1: int, formal_5_347_0: int, formal_5_347_1: int, formal_6_349_0: int, formal_6_349_1: int, formal_7_351_0: int, formal_7_351_1: int, formal_8_353_0: int, formal_8_353_1: int, formal_9_355_0: int, formal_9_355_1: int, formal_10_357_0: int, formal_10_357_1: int, formal_11_359_0: int, formal_11_359_1: int, formal_12_361_0: int, formal_12_361_1: int, argument_2_0_0: nat, argument_2_0_1: nat, receiver: SocialNetwork)
+    modifies receiver {assume !(receiver.users.Keys == {0, 1, 2, 3, 4, 5} && 1 in receiver.users[0].friends && 0 in receiver.users[1].friends && 1 in receiver.users[2].friends && 2 in receiver.users[1].friends && 2 in receiver.users[3].friends && 3 in receiver.users[2].friends && 3 in receiver.users[4].friends && 4 in receiver.users[3].friends && 5 in receiver.users[4].friends && 4 in receiver.users[5].friends && 0 in receiver.users[5].friends && 5 in receiver.users[0].friends);
+assume true && receiver.IsValid() && argument_2_0_0 != argument_2_0_1 && argument_2_0_0 in receiver.users && argument_2_0_1 in receiver.users && argument_2_0_0 !in receiver.users[argument_2_0_1].friends && argument_2_0_1 !in receiver.users[argument_2_0_0].friends && argument_2_0_1 !in receiver.users[argument_2_0_0].requests;
+receiver.RequestConnect(argument_2_0_0, argument_2_0_1);
+assert {:keepAssertion} !(receiver.users.Keys == {0, 1, 2, 3, 4, 5} && 1 in receiver.users[0].friends && 0 in receiver.users[1].friends && 1 in receiver.users[2].friends && 2 in receiver.users[1].friends && 2 in receiver.users[3].friends && 3 in receiver.users[2].friends && 3 in receiver.users[4].friends && 4 in receiver.users[3].friends && 5 in receiver.users[4].friends && 4 in receiver.users[5].friends && 0 in receiver.users[5].friends && 5 in receiver.users[0].friends);}
+2024-09-24 13:00:30.1640 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_0_337_0: int, formal_0_337_1: int, formal_0_337_2: int, formal_0_337_3: int, formal_0_337_4: int, formal_0_337_5: int, formal_1_339_0: int, formal_1_339_1: int, formal_2_341_0: int, formal_2_341_1: int, formal_3_343_0: int, formal_3_343_1: int, formal_4_345_0: int, formal_4_345_1: int, formal_5_347_0: int, formal_5_347_1: int, formal_6_349_0: int, formal_6_349_1: int, formal_7_351_0: int, formal_7_351_1: int, formal_8_353_0: int, formal_8_353_1: int, formal_9_355_0: int, formal_9_355_1: int, formal_10_357_0: int, formal_10_357_1: int, formal_11_359_0: int, formal_11_359_1: int, formal_12_361_0: int, formal_12_361_1: int, argument_2_0_0: nat, argument_2_0_1: nat, receiver: SocialNetwork)
+      modifies receiver
+    {
+      assume {:formal} formal_0_337_0 == 0;
+      assume {:formal} formal_0_337_1 == 1;
+      assume {:formal} formal_0_337_2 == 2;
+      assume {:formal} formal_0_337_3 == 3;
+      assume {:formal} formal_0_337_4 == 4;
+      assume {:formal} formal_0_337_5 == 5;
+      assume {:formal} formal_1_339_0 == 1;
+      assume {:formal} formal_1_339_1 == 0;
+      assume {:formal} formal_2_341_0 == 0;
+      assume {:formal} formal_2_341_1 == 1;
+      assume {:formal} formal_3_343_0 == 1;
+      assume {:formal} formal_3_343_1 == 2;
+      assume {:formal} formal_4_345_0 == 2;
+      assume {:formal} formal_4_345_1 == 1;
+      assume {:formal} formal_5_347_0 == 2;
+      assume {:formal} formal_5_347_1 == 3;
+      assume {:formal} formal_6_349_0 == 3;
+      assume {:formal} formal_6_349_1 == 2;
+      assume {:formal} formal_7_351_0 == 3;
+      assume {:formal} formal_7_351_1 == 4;
+      assume {:formal} formal_8_353_0 == 4;
+      assume {:formal} formal_8_353_1 == 3;
+      assume {:formal} formal_9_355_0 == 5;
+      assume {:formal} formal_9_355_1 == 4;
+      assume {:formal} formal_10_357_0 == 4;
+      assume {:formal} formal_10_357_1 == 5;
+      assume {:formal} formal_11_359_0 == 0;
+      assume {:formal} formal_11_359_1 == 5;
+      assume {:formal} formal_12_361_0 == 5;
+      assume {:formal} formal_12_361_1 == 0;
+      assume !(receiver.users.Keys == {formal_0_337_0, formal_0_337_1, formal_0_337_2, formal_0_337_3, formal_0_337_4, formal_0_337_5} && formal_1_339_0 in receiver.users[formal_1_339_1].friends && formal_2_341_0 in receiver.users[formal_2_341_1].friends && formal_3_343_0 in receiver.users[formal_3_343_1].friends && formal_4_345_0 in receiver.users[formal_4_345_1].friends && formal_5_347_0 in receiver.users[formal_5_347_1].friends && formal_6_349_0 in receiver.users[formal_6_349_1].friends && formal_7_351_0 in receiver.users[formal_7_351_1].friends && formal_8_353_0 in receiver.users[formal_8_353_1].friends && formal_9_355_0 in receiver.users[formal_9_355_1].friends && formal_10_357_0 in receiver.users[formal_10_357_1].friends && formal_11_359_0 in receiver.users[formal_11_359_1].friends && formal_12_361_0 in receiver.users[formal_12_361_1].friends);
+      assume true && receiver.IsValid() && argument_2_0_0 != argument_2_0_1 && argument_2_0_0 in receiver.users && argument_2_0_1 in receiver.users && argument_2_0_0 !in receiver.users[argument_2_0_1].friends && argument_2_0_1 !in receiver.users[argument_2_0_0].friends && argument_2_0_1 !in receiver.users[argument_2_0_0].requests;
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 20333 LINES OF LOGS TO SAVE DISK SPACE *************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+receiver.RequestResponse(argument_80_0_0, argument_80_0_1, argument_80_0_2);
+assert {:keepAssertion} !(!(receiver == null) && 1 in receiver.users && receiver.users.Keys == {1, 1} && receiver.IsValid.requires() && true == receiver.IsValid() && {} == receiver.users[1].friends && {} == receiver.users[1].requests);}
+2024-09-24 13:02:41.4705 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_408_0: int, formal_2_3770_0: int, formal_2_3770_1: int, formal_4_248_0: bool, formal_5_3724_0: int, formal_6_665_0: int, argument_80_0_0: nat, argument_80_0_1: nat, argument_80_0_2: bool, receiver: SocialNetwork)
+      modifies receiver
+    {
+      assume {:formal} formal_1_408_0 == 1;
+      assume {:formal} formal_2_3770_0 == 1;
+      assume {:formal} formal_2_3770_1 == 1;
+      assume {:formal} formal_4_248_0 == true;
+      assume {:formal} formal_5_3724_0 == 1;
+      assume {:formal} formal_6_665_0 == 1;
+      assume !(!(receiver == null) && formal_1_408_0 in receiver.users && receiver.users.Keys == {formal_2_3770_0, formal_2_3770_1} && receiver.IsValid.requires() && formal_4_248_0 == receiver.IsValid() && {} == receiver.users[formal_5_3724_0].friends && {} == receiver.users[formal_6_665_0].requests);
+      assume true && receiver.IsValid() && argument_80_0_0 != argument_80_0_1 && argument_80_0_0 in receiver.users && argument_80_0_1 in receiver.users && argument_80_0_1 in receiver.users[argument_80_0_0].requests && argument_80_0_1 !in receiver.users[argument_80_0_0].friends && argument_80_0_0 !in receiver.users[argument_80_0_1].friends;
+      receiver.RequestResponse(argument_80_0_0, argument_80_0_1, argument_80_0_2);
+      assert {:keepAssertion} !(!(receiver == null) && formal_1_408_0 in receiver.users && receiver.users.Keys == {formal_2_3770_0, formal_2_3770_1} && receiver.IsValid.requires() && formal_4_248_0 == receiver.IsValid() && {} == receiver.users[formal_5_3724_0].friends && {} == receiver.users[formal_6_665_0].requests);
+    }
+2024-09-24 13:02:41.8138 INFO Expanding method sequence AddUser, AddUser, RequestConnect, RequestResponse, AddUser, AddUser, RequestConnect, RequestResponse, AddUser, RequestConnect, RequestResponse, AddUser, RequestConnect, RequestResponse, RequestConnect, RequestResponse, RequestConnect, RequestResponse, AddUser, RemoveUser -- estimated distance to start = 0, distance to end = 20
+2024-09-24 13:02:41.8191 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_248_0: bool) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} !(!(receiver == null) && receiver.IsValid.requires() && true == receiver.IsValid() && map[] == receiver.users);}
+2024-09-24 13:02:41.8191 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_248_0: bool) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_2_248_0 == true;
+      assert {:keepAssertion} !(!(receiver == null) && receiver.IsValid.requires() && formal_2_248_0 == receiver.IsValid() && map[] == receiver.users);
+    }
+2024-09-24 13:02:42.1669 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_248_0: bool) returns (receiver: SocialNetwork) {assume true;
+receiver := new SocialNetwork();
+assert {:keepAssertion} !(receiver == null) && receiver.IsValid.requires() && true == receiver.IsValid() && map[] == receiver.users;}
+2024-09-24 13:02:42.1669 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_248_0: bool) returns (receiver: SocialNetwork)
+    {
+      assume true;
+      receiver := new SocialNetwork();
+      assume {:formal} formal_2_248_0 == true;
+      assert {:keepAssertion} !(receiver == null) && receiver.IsValid.requires() && formal_2_248_0 == receiver.IsValid() && map[] == receiver.users;
+    }
+2024-09-24 13:02:42.4440 INFO Have found the following solution to a subproblem!
+{
+result := new SocialNetwork();
+result.AddUser(1);
+result.AddUser(0);
+result.RequestConnect(0, 1);
+result.RequestResponse(1, 0, true);
+result.AddUser(5);
+result.AddUser(4);
+result.RequestConnect(4, 5);
+result.RequestResponse(5, 4, true);
+result.AddUser(2);
+result.RequestConnect(1, 2);
+result.RequestResponse(2, 1, true);
+result.AddUser(3);
+result.RequestConnect(2, 3);
+result.RequestResponse(3, 2, true);
+result.RequestConnect(3, 4);
+result.RequestResponse(4, 3, true);
+result.RequestConnect(0, 5);
+result.RequestResponse(5, 0, true);
+result.AddUser(6);
+result.RemoveUser(6);
+}
+2024-09-24 13:02:42.4440 INFO Time spend on subproblem: 00:02:13.7379108
+2024-09-24 13:02:42.4470 INFO Number of Regular queries to Dafny used to solve subproblem: 132 (00:01:31.0083310)
+2024-09-24 13:02:42.4470 INFO Number of Simplify queries to Dafny used to solve subproblem: 50 (00:00:40.4718516)
+2024-09-24 13:02:42.4470 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-24 13:02:42.4470 INFO Have found the following solution!
+static method solution() returns (result:SocialNetwork)
+ensures Goal(result)
+{
+result := new SocialNetwork();
+result.AddUser(1);
+result.AddUser(0);
+result.RequestConnect(0, 1);
+result.RequestResponse(1, 0, true);
+result.AddUser(5);
+result.AddUser(4);
+result.RequestConnect(4, 5);
+result.RequestResponse(5, 4, true);
+result.AddUser(2);
+result.RequestConnect(1, 2);
+result.RequestResponse(2, 1, true);
+result.AddUser(3);
+result.RequestConnect(2, 3);
+result.RequestResponse(3, 2, true);
+result.RequestConnect(3, 4);
+result.RequestResponse(4, 3, true);
+result.RequestConnect(0, 5);
+result.RequestResponse(5, 0, true);
+result.AddUser(6);
+result.RemoveUser(6);
+}
+2024-09-24 13:02:42.4470 INFO Total time spend on synthesis: 00:02:13.9676804
+2024-09-24 13:02:42.4470 INFO Total number of Regular queries to Dafny: 132 (00:01:31.0083310)
+2024-09-24 13:02:42.4470 INFO Total number of Simplify queries to Dafny: 50 (00:00:40.4718516)
+2024-09-24 13:02:42.4470 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

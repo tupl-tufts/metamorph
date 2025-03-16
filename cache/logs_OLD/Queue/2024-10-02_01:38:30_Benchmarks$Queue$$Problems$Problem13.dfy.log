@@ -1,0 +1,223 @@
+2024-10-02 01:38:31.4645 DEBUG Using integer programming to estimating the distance to this.View() == [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], receiver.IsValid()
+2024-10-02 01:38:31.4803 TRACE Minimizing value: ((((Rotate + IsEmpty) + Enqueue) + Front) + Dequeue)
+2024-10-02 01:38:31.4836 DEBUG The integer programming gives the lower bound of 0 methods.
+2024-10-02 01:38:31.4836 DEBUG In particular, need at least -0 calls to Rotate
+2024-10-02 01:38:31.4836 DEBUG In particular, need at least -0 calls to IsEmpty
+2024-10-02 01:38:31.4836 DEBUG In particular, need at least -0 calls to Enqueue
+2024-10-02 01:38:31.4836 DEBUG In particular, need at least -0 calls to Front
+2024-10-02 01:38:31.4836 DEBUG In particular, need at least -0 calls to Dequeue
+2024-10-02 01:38:31.4836 INFO Initial heuristic value is 0
+2024-10-02 01:38:31.4836 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-10-02 01:38:31.5256 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int) returns (receiver: Queue) {assume true;
+receiver := new Queue();
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);}
+2024-10-02 01:38:31.5256 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int)
+        returns (receiver: Queue)
+    {
+      assume true;
+      receiver := new Queue();
+      assume {:formal} formal_1_1492_0 == 0;
+      assume {:formal} formal_1_1492_1 == 1;
+      assume {:formal} formal_1_1492_2 == 2;
+      assume {:formal} formal_1_1492_3 == 4;
+      assume {:formal} formal_1_1492_4 == 5;
+      assume {:formal} formal_1_1492_5 == 6;
+      assume {:formal} formal_1_1492_6 == 7;
+      assume {:formal} formal_1_1492_7 == 8;
+      assume {:formal} formal_1_1492_8 == 9;
+      assume {:formal} formal_1_1492_9 == 10;
+      assume {:formal} formal_1_1492_10 == 11;
+      assume {:formal} formal_1_1492_11 == 12;
+      assume {:formal} formal_1_1492_12 == 13;
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == [formal_1_1492_0, formal_1_1492_1, formal_1_1492_2, formal_1_1492_3, formal_1_1492_4, formal_1_1492_5, formal_1_1492_6, formal_1_1492_7, formal_1_1492_8, formal_1_1492_9, formal_1_1492_10, formal_1_1492_11, formal_1_1492_12]);
+    }
+2024-10-02 01:38:32.5789 DEBUG Trying method sequence: Rotate
+2024-10-02 01:38:32.5789 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int, receiver: Queue)
+    modifies receiver, receiver.Repr {assume !(receiver.IsValid() && receiver.View() == [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);
+assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+receiver.Rotate();
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);}
+2024-10-02 01:38:32.5789 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int, receiver: Queue)
+      modifies receiver, receiver.Repr
+    {
+      assume {:formal} formal_1_1492_0 == 0;
+      assume {:formal} formal_1_1492_1 == 1;
+      assume {:formal} formal_1_1492_2 == 2;
+      assume {:formal} formal_1_1492_3 == 4;
+      assume {:formal} formal_1_1492_4 == 5;
+      assume {:formal} formal_1_1492_5 == 6;
+      assume {:formal} formal_1_1492_6 == 7;
+      assume {:formal} formal_1_1492_7 == 8;
+      assume {:formal} formal_1_1492_8 == 9;
+      assume {:formal} formal_1_1492_9 == 10;
+      assume {:formal} formal_1_1492_10 == 11;
+      assume {:formal} formal_1_1492_11 == 12;
+      assume {:formal} formal_1_1492_12 == 13;
+      assume !(receiver.IsValid() && receiver.View() == [formal_1_1492_0, formal_1_1492_1, formal_1_1492_2, formal_1_1492_3, formal_1_1492_4, formal_1_1492_5, formal_1_1492_6, formal_1_1492_7, formal_1_1492_8, formal_1_1492_9, formal_1_1492_10, formal_1_1492_11, formal_1_1492_12]);
+      assume true && receiver.IsValid() && 0 < |receiver.Repr|;
+      receiver.Rotate();
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View() == [formal_1_1492_0, formal_1_1492_1, formal_1_1492_2, formal_1_1492_3, formal_1_1492_4, formal_1_1492_5, formal_1_1492_6, formal_1_1492_7, formal_1_1492_8, formal_1_1492_9, formal_1_1492_10, formal_1_1492_11, formal_1_1492_12]);
+    }
+2024-10-02 01:38:33.1329 TRACE Verifying the body of the following method:
+static method synthesized(formal_3_1010_0: int, formal_4_1012_0: int, formal_5_1016_0: int, formal_6_1018_0: int, formal_7_1034_0: int, formal_8_1082_0: int, formal_9_1104_0: int, formal_10_1106_0: int, formal_11_1108_0: int, formal_12_1110_0: int, formal_13_1112_0: int, formal_14_1014_0: int, formal_15_1060_0: int, formal_16_1536_0: int, formal_17_1124_0: int, formal_18_1142_0: int, formal_19_1186_0: int, formal_20_1206_0: int, formal_21_1208_0: int, formal_22_1210_0: int, formal_23_1212_0: int, formal_24_1214_0: int, formal_25_1122_0: int, formal_26_1547_0: int, formal_27_1549_0: int, formal_27_1549_1: int, formal_28_1218_0: int, formal_29_1552_0: int, formal_29_1552_1: int, formal_30_1554_0: int, formal_30_1554_1: int, formal_31_1556_0: int, formal_32_1558_0: int, formal_33_1560_0: int, formal_34_1562_0: int, formal_35_1564_0: int, formal_35_1564_1: int, formal_36_1566_0: int, formal_36_1566_1: int, formal_37_1568_0: int, formal_37_1568_1: int, formal_38_1570_0: int, formal_38_1570_1: int, formal_39_1572_0: int, formal_39_1572_1: int, formal_40_1574_0: int, formal_40_1574_1: int, formal_41_1576_0: int, formal_41_1576_1: int, formal_42_1578_0: int, formal_42_1578_1: int, formal_44_734_0: bool, formal_45_1582_0: int, formal_45_1582_1: int, formal_46_1584_0: int, formal_47_1586_0: int, formal_48_1358_0: int, formal_48_1358_1: int, formal_50_1590_0: int, formal_50_1590_1: int, formal_51_1592_0: int, formal_51_1592_1: int, formal_52_1438_0: int, formal_52_1438_1: int, formal_53_1440_0: int, formal_53_1440_1: int, formal_54_1442_0: int, formal_54_1442_1: int, formal_55_1444_0: int, formal_55_1444_1: int, formal_56_217_0: int, formal_56_217_1: int, formal_57_1356_0: int, formal_57_1356_1: int, formal_1_1492_0: int, formal_1_1492_1: int, formal_1_1492_2: int, formal_1_1492_3: int, formal_1_1492_4: int, formal_1_1492_5: int, formal_1_1492_6: int, formal_1_1492_7: int, formal_1_1492_8: int, formal_1_1492_9: int, formal_1_1492_10: int, formal_1_1492_11: int, formal_1_1492_12: int, receiver: Queue)
+    modifies receiver, receiver.Repr {assume !(receiver == null);
+assume !(receiver.head == null);
+assume !(receiver.tail == null);
+assume |receiver.Repr| > 0;
+assume |receiver.Repr| > 1;
+assume |receiver.Repr| > 11;
+assume |receiver.Repr| > 12;
+assume |receiver.Repr| > 2;
+assume |receiver.Repr| > 4;
+assume |receiver.Repr| > 5;
+assume |receiver.Repr| > 6;
+assume |receiver.Repr| > 7;
+assume |receiver.Repr| > 8;
+assume |receiver.Repr| > 9;
+assume |receiver.Repr| > 10;
+assume |receiver.Repr| > 3;
+assume !(receiver.Repr[1] == null);
+assume !(receiver.Repr[11] == null);
+assume !(receiver.Repr[2] == null);
+assume !(receiver.Repr[4] == null);
+assume !(receiver.Repr[5] == null);
+assume !(receiver.Repr[6] == null);
+assume !(receiver.Repr[7] == null);
+assume !(receiver.Repr[8] == null);
+assume !(receiver.Repr[9] == null);
+assume !(receiver.Repr[10] == null);
+assume !(receiver.Repr[2].next == null);
+assume 0 == receiver.Repr[1].data;
+assume receiver.head == receiver.Repr[0];
+assume 1 == receiver.Repr[2].data;
+assume 11 == receiver.Repr[11].data;
+assume 12 == receiver.tail.data;
+assume receiver.tail == receiver.Repr[12];
+assume 13 == receiver.head.data;
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+****************** SKIPPING 15908 LINES OF LOGS TO SAVE DISK SPACE *************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+      assume {:formal} formal_5_1218_0 == 0;
+      assume {:formal} formal_7_734_0 == true;
+      assert {:keepAssertion} !(receiver == null);
+      assert {:keepAssertion} !(receiver.head == null);
+      assert {:keepAssertion} |receiver.Repr| > formal_2_1010_0;
+      assert {:keepAssertion} formal_3_279_0 == |receiver.Repr|;
+      assert {:keepAssertion} formal_4_1639_0 == receiver.head.data;
+      assert {:keepAssertion} receiver.head == receiver.Repr[formal_5_1218_0];
+      assert {:keepAssertion} receiver.IsValid.requires();
+      assert {:keepAssertion} formal_7_734_0 == receiver.IsValid();
+      assert {:keepAssertion} receiver.head == receiver.tail;
+      assert {:keepAssertion} null == receiver.head.next;
+    }
+2024-10-02 01:49:49.7917 DEBUG Using integer programming to estimating the distance to |this.Repr| > 0, |this.Repr| > 1, receiver.tail == receiver.head.next, this.tail == this.Repr[1], ¬(receiver.tail == null), this.head == this.Repr[0], ¬(receiver.head == null), receiver.IsValid.requires(), ¬(receiver == null), null == receiver.tail.next, 2 == |this.Repr|, 0 == this.tail.data, 49 == this.head.data, true == this.IsValid()
+2024-10-02 01:49:49.7917 TRACE Adding solver constraint for property |this.Repr| > default0 from False to True: ((Enqueue * 1) + (Enqueue * 0)) >= 2
+2024-10-02 01:49:49.7917 TRACE Adding solver constraint for property |this.Repr| > default0 from False to True: ((Enqueue * 1) + (Enqueue * 0)) >= 2
+2024-10-02 01:49:49.7917 TRACE Adding solver constraint for property this.tail == this.Repr[default0] from Undefined to True: (((Enqueue * 1) + (Enqueue * 0)) + ((Dequeue * 0) + (Dequeue * 0))) >= 1
+2024-10-02 01:49:49.7917 TRACE Adding solver constraint for property this.tail == this.Repr[default0] from Undefined to True: (((Enqueue * 1) + (Enqueue * 0)) + ((Dequeue * 0) + (Dequeue * 1))) >= 1
+2024-10-02 01:49:49.7917 TRACE Adding solver constraint for property this.head == this.Repr[default0] from Undefined to True: ((((Rotate * 0) + (Rotate * 0)) + ((Enqueue * 1) + (Enqueue * 1))) + ((Dequeue * 0) + (Dequeue * 0))) >= 1
+2024-10-02 01:49:49.7917 TRACE Adding solver constraint for property this.head == this.Repr[default0] from Undefined to True: ((((Rotate * 0) + (Rotate * 10000)) + ((Enqueue * 1) + (Enqueue * 0))) + ((Dequeue * 0) + (Dequeue * 10000))) >= 1
+2024-10-02 01:49:49.7917 TRACE Adding solver constraint for property default0 == |this.Repr| from False to True: (((Enqueue * 1) + (Enqueue * 0)) + ((Dequeue * 1) + (Dequeue * 0))) >= 1
+2024-10-02 01:49:49.7917 TRACE Adding solver constraint for property default0 == |this.Repr| from False to True: (((Enqueue * 1) + (Enqueue * 0)) + ((Dequeue * 1) + (Dequeue * 0))) >= 1
+2024-10-02 01:49:49.7917 TRACE Minimizing value: ((((Rotate + IsEmpty) + Enqueue) + Front) + Dequeue)
+2024-10-02 01:49:49.7950 DEBUG The integer programming gives the lower bound of 2 methods.
+2024-10-02 01:49:49.7950 DEBUG In particular, need at least -0 calls to Rotate
+2024-10-02 01:49:49.7950 DEBUG In particular, need at least -0 calls to IsEmpty
+2024-10-02 01:49:49.7950 DEBUG In particular, need at least 2 calls to Enqueue
+2024-10-02 01:49:49.7950 DEBUG In particular, need at least -0 calls to Front
+2024-10-02 01:49:49.7950 DEBUG In particular, need at least -0 calls to Dequeue
+2024-10-02 01:49:49.7950 INFO The following method sequence is possible (heuristic=2): Dequeue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue
+2024-10-02 01:49:49.7950 INFO New state is |this.Repr| > 0, |this.Repr| > 1, receiver.tail == receiver.head.next, this.tail == this.Repr[1], ¬(receiver.tail == null), this.head == this.Repr[0], ¬(receiver.head == null), receiver.IsValid.requires(), ¬(receiver == null), null == receiver.tail.next, 2 == |this.Repr|, 0 == this.tail.data, 49 == this.head.data, true == this.IsValid()
+2024-10-02 01:49:49.7950 INFO Expanding method sequence Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue, Enqueue -- estimated distance to start = 0, distance to end = 13
+2024-10-02 01:49:49.7950 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_734_0: bool) returns (receiver: Queue) {assume true;
+receiver := new Queue();
+assert {:keepAssertion} !(!(receiver == null) && receiver.IsValid.requires() && true == receiver.IsValid() && null == receiver.head && null == receiver.tail && [] == receiver.Repr);}
+2024-10-02 01:49:49.7950 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_734_0: bool) returns (receiver: Queue)
+    {
+      assume true;
+      receiver := new Queue();
+      assume {:formal} formal_2_734_0 == true;
+      assert {:keepAssertion} !(!(receiver == null) && receiver.IsValid.requires() && formal_2_734_0 == receiver.IsValid() && null == receiver.head && null == receiver.tail && [] == receiver.Repr);
+    }
+2024-10-02 01:49:50.2196 TRACE Verifying the body of the following method:
+static method synthesized(formal_2_734_0: bool) returns (receiver: Queue) {assume true;
+receiver := new Queue();
+assert {:keepAssertion} !(receiver == null) && receiver.IsValid.requires() && true == receiver.IsValid() && null == receiver.head && null == receiver.tail && [] == receiver.Repr;}
+2024-10-02 01:49:50.2196 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_2_734_0: bool) returns (receiver: Queue)
+    {
+      assume true;
+      receiver := new Queue();
+      assume {:formal} formal_2_734_0 == true;
+      assert {:keepAssertion} !(receiver == null) && receiver.IsValid.requires() && formal_2_734_0 == receiver.IsValid() && null == receiver.head && null == receiver.tail && [] == receiver.Repr;
+    }
+2024-10-02 01:49:50.5768 INFO Have found the following solution to a subproblem!
+{
+result := new Queue();
+result.Enqueue(0);
+result.Enqueue(1);
+result.Enqueue(2);
+result.Enqueue(4);
+result.Enqueue(5);
+result.Enqueue(6);
+result.Enqueue(7);
+result.Enqueue(8);
+result.Enqueue(9);
+result.Enqueue(10);
+result.Enqueue(11);
+result.Enqueue(12);
+result.Enqueue(13);
+}
+2024-10-02 01:49:50.5768 INFO Time spend on subproblem: 00:11:19.1244066
+2024-10-02 01:49:50.5800 INFO Number of Regular queries to Dafny used to solve subproblem: 107 (00:01:50.0138588)
+2024-10-02 01:49:50.5800 INFO Number of Simplify queries to Dafny used to solve subproblem: 26 (00:08:46.7648164)
+2024-10-02 01:49:50.5800 INFO Number of Heuristic queries to Dafny used to solve subproblem: 140 (00:00:39.3660166)
+2024-10-02 01:49:50.5800 INFO Have found the following solution!
+static method solution() returns (result:Queue)
+ensures Goal(result)
+{
+result := new Queue();
+result.Enqueue(0);
+result.Enqueue(1);
+result.Enqueue(2);
+result.Enqueue(4);
+result.Enqueue(5);
+result.Enqueue(6);
+result.Enqueue(7);
+result.Enqueue(8);
+result.Enqueue(9);
+result.Enqueue(10);
+result.Enqueue(11);
+result.Enqueue(12);
+result.Enqueue(13);
+}
+2024-10-02 01:49:50.5800 INFO Total time spend on synthesis: 00:11:19.7313025
+2024-10-02 01:49:50.5800 INFO Total number of Regular queries to Dafny: 107 (00:01:50.0138588)
+2024-10-02 01:49:50.5800 INFO Total number of Simplify queries to Dafny: 26 (00:08:46.7648164)
+2024-10-02 01:49:50.5800 INFO Total number of Heuristic queries to Dafny: 140 (00:00:39.3660166)

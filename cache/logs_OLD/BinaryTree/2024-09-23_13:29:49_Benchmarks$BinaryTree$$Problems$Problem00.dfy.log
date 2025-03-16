@@ -1,0 +1,52 @@
+2024-09-23 13:29:50.6312 INFO Initial heuristic value is 0
+2024-09-23 13:29:50.6312 INFO Expanding method sequence  -- estimated distance to start = 0, distance to end = 0
+2024-09-23 13:29:50.6804 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1_0: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int) returns (receiver: BinaryTree) {assume true && (if argument_1_0_0 == null then {} else argument_1_0_0.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (argument_1_0_0 == null || argument_1_0_0.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+receiver := new BinaryTree(argument_1_0_0, argument_1_0_1, argument_1_0_2);
+assert {:keepAssertion} !(receiver.IsValid() && receiver.View == [0] && receiver.Height == 0);}
+2024-09-23 13:29:50.6804 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1_0: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int)
+        returns (receiver: BinaryTree)
+    {
+      assume true && (if argument_1_0_0 == null then {} else argument_1_0_0.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (argument_1_0_0 == null || argument_1_0_0.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+      receiver := new BinaryTree(argument_1_0_0, argument_1_0_1, argument_1_0_2);
+      assume {:formal} formal_1_1_0 == 0;
+      assume {:formal} formal_2_3_0 == 0;
+      assert {:keepAssertion} !(receiver.IsValid() && receiver.View == [formal_1_1_0] && receiver.Height == formal_2_3_0);
+    }
+2024-09-23 13:29:51.8814 TRACE Verifying the body of the following method:
+static method synthesized(formal_1_1_0: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int, formal_0_5_0: int) returns (receiver: BinaryTree) {assume true && (if null == null then {} else null.Repr) * (if null == null then {} else null.Repr) == {} && (null == null || null.IsValid()) && (null == null || null.IsValid());
+receiver := new BinaryTree(null, null, 0);
+assert {:keepAssertion} receiver.IsValid() && receiver.View == [0] && receiver.Height == 0;}
+2024-09-23 13:29:51.8814 TRACE Verifying the body of the following method (literal):
+ static method synthesized(formal_1_1_0: int, formal_2_3_0: int, argument_1_0_0: BinaryTree?, argument_1_0_1: BinaryTree?, argument_1_0_2: int, formal_0_5_0: int)
+        returns (receiver: BinaryTree)
+    {
+      assume {:attribute 8} argument_1_0_0 == null;
+      assume {:attribute 9} argument_1_0_1 == null;
+      assume {:formal} formal_0_5_0 == 0;
+      assume {:attribute 10} argument_1_0_2 == formal_0_5_0;
+      assume true && (if argument_1_0_0 == null then {} else argument_1_0_0.Repr) * (if argument_1_0_1 == null then {} else argument_1_0_1.Repr) == {} && (argument_1_0_0 == null || argument_1_0_0.IsValid()) && (argument_1_0_1 == null || argument_1_0_1.IsValid());
+      receiver := new BinaryTree(argument_1_0_0, argument_1_0_1, argument_1_0_2);
+      assume {:formal} formal_1_1_0 == 0;
+      assume {:formal} formal_2_3_0 == 0;
+      assert {:keepAssertion} receiver.IsValid() && receiver.View == [formal_1_1_0] && receiver.Height == formal_2_3_0;
+    }
+2024-09-23 13:29:52.1488 INFO Have found the following solution to a subproblem!
+{
+result := new BinaryTree(null, null, 0);
+}
+2024-09-23 13:29:52.1488 INFO Time spend on subproblem: 00:00:01.5286073
+2024-09-23 13:29:52.1516 INFO Number of Regular queries to Dafny used to solve subproblem: 2 (00:00:01.4829006)
+2024-09-23 13:29:52.1516 INFO Number of Simplify queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:29:52.1516 INFO Number of Heuristic queries to Dafny used to solve subproblem: 0 (00:00:00)
+2024-09-23 13:29:52.1516 INFO Have found the following solution!
+static method solution() returns (result:BinaryTree)
+ensures Goal(result)
+{
+result := new BinaryTree(null, null, 0);
+}
+2024-09-23 13:29:52.1516 INFO Total time spend on synthesis: 00:00:01.6268102
+2024-09-23 13:29:52.1516 INFO Total number of Regular queries to Dafny: 2 (00:00:01.4829006)
+2024-09-23 13:29:52.1516 INFO Total number of Simplify queries to Dafny: 0 (00:00:00)
+2024-09-23 13:29:52.1516 INFO Total number of Heuristic queries to Dafny: 0 (00:00:00)

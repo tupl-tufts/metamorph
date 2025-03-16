@@ -1,0 +1,15 @@
+# LICENSE
+
+This artifact presents **Metamorph**, a tool for the synthesis of Dafny code.  
+**Metamorph** is licensed under the **MIT License**. All benchmarks packaged 
+with the artifact, except CMPL (see below), are also licensed under the **MIT License**.
+
+The evaluation package also includes tools and libraries covered by the following licenses:
+
+1. **Dafny**:  
+   Distributed under the **MIT License**. For more details, see [Metamorph/dafny/LICENSE.txt](Metamorph/dafny/LICENSE.txt).
+
+2. **AWS Cryptographic Material Providers Library (CMPL)**:  
+   Distributed under the **Apache License 2.0**. For more details, see [Benchmarks/CMPL/LICENSE.txt](Benchmarks/CMPL/LICENSE.txt).  
+   - A small, minimally modified portion of the original CMPL is included in this package.  
+   - For a list of changes made, see [Benchmarks/CMPL/CHANGES.txt](Benchmarks/CMPL/CHANGES.txt).
